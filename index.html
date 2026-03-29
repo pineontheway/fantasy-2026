@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantasy League 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #e2e8f0; padding: 2rem; }
+    h1 { text-align: center; margin-bottom: 2rem; font-size: 2rem; color: #f8fafc; }
+    .standings { max-width: 600px; margin: 0 auto 3rem; }
+    .standings h2 { font-size: 1.2rem; color: #94a3b8; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .standing-row { display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 8px; margin-bottom: 0.5rem; background: #1e293b; }
+    .standing-row:first-of-type { background: #854d0e; }
+    .standing-row .rank { font-weight: bold; color: #94a3b8; width: 2rem; }
+    .standing-row .team-name { flex: 1; }
+    .standing-row .points { font-weight: bold; color: #fbbf24; }
+    .teams { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 1.5rem; }
+    .team-card { background: #1e293b; border-radius: 12px; padding: 1.5rem; }
+    .team-card h3 { color: #fbbf24; margin-bottom: 0.25rem; }
+    .team-card .total { color: #94a3b8; margin-bottom: 1rem; font-size: 0.9rem; }
+    .player-row { display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid #334155; font-size: 0.9rem; }
+    .player-row:last-child { border-bottom: none; }
+    .player-row .pts { color: #fbbf24; }
+    .player-row .pts.zero { color: #475569; }
+    .player-row .pts.negative { color: #f87171; }
+  </style>
+</head>
+<body>
+  <h1>Fantasy League 2026</h1>
+  <div class="standings" id="standings"></div>
+  <div class="teams" id="teams"></div>
+
+  <script>
+    fetch('draft_data.json')
+      .then(r => r.json())
+      .then(data => {
+        const sorted = [...data.teams].sort((a, b) => b.total_points - a.total_points);
+
+        // Standings
+        const standingsEl = document.getElementById('standings');
+        standingsEl.innerHTML = '<h2>Standings</h2>' + sorted.map((t, i) => `
+          <div class="standing-row">
+            <span class="rank">${i + 1}</span>
+            <span class="team-name">${t.name}</span>
+            <span class="points">${t.total_points}</span>
+          </div>
+        `).join('');
+
+        // Team cards
+        const teamsEl = document.getElementById('teams');
+        teamsEl.innerHTML = sorted.map(t => {
+          const players = t.players.map(name => {
+            const pts = t.player_points[name] || 0;
+            const cls = pts < 0 ? 'negative' : pts === 0 ? 'zero' : '';
+            return `<div class="player-row"><span>${name}</span><span class="pts ${cls}">${pts}</span></div>`;
+          }).join('');
+          return `
+            <div class="team-card">
+              <h3>${t.name}</h3>
+              <div class="total">Total: ${t.total_points} pts</div>
+              ${players}
+            </div>`;
+        }).join('');
+      });
+  </script>
+</body>
+</html>
