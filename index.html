@@ -530,7 +530,7 @@ function renderGameScorecard(elId, scoring) {
       ${activePlayers.length ? activePlayers.map(p => `
         <div class="gtc-player">
           <div class="name">
-            ${p.capped_status === 'Uncapped' ? '<span class="badge badge-2x">2x</span>' : ''}
+            ${p.multiplier === 2 ? '<span class="badge badge-2x">2x</span>' : (p.capped_status === 'Uncapped' ? '<span class="badge badge-uncapped">UC</span>' : '')}
             <span>${p.name}</span>
           </div>
           <span class="pts-cell ${ptsClass(p.total_points)}">${p.base_points !== p.total_points ? p.base_points + '→' : ''}${fmtPts(p.total_points)}</span>
@@ -633,7 +633,7 @@ function renderMVP() {
         return `<tr>
           <td style="font-weight:700;color:var(--gold)">${i + 1}</td>
           <td><div class="player-cell">
-            ${p.capped === 'Uncapped' ? '<span class="badge badge-2x">2x</span>' : ''}
+            ${p.capped === 'Uncapped' ? '<span class="badge badge-uncapped">UC</span>' : ''}
             <span>${name}</span>
           </div></td>
           <td style="color:var(--text2)">${p.ipl}</td>
@@ -681,7 +681,7 @@ function setupSearch() {
       <div class="sr-item">
         <div>
           <div class="player-cell">
-            ${p.capped === 'Uncapped' ? '<span class="badge badge-2x">2x</span>' : ''}
+            ${p.capped === 'Uncapped' ? '<span class="badge badge-uncapped">UC</span>' : ''}
             <strong>${p.name}</strong>
           </div>
           <div class="sr-meta">${p.team}</div>
