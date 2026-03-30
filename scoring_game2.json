@@ -11,8 +11,13 @@
     ]
   },
   "scoring_rules": {
-    "note": "Uncapped players get 2x multiplier on all points",
-    "uncapped_multiplier": 2
+    "note": "Uncapped players get 2x multiplier ONLY if: 30+ runs OR 3+ wickets OR 3+ fielding dismissals",
+    "uncapped_multiplier": 2,
+    "conditions": [
+      "30+ runs",
+      "3+ wickets",
+      "3+ fielding dismissals (catches + runouts + direct hits + stumpings)"
+    ]
   },
   "player_scores": {
     "Angkrish Raghuvanshi": {
@@ -52,6 +57,7 @@
       },
       "base_points": 81,
       "multiplier": 2,
+      "multiplier_reason": "30+ runs (51)",
       "total_points": 162
     },
     "Rohit Sharma": {
@@ -92,6 +98,7 @@
       },
       "base_points": 139,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 139
     },
     "Ryan Rickelton": {
@@ -131,6 +138,7 @@
       },
       "base_points": 131,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 131
     },
     "Ajinkya Rahane": {
@@ -170,6 +178,7 @@
       },
       "base_points": 103,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 103
     },
     "Finn Allen": {
@@ -209,6 +218,7 @@
       },
       "base_points": 77,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 77
     },
     "Shardul Thakur": {
@@ -247,6 +257,7 @@
       },
       "base_points": 70,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 70
     },
     "Rinku Singh": {
@@ -286,6 +297,7 @@
       },
       "base_points": 56,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 56
     },
     "Tilak Varma": {
@@ -325,6 +337,7 @@
       },
       "base_points": 48,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 48
     },
     "Hardik Pandya": {
@@ -366,6 +379,7 @@
       },
       "base_points": 34,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 34
     },
     "Cameron Green": {
@@ -403,6 +417,7 @@
       },
       "base_points": 24,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 24
     },
     "Suryakumar Yadav": {
@@ -439,45 +454,8 @@
       },
       "base_points": 22,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 22
-    },
-    "Kartik Tyagi": {
-      "ipl_team": "Kolkata Knight Riders",
-      "capped_status": "Uncapped",
-      "batting": {
-        "runs": 0,
-        "balls": 0,
-        "fours": 0,
-        "sixes": 0,
-        "is_out": false,
-        "points": 0,
-        "breakdown": [
-          "Did not bat"
-        ]
-      },
-      "bowling": {
-        "overs": 4,
-        "wickets": 1,
-        "conceded": 43,
-        "economy": 10.75,
-        "maidens": 0,
-        "points": 10,
-        "breakdown": [
-          "1 wickets = +20",
-          "Economy 10.75 >10 = -10"
-        ]
-      },
-      "fielding": {
-        "catches": 0,
-        "runouts": 0,
-        "runout_direct_hits": 0,
-        "stumpings": 0,
-        "points": 0,
-        "breakdown": []
-      },
-      "base_points": 10,
-      "multiplier": 2,
-      "total_points": 20
     },
     "Anukul Roy": {
       "ipl_team": "Kolkata Knight Riders",
@@ -515,6 +493,7 @@
       },
       "base_points": 20,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 20
     },
     "Sunil Narine": {
@@ -552,31 +531,34 @@
       },
       "base_points": 20,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 20
     },
-    "Naman Dhir": {
-      "ipl_team": "Mumbai Indians",
+    "Kartik Tyagi": {
+      "ipl_team": "Kolkata Knight Riders",
       "capped_status": "Uncapped",
       "batting": {
-        "runs": 5,
-        "balls": 2,
-        "fours": 1,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
         "sixes": 0,
         "is_out": false,
-        "points": 7,
+        "points": 0,
         "breakdown": [
-          "5 runs = +5",
-          "1 fours = +2"
+          "Did not bat"
         ]
       },
       "bowling": {
-        "overs": 0,
-        "wickets": 0,
-        "conceded": 0,
-        "economy": 0,
+        "overs": 4,
+        "wickets": 1,
+        "conceded": 43,
+        "economy": 10.75,
         "maidens": 0,
-        "points": 0,
-        "breakdown": []
+        "points": 10,
+        "breakdown": [
+          "1 wickets = +20",
+          "Economy 10.75 >10 = -10"
+        ]
       },
       "fielding": {
         "catches": 0,
@@ -586,9 +568,10 @@
         "points": 0,
         "breakdown": []
       },
-      "base_points": 7,
-      "multiplier": 2,
-      "total_points": 14
+      "base_points": 10,
+      "multiplier": 1,
+      "multiplier_reason": "Uncapped but conditions not met (needs 30+ runs, 3+ wkts, or 3+ dismissals)",
+      "total_points": 10
     },
     "Sherfane Rutherford": {
       "ipl_team": "Mumbai Indians",
@@ -625,6 +608,7 @@
       },
       "base_points": 10,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 10
     },
     "Manish Pandey": {
@@ -660,7 +644,45 @@
       },
       "base_points": 10,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 10
+    },
+    "Naman Dhir": {
+      "ipl_team": "Mumbai Indians",
+      "capped_status": "Uncapped",
+      "batting": {
+        "runs": 5,
+        "balls": 2,
+        "fours": 1,
+        "sixes": 0,
+        "is_out": false,
+        "points": 7,
+        "breakdown": [
+          "5 runs = +5",
+          "1 fours = +2"
+        ]
+      },
+      "bowling": {
+        "overs": 0,
+        "wickets": 0,
+        "conceded": 0,
+        "economy": 0,
+        "maidens": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "base_points": 7,
+      "multiplier": 1,
+      "multiplier_reason": "Uncapped but conditions not met (needs 30+ runs, 3+ wkts, or 3+ dismissals)",
+      "total_points": 7
     },
     "Ramandeep Singh": {
       "ipl_team": "Kolkata Knight Riders",
@@ -694,8 +716,9 @@
         "breakdown": []
       },
       "base_points": 4,
-      "multiplier": 2,
-      "total_points": 8
+      "multiplier": 1,
+      "multiplier_reason": "Uncapped but conditions not met (needs 30+ runs, 3+ wkts, or 3+ dismissals)",
+      "total_points": 4
     },
     "Vaibhav Arora": {
       "ipl_team": "Kolkata Knight Riders",
@@ -732,7 +755,8 @@
         "breakdown": []
       },
       "base_points": 0,
-      "multiplier": 2,
+      "multiplier": 1,
+      "multiplier_reason": "Uncapped but conditions not met (needs 30+ runs, 3+ wkts, or 3+ dismissals)",
       "total_points": 0
     },
     "Trent Boult": {
@@ -768,6 +792,7 @@
       },
       "base_points": 0,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 0
     },
     "Jasprit Bumrah": {
@@ -803,6 +828,7 @@
       },
       "base_points": 0,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": 0
     },
     "Mayank Markande": {
@@ -837,7 +863,8 @@
         "breakdown": []
       },
       "base_points": 0,
-      "multiplier": 2,
+      "multiplier": 1,
+      "multiplier_reason": "Uncapped but conditions not met (needs 30+ runs, 3+ wkts, or 3+ dismissals)",
       "total_points": 0
     },
     "Varun Chakaravarthy": {
@@ -875,6 +902,7 @@
       },
       "base_points": -10,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": -10
     },
     "Blessing Muzarabani": {
@@ -912,6 +940,7 @@
       },
       "base_points": -10,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": -10
     },
     "AM Ghazanfar": {
@@ -949,6 +978,7 @@
       },
       "base_points": -20,
       "multiplier": 1,
+      "multiplier_reason": "",
       "total_points": -20
     }
   },
@@ -956,13 +986,14 @@
     {
       "id": 6,
       "name": "Tyrion Titans",
-      "total_points": 270,
+      "total_points": 266,
       "players": [
         {
           "name": "Mitchell Marsh",
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -970,6 +1001,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -977,6 +1009,7 @@
           "capped_status": "Capped",
           "base_points": 20,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 20
         },
         {
@@ -984,6 +1017,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -991,6 +1025,7 @@
           "capped_status": "Capped",
           "base_points": 139,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 139
         },
         {
@@ -998,6 +1033,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1005,6 +1041,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1012,6 +1049,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1019,6 +1057,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1026,6 +1065,7 @@
           "capped_status": "Capped",
           "base_points": 103,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 103
         },
         {
@@ -1033,6 +1073,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1040,41 +1081,47 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Karun Nair",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Ayush Badoni",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Abdul Samad",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Ramandeep Singh",
           "capped_status": "Uncapped",
           "base_points": 4,
-          "multiplier": 2,
-          "total_points": 8
+          "multiplier": 1,
+          "multiplier_reason": "Uncapped but conditions not met (needs 30+ runs, 3+ wkts, or 3+ dismissals)",
+          "total_points": 4
         },
         {
           "name": "Ashwani Kumar",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         }
       ]
@@ -1088,21 +1135,24 @@
           "name": "Vaibhav Sooryavanshi",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Digvesh Singh",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Sameer Rizvi",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1110,6 +1160,7 @@
           "capped_status": "Capped",
           "base_points": 77,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 77
         },
         {
@@ -1117,6 +1168,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1124,6 +1176,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1131,6 +1184,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1138,6 +1192,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1145,6 +1200,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1152,6 +1208,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1159,6 +1216,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1166,13 +1224,15 @@
           "capped_status": "Capped",
           "base_points": 131,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 131
         },
         {
           "name": "Musheer Khan",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1180,20 +1240,23 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Rasikh Salam",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Manav Suthar",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1201,6 +1264,7 @@
           "capped_status": "Capped",
           "base_points": -10,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": -10
         }
       ]
@@ -1215,20 +1279,23 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Arjun Tendulkar",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Shahrukh Khan",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1236,6 +1303,7 @@
           "capped_status": "Capped",
           "base_points": 34,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 34
         },
         {
@@ -1243,6 +1311,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1250,6 +1319,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1257,6 +1327,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1264,6 +1335,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1271,6 +1343,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1278,6 +1351,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1285,6 +1359,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1292,6 +1367,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1299,6 +1375,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1306,6 +1383,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1313,6 +1391,7 @@
           "capped_status": "Uncapped",
           "base_points": 81,
           "multiplier": 2,
+          "multiplier_reason": "30+ runs (51)",
           "total_points": 162
         },
         {
@@ -1320,20 +1399,23 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Anuj Rawat",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Zeeshan Ansari",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         }
       ]
@@ -1348,13 +1430,15 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Prashant Veer",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1362,6 +1446,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1369,6 +1454,7 @@
           "capped_status": "Capped",
           "base_points": 22,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 22
         },
         {
@@ -1376,6 +1462,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1383,6 +1470,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1390,6 +1478,7 @@
           "capped_status": "Capped",
           "base_points": -10,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": -10
         },
         {
@@ -1397,6 +1486,7 @@
           "capped_status": "Capped",
           "base_points": 48,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 48
         },
         {
@@ -1404,6 +1494,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1411,6 +1502,7 @@
           "capped_status": "Capped",
           "base_points": 70,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 70
         },
         {
@@ -1418,6 +1510,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1425,6 +1518,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1432,6 +1526,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1439,13 +1534,15 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Sandeep Sharma",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1453,6 +1550,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1460,6 +1558,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1467,6 +1566,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         }
       ]
@@ -1474,13 +1574,14 @@
     {
       "id": 1,
       "name": "Valtheru Valyrian Steel",
-      "total_points": 70,
+      "total_points": 63,
       "players": [
         {
           "name": "Sanju Samson",
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1488,6 +1589,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1495,6 +1597,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1502,6 +1605,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1509,6 +1613,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1516,6 +1621,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1523,6 +1629,7 @@
           "capped_status": "Capped",
           "base_points": 56,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 56
         },
         {
@@ -1530,6 +1637,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1537,6 +1645,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1544,6 +1653,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1551,6 +1661,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1558,6 +1669,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1565,6 +1677,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1572,34 +1685,39 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Naman Dhir",
           "capped_status": "Uncapped",
           "base_points": 7,
-          "multiplier": 2,
-          "total_points": 14
+          "multiplier": 1,
+          "multiplier_reason": "Uncapped but conditions not met (needs 30+ runs, 3+ wkts, or 3+ dismissals)",
+          "total_points": 7
         },
         {
           "name": "Vaibhav Arora",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "Uncapped but conditions not met (needs 30+ runs, 3+ wkts, or 3+ dismissals)",
           "total_points": 0
         },
         {
           "name": "Yash Dayal",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Robin Minz",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         }
       ]
@@ -1614,34 +1732,39 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Krains Fuletra",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Auqib Nabi",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Vihaan Malhotra",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Abishek Porel",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1649,13 +1772,15 @@
           "capped_status": "Capped",
           "base_points": 24,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 24
         },
         {
           "name": "MS Dhoni",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1663,6 +1788,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1670,6 +1796,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1677,6 +1804,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1684,6 +1812,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1691,6 +1820,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1698,6 +1828,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1705,6 +1836,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1712,6 +1844,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1719,13 +1852,15 @@
           "capped_status": "Capped",
           "base_points": 10,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 10
         },
         {
           "name": "Rahul Tewatia",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1733,6 +1868,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         }
       ]
@@ -1740,27 +1876,30 @@
     {
       "id": 7,
       "name": "White Walkers",
-      "total_points": 20,
+      "total_points": 10,
       "players": [
         {
           "name": "Heinrich Klaasen",
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Ashok Sharma",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Priyansh Arya",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1768,6 +1907,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1775,6 +1915,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1782,6 +1923,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1789,6 +1931,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1796,6 +1939,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1803,6 +1947,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1810,13 +1955,15 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Shashank Singh",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1824,6 +1971,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1831,6 +1979,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1838,6 +1987,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1845,6 +1995,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1852,20 +2003,23 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Kartik Tyagi",
           "capped_status": "Uncapped",
           "base_points": 10,
-          "multiplier": 2,
-          "total_points": 20
+          "multiplier": 1,
+          "multiplier_reason": "Uncapped but conditions not met (needs 30+ runs, 3+ wkts, or 3+ dismissals)",
+          "total_points": 10
         },
         {
           "name": "Suyash Sharma",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         }
       ]
@@ -1879,7 +2033,8 @@
           "name": "Ayush Mhatre",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1887,6 +2042,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1894,6 +2050,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1901,6 +2058,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1908,6 +2066,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1915,6 +2074,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1922,6 +2082,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1929,6 +2090,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1936,6 +2098,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1943,6 +2106,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1950,6 +2114,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1957,13 +2122,15 @@
           "capped_status": "Capped",
           "base_points": 10,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 10
         },
         {
           "name": "Vipraj Nigam",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1971,6 +2138,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -1978,27 +2146,31 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Harsh Dubey",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Ravichandran Smaran",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Mayank Markande",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "Uncapped but conditions not met (needs 30+ runs, 3+ wkts, or 3+ dismissals)",
           "total_points": 0
         }
       ]
@@ -2013,13 +2185,15 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Kartik Sharma",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -2027,6 +2201,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -2034,6 +2209,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -2041,6 +2217,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -2048,6 +2225,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -2055,6 +2233,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -2062,13 +2241,15 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Prabhsimran Singh",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -2076,6 +2257,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -2083,6 +2265,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -2090,6 +2273,7 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
@@ -2097,34 +2281,39 @@
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Harpreet Brar",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Ashutosh Sharma",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Nehal Wadhera",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         },
         {
           "name": "Onkar Tarmale",
           "capped_status": "Uncapped",
           "base_points": 0,
-          "multiplier": 2,
+          "multiplier": 1,
+          "multiplier_reason": "",
           "total_points": 0
         }
       ]

@@ -38,12 +38,12 @@
         "Dewald Brevis": 0,
         "Harshal Patel": -30,
         "Xavier Bartlett": 0,
-        "Naman Dhir": 14,
+        "Naman Dhir": 7,
         "Vaibhav Arora": 0,
         "Yash Dayal": 0,
         "Robin Minz": 0
       },
-      "total_points": 62,
+      "total_points": 55,
       "player_capped": {
         "Sanju Samson": "Capped",
         "Lhuan-dre Pretorius": "Capped",
@@ -360,10 +360,10 @@
         "Karun Nair": 0,
         "Ayush Badoni": 0,
         "Abdul Samad": 0,
-        "Ramandeep Singh": 8,
+        "Ramandeep Singh": 4,
         "Ashwani Kumar": 0
       },
-      "total_points": 305,
+      "total_points": 301,
       "player_capped": {
         "Mitchell Marsh": "Capped",
         "Jason Holder": "Capped",
@@ -424,10 +424,10 @@
         "Ishant Sharma": 0,
         "Noor Ahmad": 0,
         "Sai Kishore": 0,
-        "Kartik Tyagi": 20,
-        "Suyash Sharma": 40
+        "Kartik Tyagi": 10,
+        "Suyash Sharma": 20
       },
-      "total_points": 280,
+      "total_points": 250,
       "player_capped": {
         "Heinrich Klaasen": "Capped",
         "Ashok Sharma": "Uncapped",
@@ -550,11 +550,11 @@
         "Vipraj Nigam": 0,
         "Mayank Yadav": 0,
         "Tushar Deshpande": 0,
-        "Harsh Dubey": 46,
+        "Harsh Dubey": 23,
         "Ravichandran Smaran": 0,
         "Mayank Markande": 0
       },
-      "total_points": 299,
+      "total_points": 276,
       "player_capped": {
         "Ayush Mhatre": "Uncapped",
         "Ishan Kishan": "Capped",
@@ -610,8 +610,13 @@
       "stumping": 10
     },
     "uncapped_multiplier": {
-      "rule": "All points for uncapped players are doubled (2x)",
-      "multiplier": 2
+      "rule": "Uncapped players get 2x multiplier ONLY if they achieve: 30+ runs OR 3+ wickets OR 3+ fielding dismissals in a match",
+      "multiplier": 2,
+      "conditions": {
+        "runs_threshold": 30,
+        "wickets_threshold": 3,
+        "fielding_dismissals_threshold": 3
+      }
     }
   }
 }
