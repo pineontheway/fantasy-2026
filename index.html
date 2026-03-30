@@ -574,8 +574,7 @@ function renderTeams() {
       const g2pts = g2 ? g2.total_points : 0;
       const total = g1pts + g2pts;
       const capped = t.player_capped[name];
-      const got2x = (g1 && g1.multiplier === 2) || (g2 && g2.multiplier === 2);
-      return { name, g1pts, g2pts, total, capped, got2x };
+      return { name, g1pts, g2pts, total, capped };
     }).sort((a, b) => b.total - a.total);
 
     html += `<div class="team-card" data-id="${t.id}">
@@ -595,7 +594,7 @@ function renderTeams() {
       ${playerData.map(p => `
         <div class="tc-player-row">
           <div class="name">
-            ${p.got2x ? '<span class="badge badge-2x">2x</span>' : (p.capped === 'Uncapped' ? '<span class="badge badge-uncapped">UC</span>' : '')}
+            ${p.capped === 'Uncapped' ? '<span class="badge badge-uncapped">UC</span>' : ''}
             <span>${p.name}</span>
           </div>
           <div class="game-pts ${ptsClass(p.g1pts)}">${p.g1pts || '-'}</div>
