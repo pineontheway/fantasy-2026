@@ -115,6 +115,7 @@
     .breakdown-toggle:hover { background: var(--bg4); color: var(--text); }
     .breakdown-row { display: none; }
     .breakdown-row.open { display: table-row; }
+    .game-team-card .breakdown-row.open { display: block; }
     .breakdown-content { padding: 0.5rem 0.6rem 0.5rem 2rem; font-size: 0.75rem; color: var(--text2); background: var(--bg3); border-radius: 6px; }
     .breakdown-content .bd-line { padding: 0.1rem 0; }
     .breakdown-content .bd-section { font-weight: 600; color: var(--text); margin-top: 0.3rem; }
@@ -624,15 +625,28 @@ function renderGameScorecard(elId, scoring) {
     html += `<div class="game-team-card">
       <h4>${t.name}</h4>
       <div class="gtc-pts ${ptsClass(t.total_points)}">${t.total_points > 0 ? '+' : ''}${t.total_points} pts</div>
-      ${activePlayers.length ? activePlayers.map(p => `
-        <div class="gtc-player">
+      ${activePlayers.length ? activePlayers.map(p => {
+        const uid = 'fti-' + p.name.replace(/[^a-zA-Z]/g, '') + elId;
+        const pData = ps[p.name];
+        let bdHtml = '';
+        if (pData) {
+          const sections = [];
+          if (pData.batting.breakdown.length) sections.push('<div class="bd-section">Batting (' + fmtPts(pData.batting.points) + ')</div>' + pData.batting.breakdown.map(l => '<div class="bd-line">' + l + '</div>').join(''));
+          if (pData.bowling.breakdown.length) sections.push('<div class="bd-section">Bowling (' + fmtPts(pData.bowling.points) + ')</div>' + pData.bowling.breakdown.map(l => '<div class="bd-line">' + l + '</div>').join(''));
+          if (pData.fielding.breakdown.length) sections.push('<div class="bd-section">Fielding (' + fmtPts(pData.fielding.points) + ')</div>' + pData.fielding.breakdown.map(l => '<div class="bd-line">' + l + '</div>').join(''));
+          if (p.multiplier > 1) sections.push('<div class="bd-mult">Uncapped 2x (' + (p.multiplier_reason || '') + '): ' + p.base_points + ' × 2 = ' + p.total_points + '</div>');
+          bdHtml = sections.join('');
+        }
+        return `
+        <div class="gtc-player" onclick="toggleBD('${uid}')" style="cursor:pointer">
           <div class="name">
             ${p.capped_status === 'Uncapped' ? '<span class="badge badge-uncapped">UC</span>' : ''}${p.multiplier === 2 ? '<span class="badge badge-2x">2x</span>' : ''}
             <span>${p.name}</span>
           </div>
           <span class="pts-cell ${ptsClass(p.total_points)}">${p.base_points !== p.total_points ? p.base_points + '→' : ''}${fmtPts(p.total_points)}</span>
         </div>
-      `).join('') : '<div style="font-size:0.8rem;color:var(--text3);padding:0.3rem 0">No players scored</div>'}
+        ${bdHtml ? '<div class="breakdown-row" id="' + uid + '"><div class="breakdown-content">' + bdHtml + '</div></div>' : ''}
+      `}).join('') : '<div style="font-size:0.8rem;color:var(--text3);padding:0.3rem 0">No players scored</div>'}
     </div>`;
   });
   html += '</div>';
