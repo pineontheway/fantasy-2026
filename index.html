@@ -49,6 +49,18 @@
     .section.active { display: block; }
     .sec-title { font-family: 'Cinzel', serif; font-size: 1.2rem; margin-bottom: 1rem; }
 
+    /* Weekly Sections */
+    .week-section { margin-bottom: 1.5rem; }
+    .week-header { font-family: 'Cinzel', serif; font-size: 1rem; padding: 0.75rem 1rem; background: var(--bg2); border-radius: 8px; margin-bottom: 0.5rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; user-select: none; transition: 0.2s; }
+    .week-header:hover { background: var(--bg3); }
+    .week-header .arrow { transition: transform 0.2s; font-size: 0.7rem; color: var(--text3); }
+    .week-header.open .arrow { transform: rotate(90deg); }
+    .week-current .week-header { color: var(--gold); border-left: 3px solid var(--gold); }
+    .week-body { overflow: hidden; max-height: 0; transition: max-height 0.3s ease; }
+    .week-body.open { max-height: 8000px; }
+    .week-date { font-size: 0.75rem; color: var(--text2); font-family: 'Inter', sans-serif; margin-left: auto; }
+    .week-games-list { font-size: 0.75rem; color: var(--text3); padding: 0 1rem 0.5rem; }
+
     /* Standings */
     .standings-list { max-width: 700px; }
     .standing-row { display: flex; align-items: center; padding: 0.75rem 1rem; border-radius: 8px; margin-bottom: 0.4rem; background: var(--bg2); cursor: pointer; transition: 0.2s; position: relative; overflow: hidden; }
@@ -320,6 +332,8 @@ function init() {
 }
 
 function renderAll() {
+  allScorings = [scoring1, scoring2, scoring3, scoring4, scoring5].filter(Boolean);
+  weeks = groupGamesByWeek(allScorings);
   renderStats();
   renderStandings();
   renderGameScorecard('sec-game1', scoring1);
@@ -333,6 +347,40 @@ function renderAll() {
   setupSearch();
 }
 
+let allScorings = [], weeks = [];
+
+const WEEK1_START = Date.UTC(2026, 2, 28); // Mar 28, 2026 (Saturday)
+const MS_PER_WEEK = 7 * 24 * 60 * 60 * 1000;
+
+function getWeekNumber(dateStr) {
+  const d = new Date(dateStr).getTime();
+  return Math.floor((d - WEEK1_START) / MS_PER_WEEK) + 1;
+}
+
+function getWeekRange(weekNum) {
+  const start = new Date(WEEK1_START + (weekNum - 1) * MS_PER_WEEK);
+  const end = new Date(start.getTime() + 6 * 24 * 60 * 60 * 1000);
+  const fmt = d => d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', timeZone: 'UTC' });
+  return fmt(start) + ' – ' + fmt(end);
+}
+
+function groupGamesByWeek(scorings) {
+  const map = {};
+  scorings.forEach((s, i) => {
+    const wn = getWeekNumber(s.match.date);
+    if (!map[wn]) map[wn] = { weekNum: wn, label: 'Week ' + wn, range: getWeekRange(wn), games: [] };
+    map[wn].games.push({ scoring: s, gameNum: i + 1 });
+  });
+  return Object.values(map).sort((a, b) => b.weekNum - a.weekNum);
+}
+
+function toggleWeek(weekId) {
+  const header = document.querySelector('[data-week="' + weekId + '"]');
+  const body = document.getElementById('week-body-' + weekId);
+  if (header) header.classList.toggle('open');
+  if (body) body.classList.toggle('open');
+}
+
 function ptsClass(v) { return v > 0 ? 'pts-pos' : v < 0 ? 'pts-neg' : 'pts-zero'; }
 function fmtPts(v) { return v > 0 ? '+' + v : v; }
 
@@ -340,9 +388,8 @@ function fmtPts(v) { return v > 0 ? '+' + v : v; }
 function renderStats() {
   const totalPlayers = draft.teams.reduce((s, t) => s + t.players.length, 0);
   let maxPts = 0, topName = '';
-  const allS = [scoring1, scoring2, scoring3, scoring4, scoring5];
   const combined = {};
-  allS.forEach(s => {
+  allScorings.forEach(s => {
     Object.entries(s.player_scores).forEach(([name, ps]) => {
       combined[name] = (combined[name] || 0) + ps.total_points;
     });
@@ -354,33 +401,65 @@ function renderStats() {
     <div class="stat"><div class="stat-val">${draft.teams.length}</div><div class="stat-lbl">Teams</div></div>
     <div class="stat"><div class="stat-val">${totalPlayers}</div><div class="stat-lbl">Players</div></div>
     <div class="stat"><div class="stat-val">${uncapped}</div><div class="stat-lbl">Uncapped (2x)</div></div>
-    <div class="stat"><div class="stat-val">5</div><div class="stat-lbl">Matches</div></div>
+    <div class="stat"><div class="stat-val">${allScorings.length}</div><div class="stat-lbl">Matches</div></div>
     <div class="stat"><div class="stat-val" style="font-size:1rem">${topName}</div><div class="stat-lbl">Top Scorer (${maxPts})</div></div>
   `;
 }
 
 // ── Standings ──
 function renderStandings() {
-  const sorted = [...draft.teams].sort((a, b) => b.total_points - a.total_points);
-  const max = sorted[0]?.total_points || 1;
   const el = document.getElementById('sec-standings');
-  el.innerHTML = '<h2 class="sec-title">Standings</h2><div class="standings-list">' + sorted.map((t, i) => {
-    const pct = max > 0 ? Math.max(0, (t.total_points / max) * 100) : 0;
-    const rc = i < 3 ? 'rank-' + (i + 1) : 'rank-n';
-    return `<div class="standing-row" onclick="showTeamTab(${t.id})" style="animation:fadeIn 0.4s ease ${i*0.05}s both">
-      <div class="standing-bar" style="width:${pct}%"></div>
-      <div class="rank-badge ${rc}">${i + 1}</div>
-      <span class="team-name">${t.name}</span>
-      <span class="pts">${t.total_points}</span>
+  let html = '<h2 class="sec-title">Standings</h2>';
+
+  weeks.forEach((week, wi) => {
+    const isCurrent = wi === 0;
+    const weekId = 'standings-w' + week.weekNum;
+
+    // Compute per-team weekly points
+    const teamPts = {};
+    draft.teams.forEach(t => { teamPts[t.id] = { name: t.name, id: t.id, pts: 0 }; });
+    week.games.forEach(g => {
+      g.scoring.fantasy_team_scores.forEach(ft => {
+        if (teamPts[ft.id]) teamPts[ft.id].pts += ft.total_points;
+      });
+    });
+    const sorted = Object.values(teamPts).sort((a, b) => b.pts - a.pts);
+    const max = sorted[0]?.pts || 1;
+
+    const gamesList = week.games.map(g => 'Game ' + g.gameNum + ': ' + g.scoring.match.teams.join(' vs ')).join(' &bull; ');
+
+    html += `<div class="week-section ${isCurrent ? 'week-current' : ''}">
+      <div class="week-header ${isCurrent ? 'open' : ''}" data-week="${weekId}" onclick="toggleWeek('${weekId}')">
+        <span class="arrow">&#9654;</span>
+        <span>${isCurrent ? 'This Week' : week.label}</span>
+        <span class="week-date">${week.range}</span>
+      </div>
+      <div class="week-body ${isCurrent ? 'open' : ''}" id="week-body-${weekId}">
+        <div class="week-games-list">${gamesList}</div>
+        <div class="standings-list">
+          ${sorted.map((t, i) => {
+            const pct = max > 0 ? Math.max(0, (t.pts / max) * 100) : 0;
+            const rc = i < 3 ? 'rank-' + (i + 1) : 'rank-n';
+            return `<div class="standing-row" onclick="showTeamTab(${t.id})" style="animation:fadeIn 0.4s ease ${i*0.05}s both">
+              <div class="standing-bar" style="width:${pct}%"></div>
+              <div class="rank-badge ${rc}">${i + 1}</div>
+              <span class="team-name">${t.name}</span>
+              <span class="pts">${t.pts}</span>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>
     </div>`;
-  }).join('') + '</div>';
+  });
+
+  el.innerHTML = html;
 }
 
 function showTeamTab(id) {
   switchTab('teams');
   setTimeout(() => {
-    const card = document.querySelector('.team-card[data-id="' + id + '"]');
-    if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const cards = document.querySelectorAll('.team-card[data-id="' + id + '"]');
+    if (cards.length) cards[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
   }, 50);
 }
 
@@ -578,59 +657,73 @@ function fantasyBadge(name) {
 
 // ── Teams ──
 function renderTeams() {
-  const sorted = [...draft.teams].sort((a, b) => b.total_points - a.total_points);
   const el = document.getElementById('sec-teams');
-  let html = '<h2 class="sec-title">Teams</h2><div class="team-cards">';
+  let html = '<h2 class="sec-title">Teams</h2>';
 
-  sorted.forEach((t, ti) => {
-    const rank = ti + 1;
-    // Get per-game points for each player
-    const playerData = t.players.map(name => {
-      const g1 = scoring1.player_scores[name];
-      const g2 = scoring2.player_scores[name];
-      const g1pts = g1 ? g1.total_points : 0;
-      const g2pts = g2 ? g2.total_points : 0;
-      const total = g1pts + g2pts;
-      const capped = t.player_capped[name];
-      return { name, g1pts, g2pts, total, capped };
-    }).sort((a, b) => b.total - a.total);
+  weeks.forEach((week, wi) => {
+    const isCurrent = wi === 0;
+    const weekId = 'teams-w' + week.weekNum;
 
-    html += `<div class="team-card" data-id="${t.id}">
-      <div class="tc-header">
-        <div>
-          <h3>${t.name}</h3>
-          <div class="tc-rank">Rank #${rank} &bull; ${t.players.length} players</div>
-        </div>
-        <div class="tc-pts-badge">${t.total_points} pts</div>
+    // Compute per-team weekly points and per-player per-game points
+    const teamData = draft.teams.map(t => {
+      const playerData = t.players.map(name => {
+        const gamePts = week.games.map(g => {
+          const ps = g.scoring.player_scores[name];
+          return ps ? ps.total_points : 0;
+        });
+        const total = gamePts.reduce((s, v) => s + v, 0);
+        return { name, gamePts, total, capped: t.player_capped[name] };
+      }).sort((a, b) => b.total - a.total);
+      const weeklyTotal = playerData.reduce((s, p) => s + p.total, 0);
+      return { id: t.id, name: t.name, players: t.players.length, weeklyTotal, playerData };
+    }).sort((a, b) => b.weeklyTotal - a.weeklyTotal);
+
+    html += `<div class="week-section ${isCurrent ? 'week-current' : ''}">
+      <div class="week-header ${isCurrent ? 'open' : ''}" data-week="${weekId}" onclick="toggleWeek('${weekId}')">
+        <span class="arrow">&#9654;</span>
+        <span>${isCurrent ? 'This Week' : week.label}</span>
+        <span class="week-date">${week.range}</span>
       </div>
-      <div class="tc-game-header">
-        <span style="flex:1">Player</span>
-        <span style="width:45px;text-align:center">G1</span>
-        <span style="width:45px;text-align:center">G2</span>
-        <span style="width:50px;text-align:right">Total</span>
-      </div>
-      ${playerData.map(p => `
-        <div class="tc-player-row">
-          <div class="name">
-            ${p.capped === 'Uncapped' ? '<span class="badge badge-uncapped">UC</span>' : ''}
-            <span>${p.name}</span>
-          </div>
-          <div class="game-pts ${ptsClass(p.g1pts)}">${p.g1pts || '-'}</div>
-          <div class="game-pts ${ptsClass(p.g2pts)}">${p.g2pts || '-'}</div>
-          <div class="total ${ptsClass(p.total)}">${p.total}</div>
+      <div class="week-body ${isCurrent ? 'open' : ''}" id="week-body-${weekId}">
+        <div class="team-cards">
+          ${teamData.map((t, ti) => `
+            <div class="team-card" data-id="${t.id}">
+              <div class="tc-header">
+                <div>
+                  <h3>${t.name}</h3>
+                  <div class="tc-rank">Rank #${ti + 1} &bull; ${t.players} players</div>
+                </div>
+                <div class="tc-pts-badge">${t.weeklyTotal} pts</div>
+              </div>
+              <div class="tc-game-header">
+                <span style="flex:1">Player</span>
+                ${week.games.map(g => `<span style="width:45px;text-align:center">G${g.gameNum}</span>`).join('')}
+                <span style="width:50px;text-align:right">Total</span>
+              </div>
+              ${t.playerData.map(p => `
+                <div class="tc-player-row">
+                  <div class="name">
+                    ${p.capped === 'Uncapped' ? '<span class="badge badge-uncapped">UC</span>' : ''}
+                    <span>${p.name}</span>
+                  </div>
+                  ${p.gamePts.map(gp => `<div class="game-pts ${ptsClass(gp)}">${gp || '-'}</div>`).join('')}
+                  <div class="total ${ptsClass(p.total)}">${p.total}</div>
+                </div>
+              `).join('')}
+            </div>
+          `).join('')}
         </div>
-      `).join('')}
+      </div>
     </div>`;
   });
 
-  html += '</div>';
   el.innerHTML = html;
 }
 
 // ── MVP ──
 function renderMVP() {
   const combined = {};
-  [scoring1, scoring2].forEach(s => {
+  allScorings.forEach(s => {
     Object.entries(s.player_scores).forEach(([name, ps]) => {
       if (!combined[name]) combined[name] = { bat: 0, bowl: 0, field: 0, total: 0, capped: ps.capped_status, mult: ps.multiplier, ipl: ps.ipl_team };
       combined[name].bat += ps.batting.points * ps.multiplier;
@@ -687,9 +780,8 @@ function setupSearch() {
     draft.teams.forEach(t => {
       t.players.forEach(name => {
         if (name.toLowerCase().includes(q)) {
-          const g1 = scoring1.player_scores[name];
-          const g2 = scoring2.player_scores[name];
-          const total = (g1 ? g1.total_points : 0) + (g2 ? g2.total_points : 0);
+          let total = 0;
+          allScorings.forEach(s => { const ps = s.player_scores[name]; if (ps) total += ps.total_points; });
           const capped = t.player_capped[name];
           matches.push({ name, team: t.name, capped, total });
         }

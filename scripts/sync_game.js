@@ -469,19 +469,13 @@ if (!html.includes(`'${secId}'`)) {
   );
 }
 
-// renderStats: update allS array
-if (!html.includes(`scoring${gameNum}]`)) {
+// renderAll: update allScorings array
+if (!html.includes(`scoring${gameNum}].filter`)) {
   html = html.replace(
-    `scoring${gameNum - 1}];`,
-    `scoring${gameNum - 1}, scoring${gameNum}];`
+    `scoring${gameNum - 1}].filter`,
+    `scoring${gameNum - 1}, scoring${gameNum}].filter`
   );
 }
-
-// Update match count in stats bar
-html = html.replace(
-  /<div class="stat"><div class="stat-val">\d+<\/div><div class="stat-lbl">Matches<\/div><\/div>/,
-  `<div class="stat"><div class="stat-val">${totalGames}</div><div class="stat-lbl">Matches</div></div>`
-);
 
 fs.writeFileSync(path.join(ROOT, 'index.html'), html);
 console.log(`✅ index.html updated (${totalGames} game tabs)\n`);
