@@ -959,6 +959,7 @@
       "players": [
         {
           "name": "Sanju Samson",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -967,6 +968,7 @@
         },
         {
           "name": "Lhuan-dre Pretorius",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -975,6 +977,7 @@
         },
         {
           "name": "Arshdeep Singh",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 10,
           "multiplier": 1,
@@ -983,6 +986,7 @@
         },
         {
           "name": "Nicholas Pooran",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -991,6 +995,7 @@
         },
         {
           "name": "Yuzvendra Chahal",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 40,
           "multiplier": 1,
@@ -999,6 +1004,7 @@
         },
         {
           "name": "Axar Patel",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1007,6 +1013,7 @@
         },
         {
           "name": "Rinku Singh",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1015,6 +1022,7 @@
         },
         {
           "name": "Ravi Bishnoi",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1023,6 +1031,7 @@
         },
         {
           "name": "Tristan Stubbs",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1031,6 +1040,7 @@
         },
         {
           "name": "Tim David",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1039,6 +1049,7 @@
         },
         {
           "name": "Jacob Bethell",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1047,6 +1058,7 @@
         },
         {
           "name": "Dewald Brevis",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1055,6 +1067,7 @@
         },
         {
           "name": "Harshal Patel",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1063,6 +1076,7 @@
         },
         {
           "name": "Xavier Bartlett",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 25,
           "multiplier": 1,
@@ -1071,6 +1085,7 @@
         },
         {
           "name": "Naman Dhir",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1079,6 +1094,7 @@
         },
         {
           "name": "Vaibhav Arora",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1087,6 +1103,7 @@
         },
         {
           "name": "Yash Dayal",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1095,6 +1112,7 @@
         },
         {
           "name": "Robin Minz",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1103,6 +1121,7 @@
         },
         {
           "name": "Anshul Kamboj",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1118,6 +1137,7 @@
       "players": [
         {
           "name": "Jasprit Bumrah",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1126,6 +1146,7 @@
         },
         {
           "name": "Krains Fuletra",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1134,6 +1155,7 @@
         },
         {
           "name": "Auqib Nabi",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1142,6 +1164,7 @@
         },
         {
           "name": "Vihaan Malhotra",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1150,6 +1173,7 @@
         },
         {
           "name": "Abishek Porel",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1158,6 +1182,7 @@
         },
         {
           "name": "Cameron Green",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1166,6 +1191,7 @@
         },
         {
           "name": "MS Dhoni",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1174,6 +1200,7 @@
         },
         {
           "name": "Ruturaj Gaikwad",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1182,6 +1209,7 @@
         },
         {
           "name": "David Miller",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1190,6 +1218,7 @@
         },
         {
           "name": "Marco Jansen",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 58,
           "multiplier": 1,
@@ -1198,6 +1227,7 @@
         },
         {
           "name": "Riyan Parag",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1206,6 +1236,7 @@
         },
         {
           "name": "Tim Seifert",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1214,6 +1245,7 @@
         },
         {
           "name": "Glenn Phillips",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 31,
           "multiplier": 1,
@@ -1222,6 +1254,7 @@
         },
         {
           "name": "Umran Malik",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1230,6 +1263,7 @@
         },
         {
           "name": "Khaleel Ahmed",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1238,6 +1272,7 @@
         },
         {
           "name": "Manish Pandey",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1246,6 +1281,7 @@
         },
         {
           "name": "Rahul Tewatia",
+          "played": true,
           "capped_status": "Uncapped",
           "base_points": 13,
           "multiplier": 1,
@@ -1254,6 +1290,7 @@
         },
         {
           "name": "Luke Wood",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1269,6 +1306,7 @@
       "players": [
         {
           "name": "Yashasvi Jaiswal",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1277,6 +1315,7 @@
         },
         {
           "name": "Kartik Sharma",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1285,6 +1324,7 @@
         },
         {
           "name": "Travis Head",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1293,6 +1333,7 @@
         },
         {
           "name": "Mitchell Starc",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1301,6 +1342,7 @@
         },
         {
           "name": "Ravindra Jadeja",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1309,6 +1351,7 @@
         },
         {
           "name": "Krunal Pandya",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1317,6 +1360,7 @@
         },
         {
           "name": "Venkatesh Iyer",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1325,6 +1369,7 @@
         },
         {
           "name": "Sai Sudharsan",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 17,
           "multiplier": 1,
@@ -1333,6 +1378,7 @@
         },
         {
           "name": "Prabhsimran Singh",
+          "played": true,
           "capped_status": "Uncapped",
           "base_points": 60,
           "multiplier": 2,
@@ -1341,6 +1387,7 @@
         },
         {
           "name": "T Natarajan",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1349,6 +1396,7 @@
         },
         {
           "name": "Kamindu Mendis",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1357,6 +1405,7 @@
         },
         {
           "name": "Akash Deep",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1365,6 +1414,7 @@
         },
         {
           "name": "Rahul Chahar",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1373,6 +1423,7 @@
         },
         {
           "name": "Harpreet Brar",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1381,6 +1432,7 @@
         },
         {
           "name": "Ashutosh Sharma",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1389,6 +1441,7 @@
         },
         {
           "name": "Nehal Wadhera",
+          "played": true,
           "capped_status": "Uncapped",
           "base_points": 3,
           "multiplier": 1,
@@ -1397,6 +1450,7 @@
         },
         {
           "name": "Onkar Tarmale",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1412,6 +1466,7 @@
       "players": [
         {
           "name": "KL Rahul",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1420,6 +1475,7 @@
         },
         {
           "name": "Arjun Tendulkar",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1428,6 +1484,7 @@
         },
         {
           "name": "Shahrukh Khan",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1436,6 +1493,7 @@
         },
         {
           "name": "Hardik Pandya",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1444,6 +1502,7 @@
         },
         {
           "name": "Virat Kohli",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1452,6 +1511,7 @@
         },
         {
           "name": "Rishabh Pant",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1460,6 +1520,7 @@
         },
         {
           "name": "Mohammed Siraj",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1468,6 +1529,7 @@
         },
         {
           "name": "Ben Duckett",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1476,6 +1538,7 @@
         },
         {
           "name": "Rovman Powell",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1484,6 +1547,7 @@
         },
         {
           "name": "Deepak Chahar",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1492,6 +1556,7 @@
         },
         {
           "name": "Prithvi Shaw",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1500,6 +1565,7 @@
         },
         {
           "name": "Rahul Tripathi",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1508,6 +1574,7 @@
         },
         {
           "name": "Mitchell Santner",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1516,6 +1583,7 @@
         },
         {
           "name": "Akeal Hosein",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1524,6 +1592,7 @@
         },
         {
           "name": "Angkrish Raghuvanshi",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1532,6 +1601,7 @@
         },
         {
           "name": "Donovan Ferreira",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1540,6 +1610,7 @@
         },
         {
           "name": "Anuj Rawat",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1548,6 +1619,7 @@
         },
         {
           "name": "Zeeshan Ansari",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1563,6 +1635,7 @@
       "players": [
         {
           "name": "Abhishek Sharma",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1571,6 +1644,7 @@
         },
         {
           "name": "Prashant Veer",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1579,6 +1653,7 @@
         },
         {
           "name": "Rashid Khan",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 30,
           "multiplier": 1,
@@ -1587,6 +1662,7 @@
         },
         {
           "name": "Suryakumar Yadav",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1595,6 +1671,7 @@
         },
         {
           "name": "Marcus Stoinis",
+          "played": true,
           "capped_status": "Capped",
           "base_points": -10,
           "multiplier": 1,
@@ -1603,6 +1680,7 @@
         },
         {
           "name": "Kuldeep Yadav",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1611,6 +1689,7 @@
         },
         {
           "name": "Varun Chakaravarthy",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1619,6 +1698,7 @@
         },
         {
           "name": "Tilak Varma",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1627,6 +1707,7 @@
         },
         {
           "name": "Rajat Patidar",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1635,6 +1716,7 @@
         },
         {
           "name": "Shardul Thakur",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1643,6 +1725,7 @@
         },
         {
           "name": "Lungi Ngidi",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1651,6 +1734,7 @@
         },
         {
           "name": "Azmatullah Omarzai",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1659,6 +1743,7 @@
         },
         {
           "name": "Tom Banton",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1667,6 +1752,7 @@
         },
         {
           "name": "Nandre Burger",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1675,6 +1761,7 @@
         },
         {
           "name": "Sandeep Sharma",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1683,6 +1770,7 @@
         },
         {
           "name": "Dhruv Jurel",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1691,6 +1779,7 @@
         },
         {
           "name": "Pathum Nissanka",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1699,6 +1788,7 @@
         },
         {
           "name": "Jitesh Sharma",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1714,6 +1804,7 @@
       "players": [
         {
           "name": "Mitchell Marsh",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1722,6 +1813,7 @@
         },
         {
           "name": "Jason Holder",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1730,6 +1822,7 @@
         },
         {
           "name": "Sunil Narine",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1738,6 +1831,7 @@
         },
         {
           "name": "Pat Cummins",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1746,6 +1840,7 @@
         },
         {
           "name": "Rohit Sharma",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1754,6 +1849,7 @@
         },
         {
           "name": "Josh Inglis",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1762,6 +1858,7 @@
         },
         {
           "name": "Nitish Kumar Reddy",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1770,6 +1867,7 @@
         },
         {
           "name": "Avesh Khan",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1778,6 +1876,7 @@
         },
         {
           "name": "Shimron Hetmyer",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1786,6 +1885,7 @@
         },
         {
           "name": "Ajinkya Rahane",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1794,6 +1894,7 @@
         },
         {
           "name": "Jamie Overton",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1802,6 +1903,7 @@
         },
         {
           "name": "Jaydev Unadkat",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1810,6 +1912,7 @@
         },
         {
           "name": "Karun Nair",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1818,6 +1921,7 @@
         },
         {
           "name": "Ayush Badoni",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1826,6 +1930,7 @@
         },
         {
           "name": "Abdul Samad",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1834,6 +1939,7 @@
         },
         {
           "name": "Ramandeep Singh",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1842,6 +1948,7 @@
         },
         {
           "name": "Ashwani Kumar",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1857,6 +1964,7 @@
       "players": [
         {
           "name": "Heinrich Klaasen",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1865,6 +1973,7 @@
         },
         {
           "name": "Ashok Sharma",
+          "played": true,
           "capped_status": "Uncapped",
           "base_points": 20,
           "multiplier": 1,
@@ -1873,6 +1982,7 @@
         },
         {
           "name": "Priyansh Arya",
+          "played": true,
           "capped_status": "Uncapped",
           "base_points": 11,
           "multiplier": 1,
@@ -1881,6 +1991,7 @@
         },
         {
           "name": "Shivam Dube",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1889,6 +2000,7 @@
         },
         {
           "name": "Quinton de Kock",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1897,6 +2009,7 @@
         },
         {
           "name": "Josh Hazlewood",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1905,6 +2018,7 @@
         },
         {
           "name": "Trent Boult",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1913,6 +2027,7 @@
         },
         {
           "name": "Rachin Ravindra",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1921,6 +2036,7 @@
         },
         {
           "name": "Lockie Ferguson",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1929,6 +2045,7 @@
         },
         {
           "name": "Matheesha Pathirana",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1937,6 +2054,7 @@
         },
         {
           "name": "Shashank Singh",
+          "played": true,
           "capped_status": "Uncapped",
           "base_points": 4,
           "multiplier": 1,
@@ -1945,6 +2063,7 @@
         },
         {
           "name": "Prasidh Krishna",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 80,
           "multiplier": 1,
@@ -1953,6 +2072,7 @@
         },
         {
           "name": "Devdutt Padikkal",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1961,6 +2081,7 @@
         },
         {
           "name": "Ishant Sharma",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1969,6 +2090,7 @@
         },
         {
           "name": "Noor Ahmad",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1977,6 +2099,7 @@
         },
         {
           "name": "Sai Kishore",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1985,6 +2108,7 @@
         },
         {
           "name": "Kartik Tyagi",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -1993,6 +2117,7 @@
         },
         {
           "name": "Suyash Sharma",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -2008,6 +2133,7 @@
       "players": [
         {
           "name": "Vaibhav Sooryavanshi",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -2016,6 +2142,7 @@
         },
         {
           "name": "Digvesh Singh",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -2024,6 +2151,7 @@
         },
         {
           "name": "Sameer Rizvi",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -2032,6 +2160,7 @@
         },
         {
           "name": "Finn Allen",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2040,6 +2169,7 @@
         },
         {
           "name": "Shreyas Iyer",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 36,
           "multiplier": 1,
@@ -2048,6 +2178,7 @@
         },
         {
           "name": "Jos Buttler",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 67,
           "multiplier": 1,
@@ -2056,6 +2187,7 @@
         },
         {
           "name": "Kagiso Rabada",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 10,
           "multiplier": 1,
@@ -2064,6 +2196,7 @@
         },
         {
           "name": "Mohammad Shami",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2072,6 +2205,7 @@
         },
         {
           "name": "Bhuvneshwar Kumar",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2080,6 +2214,7 @@
         },
         {
           "name": "Washington Sundar",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 52,
           "multiplier": 1,
@@ -2088,6 +2223,7 @@
         },
         {
           "name": "Matt Henry",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2096,6 +2232,7 @@
         },
         {
           "name": "Ryan Rickelton",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2104,6 +2241,7 @@
         },
         {
           "name": "Musheer Khan",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -2112,6 +2250,7 @@
         },
         {
           "name": "Jacob Duffy",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2120,6 +2259,7 @@
         },
         {
           "name": "Rasikh Salam",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -2128,6 +2268,7 @@
         },
         {
           "name": "Manav Suthar",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -2136,6 +2277,7 @@
         },
         {
           "name": "Blessing Muzarabani",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2151,6 +2293,7 @@
       "players": [
         {
           "name": "Ayush Mhatre",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -2159,6 +2302,7 @@
         },
         {
           "name": "Ishan Kishan",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2167,6 +2311,7 @@
         },
         {
           "name": "Jofra Archer",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2175,6 +2320,7 @@
         },
         {
           "name": "Shubman Gill",
+          "played": true,
           "capped_status": "Capped",
           "base_points": 76,
           "multiplier": 1,
@@ -2183,6 +2329,7 @@
         },
         {
           "name": "Anrich Nortje",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2191,6 +2338,7 @@
         },
         {
           "name": "Aiden Markram",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2199,6 +2347,7 @@
         },
         {
           "name": "Liam Livingstone",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2207,6 +2356,7 @@
         },
         {
           "name": "Phil Salt",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2215,6 +2365,7 @@
         },
         {
           "name": "Nitish Rana",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2223,6 +2374,7 @@
         },
         {
           "name": "Will Jacks",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2231,6 +2383,7 @@
         },
         {
           "name": "Romario Shepherd",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2239,6 +2392,7 @@
         },
         {
           "name": "Sherfane Rutherford",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2247,6 +2401,7 @@
         },
         {
           "name": "Vipraj Nigam",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -2255,6 +2410,7 @@
         },
         {
           "name": "Mayank Yadav",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2263,6 +2419,7 @@
         },
         {
           "name": "Tushar Deshpande",
+          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -2271,6 +2428,7 @@
         },
         {
           "name": "Harsh Dubey",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -2279,6 +2437,7 @@
         },
         {
           "name": "Ravichandran Smaran",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
@@ -2287,6 +2446,7 @@
         },
         {
           "name": "Mayank Markande",
+          "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,

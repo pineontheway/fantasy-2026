@@ -306,6 +306,7 @@ const fantasyTeamScores = draft.teams.map(team => {
     total += tp;
     return {
       name: pn,
+      played: !!ps,
       capped_status: team.player_capped[pn],
       base_points:   ps ? ps.base_points : 0,
       multiplier:    ps ? ps.multiplier : 1,
