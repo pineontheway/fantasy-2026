@@ -606,19 +606,8 @@ function renderGameScorecard(elId, scoring) {
     </div>
   `;
 
-  // Innings 1
-  html += `<h3 class="sec-title" style="font-size:1rem">1st Innings &mdash; ${team1}</h3>`;
-  html += renderBatTable(team1Players, team1);
-  html += renderBowlTable(team2Players, team2);
-  html += renderFieldTable(allFielders, 'Fielding');
-
-  // Innings 2
-  html += `<h3 class="sec-title" style="font-size:1rem; margin-top:1.5rem">2nd Innings &mdash; ${team2}</h3>`;
-  html += renderBatTable(team2Players, team2);
-  html += renderBowlTable(team1Players, team1);
-
   // Fantasy team impact
-  html += `<h3 class="sec-title" style="margin-top:2rem">Fantasy Team Impact</h3>`;
+  html += `<h3 class="sec-title">Fantasy Team Impact</h3>`;
   html += '<div class="game-standings">';
   scoring.fantasy_team_scores.forEach(t => {
     const activePlayers = t.players.filter(p => p.played).sort((a, b) => b.total_points - a.total_points);
@@ -650,6 +639,17 @@ function renderGameScorecard(elId, scoring) {
     </div>`;
   });
   html += '</div>';
+
+  // Innings 1
+  html += `<h3 class="sec-title" style="font-size:1rem; margin-top:2rem">1st Innings &mdash; ${team1}</h3>`;
+  html += renderBatTable(team1Players, team1);
+  html += renderBowlTable(team2Players, team2);
+  html += renderFieldTable(allFielders, 'Fielding');
+
+  // Innings 2
+  html += `<h3 class="sec-title" style="font-size:1rem; margin-top:1.5rem">2nd Innings &mdash; ${team2}</h3>`;
+  html += renderBatTable(team2Players, team2);
+  html += renderBowlTable(team1Players, team1);
 
   el.innerHTML = html;
 }
