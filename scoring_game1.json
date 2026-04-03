@@ -109,8 +109,8 @@
           "8 fours = +16",
           "5 sixes = +20",
           "SR 210.5 >200 = +15",
-          ">50 runs bonus = +5",
-          ">30 runs bonus = +5"
+          "≥50 runs bonus = +5",
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -185,7 +185,7 @@
           "31 runs = +31",
           "2 fours = +4",
           "1 sixes = +4",
-          ">30 runs bonus = +5"
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -265,7 +265,7 @@
           "3 fours = +6",
           "4 sixes = +16",
           "SR 238.9 >200 = +15",
-          ">30 runs bonus = +5"
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -582,8 +582,8 @@
           "69 runs = +69",
           "5 fours = +10",
           "5 sixes = +20",
-          ">50 runs bonus = +5",
-          ">30 runs bonus = +5"
+          "≥50 runs bonus = +5",
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -625,8 +625,8 @@
           "7 fours = +14",
           "4 sixes = +16",
           "SR 234.6 >200 = +15",
-          ">50 runs bonus = +5",
-          ">30 runs bonus = +5"
+          "≥50 runs bonus = +5",
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -670,7 +670,7 @@
           "31 runs = +31",
           "2 fours = +4",
           "3 sixes = +12",
-          ">30 runs bonus = +5"
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {

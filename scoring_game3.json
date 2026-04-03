@@ -294,7 +294,7 @@
           "43 runs = +43",
           "2 fours = +4",
           "2 sixes = +8",
-          ">30 runs bonus = +5"
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -487,7 +487,7 @@
           "38 runs = +38",
           "3 fours = +6",
           "1 sixes = +4",
-          ">30 runs bonus = +5"
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -529,8 +529,8 @@
           "4 fours = +8",
           "5 sixes = +20",
           "SR 305.9 >300 = +25",
-          ">50 runs bonus = +5",
-          ">30 runs bonus = +5"
+          "≥50 runs bonus = +5",
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {

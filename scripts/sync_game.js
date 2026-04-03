@@ -140,9 +140,9 @@ for (const inn of innings) {
     }
 
     // Run milestones (cumulative)
-    if (runs > 100) { pts += 10; bd.push('>100 runs bonus = +10'); }
-    if (runs > 50)  { pts += 5;  bd.push('>50 runs bonus = +5'); }
-    if (runs > 30)  { pts += 5;  bd.push('>30 runs bonus = +5'); }
+    if (runs >= 100) { pts += 10; bd.push('≥100 runs bonus = +10'); }
+    if (runs >= 50)  { pts += 5;  bd.push('≥50 runs bonus = +5'); }
+    if (runs >= 30)  { pts += 5;  bd.push('≥30 runs bonus = +5'); }
 
     // Duck
     if (isOut && runs === 0) { pts -= 10; bd.push('Out on 0 = -10'); }

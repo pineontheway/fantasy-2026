@@ -150,8 +150,8 @@
           "73 runs = +73",
           "6 fours = +12",
           "5 sixes = +20",
-          ">50 runs bonus = +5",
-          ">30 runs bonus = +5"
+          "≥50 runs bonus = +5",
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -190,7 +190,7 @@
           "45 runs = +45",
           "5 fours = +10",
           "1 sixes = +4",
-          ">30 runs bonus = +5"
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -265,7 +265,7 @@
           "32 runs = +32",
           "6 fours = +12",
           "1 sixes = +4",
-          ">30 runs bonus = +5"
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -537,7 +537,7 @@
           "39 runs = +39",
           "3 fours = +6",
           "4 sixes = +16",
-          ">30 runs bonus = +5"
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -576,7 +576,7 @@
           "43 runs = +43",
           "6 fours = +12",
           "1 sixes = +4",
-          ">30 runs bonus = +5"
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -616,7 +616,7 @@
         "breakdown": [
           "36 runs = +36",
           "6 fours = +12",
-          ">30 runs bonus = +5"
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -650,12 +650,13 @@
         "fours": 4,
         "sixes": 3,
         "is_out": true,
-        "points": 75,
+        "points": 80,
         "breakdown": [
           "50 runs = +50",
           "4 fours = +8",
           "3 sixes = +12",
-          ">30 runs bonus = +5"
+          "≥50 runs bonus = +5",
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -675,10 +676,10 @@
         "points": 0,
         "breakdown": []
       },
-      "base_points": 75,
+      "base_points": 80,
       "multiplier": 1,
       "multiplier_reason": "",
-      "total_points": 75
+      "total_points": 80
     },
     "Nehal Wadhera": {
       "ipl_team": "Punjab Kings",
@@ -2127,7 +2128,7 @@
     {
       "id": 8,
       "name": "Dothraki Khaleesi Gang",
-      "total_points": 105,
+      "total_points": 110,
       "players": [
         {
           "name": "Vaibhav Sooryavanshi",
@@ -2169,10 +2170,10 @@
           "name": "Shreyas Iyer",
           "played": true,
           "capped_status": "Capped",
-          "base_points": 75,
+          "base_points": 80,
           "multiplier": 1,
           "multiplier_reason": "",
-          "total_points": 75
+          "total_points": 80
         },
         {
           "name": "Jos Buttler",

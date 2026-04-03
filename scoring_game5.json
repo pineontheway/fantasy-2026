@@ -34,7 +34,7 @@
           "35 runs = +35",
           "2 fours = +4",
           "3 sixes = +12",
-          ">30 runs bonus = +5"
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -223,7 +223,7 @@
           "36 runs = +36",
           "3 fours = +6",
           "1 sixes = +4",
-          ">30 runs bonus = +5"
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -645,8 +645,8 @@
           "70 runs = +70",
           "5 fours = +10",
           "4 sixes = +16",
-          ">50 runs bonus = +5",
-          ">30 runs bonus = +5"
+          "≥50 runs bonus = +5",
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
@@ -724,7 +724,7 @@
           "39 runs = +39",
           "3 fours = +6",
           "1 sixes = +4",
-          ">30 runs bonus = +5"
+          "≥30 runs bonus = +5"
         ]
       },
       "bowling": {
