@@ -401,48 +401,78 @@ function renderStats() {
   `;
 }
 
+// ── Helper: compute per-team points for a week ──
+function getWeekTeamStandings(week) {
+  const teamPts = {};
+  draft.teams.forEach(t => { teamPts[t.id] = { name: t.name, id: t.id, pts: 0 }; });
+  week.games.forEach(g => {
+    g.scoring.fantasy_team_scores.forEach(ft => {
+      if (teamPts[ft.id]) teamPts[ft.id].pts += ft.total_points;
+    });
+  });
+  return Object.values(teamPts).sort((a, b) => b.pts - a.pts);
+}
+
+// ── Helper: render a standings list ──
+function renderStandingsList(sorted, clickable) {
+  const max = sorted[0]?.pts || 1;
+  return `<div class="standings-list">
+    ${sorted.map((t, i) => {
+      const pct = max > 0 ? Math.max(0, (t.pts / max) * 100) : 0;
+      const rc = i < 3 ? 'rank-' + (i + 1) : 'rank-n';
+      return `<div class="standing-row" ${clickable ? `onclick="showTeamTab(${t.id})"` : ''} style="animation:fadeIn 0.4s ease ${i*0.05}s both">
+        <div class="standing-bar" style="width:${pct}%"></div>
+        <div class="rank-badge ${rc}">${i + 1}</div>
+        <span class="team-name">${t.name}</span>
+        <span class="pts">${t.pts}</span>
+      </div>`;
+    }).join('')}
+  </div>`;
+}
+
 // ── Standings ──
 function renderStandings() {
   const el = document.getElementById('sec-standings');
   let html = '<h2 class="sec-title">Standings</h2>';
 
-  weeks.forEach((week, wi) => {
-    const isCurrent = wi === 0;
-    const weekId = 'standings-w' + week.weekNum;
-
-    // Compute per-team weekly points
-    const teamPts = {};
-    draft.teams.forEach(t => { teamPts[t.id] = { name: t.name, id: t.id, pts: 0 }; });
+  // Overall cumulative standings
+  const overallPts = {};
+  draft.teams.forEach(t => { overallPts[t.id] = { name: t.name, id: t.id, pts: 0 }; });
+  weeks.forEach(week => {
     week.games.forEach(g => {
       g.scoring.fantasy_team_scores.forEach(ft => {
-        if (teamPts[ft.id]) teamPts[ft.id].pts += ft.total_points;
+        if (overallPts[ft.id]) overallPts[ft.id].pts += ft.total_points;
       });
     });
-    const sorted = Object.values(teamPts).sort((a, b) => b.pts - a.pts);
-    const max = sorted[0]?.pts || 1;
+  });
+  const overallSorted = Object.values(overallPts).sort((a, b) => b.pts - a.pts);
 
+  const overallId = 'standings-overall';
+  html += `<div class="week-section week-current">
+    <div class="week-header open" data-week="${overallId}" onclick="toggleWeek('${overallId}')">
+      <span class="arrow">&#9654;</span>
+      <span>Overall Standings</span>
+    </div>
+    <div class="week-body open" id="week-body-${overallId}">
+      ${renderStandingsList(overallSorted, true)}
+    </div>
+  </div>`;
+
+  // Per-week standings
+  weeks.forEach(week => {
+    const weekId = 'standings-w' + week.weekNum;
+    const sorted = getWeekTeamStandings(week);
     const gamesList = week.games.map(g => 'Game ' + g.gameNum + ': ' + g.scoring.match.teams.join(' vs ')).join(' &bull; ');
 
-    html += `<div class="week-section ${isCurrent ? 'week-current' : ''}">
-      <div class="week-header ${isCurrent ? 'open' : ''}" data-week="${weekId}" onclick="toggleWeek('${weekId}')">
+    html += `<div class="week-section">
+      <div class="week-header" data-week="${weekId}" onclick="toggleWeek('${weekId}')">
         <span class="arrow">&#9654;</span>
-        <span>${isCurrent ? 'This Week' : week.label}</span>
+        <span>${week.label}</span>
         <span class="week-date">${week.range}</span>
       </div>
-      <div class="week-body ${isCurrent ? 'open' : ''}" id="week-body-${weekId}">
+      <div class="week-body" id="week-body-${weekId}">
         <div class="week-games-list">${gamesList}</div>
-        <div class="standings-list">
-          ${sorted.map((t, i) => {
-            const pct = max > 0 ? Math.max(0, (t.pts / max) * 100) : 0;
-            const rc = i < 3 ? 'rank-' + (i + 1) : 'rank-n';
-            return `<div class="standing-row" onclick="showTeamTab(${t.id})" style="animation:fadeIn 0.4s ease ${i*0.05}s both">
-              <div class="standing-bar" style="width:${pct}%"></div>
-              <div class="rank-badge ${rc}">${i + 1}</div>
-              <span class="team-name">${t.name}</span>
-              <span class="pts">${t.pts}</span>
-            </div>`;
-          }).join('')}
-        </div>
+        ${renderStandingsList(sorted, true)}
       </div>
     </div>`;
   });
@@ -464,6 +494,11 @@ function renderWeekTabs() {
     const el = document.getElementById('sec-week' + week.weekNum);
     if (!el) return;
     let html = `<h2 class="sec-title">${week.label} <span style="font-family:'Inter',sans-serif;font-size:0.8rem;color:var(--text2);font-weight:400;margin-left:0.5rem">${week.range}</span></h2>`;
+
+    // Week standings
+    const weekSorted = getWeekTeamStandings(week);
+    html += `<h3 class="sec-title" style="font-size:1rem; margin-top:1rem">Team Standings</h3>`;
+    html += renderStandingsList(weekSorted, false);
 
     week.games.forEach(g => {
       const scoring = g.scoring;
@@ -563,7 +598,8 @@ function renderTeams() {
         <span class="week-date">${week.range}</span>
       </div>
       <div class="week-body ${isCurrent ? 'open' : ''}" id="week-body-${weekId}">
-        <div class="team-cards">
+        ${renderStandingsList(teamData.map(t => ({ name: t.name, id: t.id, pts: t.weeklyTotal })), false)}
+        <div class="team-cards" style="margin-top:1rem">
           ${teamData.map((t, ti) => `
             <div class="team-card" data-id="${t.id}">
               <div class="tc-header">
