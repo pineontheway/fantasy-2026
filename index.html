@@ -792,11 +792,11 @@ function renderMVP() {
   const combined = {};
   allScorings.forEach(s => {
     Object.entries(s.player_scores).forEach(([name, ps]) => {
-      if (!combined[name]) combined[name] = { bat: 0, bowl: 0, field: 0, total: 0, capped: ps.capped_status, mult: ps.multiplier, ipl: ps.ipl_team };
-      combined[name].bat += ps.batting.points * ps.multiplier;
-      combined[name].bowl += ps.bowling.points * ps.multiplier;
-      combined[name].field += ps.fielding.points * ps.multiplier;
-      combined[name].total += ps.total_points;
+      if (!combined[name]) combined[name] = { bat: 0, bowl: 0, field: 0, total: 0, capped: ps.capped_status, ipl: ps.ipl_team };
+      combined[name].bat += ps.batting.points;
+      combined[name].bowl += ps.bowling.points;
+      combined[name].field += ps.fielding.points;
+      combined[name].total += ps.base_points;
     });
   });
 
