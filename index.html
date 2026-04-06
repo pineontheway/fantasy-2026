@@ -647,8 +647,44 @@ function renderTeams() {
   const el = document.getElementById('sec-teams');
   let html = '<h2 class="sec-title">Teams</h2>';
 
-  weeks.forEach((week, wi) => {
-    const isCurrent = wi === 0;
+  // Current week (may not have games yet)
+  const currentWeekNum = getWeekNumber(new Date().toISOString());
+  const currentWeekInData = weeks.find(w => w.weekNum === currentWeekNum);
+
+  if (!currentWeekInData) {
+    const cwId = 'teams-w' + currentWeekNum;
+    const emptyTeamData = draft.teams.map(t => ({
+      id: t.id, name: t.name, players: t.players.length, weeklyTotal: 0,
+      playerData: t.players.map(name => ({ name, gamePts: [], total: 0, capped: t.player_capped[name] }))
+    }));
+    html += `<div class="week-section week-current">
+      <div class="week-header open" data-week="${cwId}" onclick="toggleWeek('${cwId}')">
+        <span class="arrow">&#9654;</span>
+        <span>This Week</span>
+        <span class="week-date">${getWeekRange(currentWeekNum)}</span>
+      </div>
+      <div class="week-body open" id="week-body-${cwId}">
+        ${renderStandingsList(emptyTeamData.map(t => ({ name: t.name, id: t.id, pts: 0 })), false)}
+        <div class="team-cards" style="margin-top:1rem">
+          ${emptyTeamData.map((t, ti) => `
+            <div class="team-card" data-id="${t.id}">
+              <div class="tc-header">
+                <div>
+                  <h3>${t.name}</h3>
+                  <div class="tc-rank">${t.players} players</div>
+                </div>
+                <div class="tc-pts-badge">0 pts</div>
+              </div>
+              <div style="font-size:0.8rem;color:var(--text3);padding:0.3rem 0">No games played yet</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </div>`;
+  }
+
+  weeks.forEach((week) => {
+    const isCurrent = week.weekNum === currentWeekNum;
     const weekId = 'teams-w' + week.weekNum;
 
     // Compute per-team weekly points and per-player per-game points
