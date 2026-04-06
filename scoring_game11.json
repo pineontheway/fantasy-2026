@@ -648,7 +648,7 @@
     },
     "Sarfaraz Khan": {
       "ipl_team": "Chennai Super Kings",
-      "capped_status": "Uncapped",
+      "capped_status": "Capped",
       "batting": {
         "runs": 50,
         "balls": 25,
@@ -682,9 +682,9 @@
         "breakdown": []
       },
       "base_points": 84,
-      "multiplier": 2,
-      "multiplier_reason": "30+ runs (50)",
-      "total_points": 168
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 84
     },
     "Kartik Sharma": {
       "ipl_team": "Chennai Super Kings",
@@ -2014,7 +2014,7 @@
     {
       "id": 7,
       "name": "White Walkers",
-      "total_points": 339,
+      "total_points": 255,
       "players": [
         {
           "name": "Heinrich Klaasen",
@@ -2172,11 +2172,11 @@
         {
           "name": "Sarfaraz Khan",
           "played": true,
-          "capped_status": "Uncapped",
+          "capped_status": "Capped",
           "base_points": 84,
-          "multiplier": 2,
-          "multiplier_reason": "30+ runs (50)",
-          "total_points": 168
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "total_points": 84
         }
       ]
     },

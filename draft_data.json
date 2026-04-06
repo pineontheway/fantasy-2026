@@ -547,9 +547,9 @@
         "Kartik Tyagi": 27,
         "Suyash Sharma": 55,
         "Mohsin Khan": 0,
-        "Sarfaraz Khan": 168
+        "Sarfaraz Khan": 84
       },
-      "total_points": 1140,
+      "total_points": 1056,
       "player_capped": {
         "Heinrich Klaasen": "Capped",
         "Ashok Sharma": "Uncapped",
@@ -568,7 +568,7 @@
         "Kartik Tyagi": "Uncapped",
         "Suyash Sharma": "Uncapped",
         "Mohsin Khan": "Uncapped",
-        "Sarfaraz Khan": "Uncapped"
+        "Sarfaraz Khan": "Capped"
       },
       "player_roles": {
         "Heinrich Klaasen": "BAT",
