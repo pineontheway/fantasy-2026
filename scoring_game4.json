@@ -218,9 +218,9 @@
       "multiplier_reason": "",
       "total_points": 52
     },
-    "M Shahrukh Khan": {
+    "Shahrukh Khan": {
       "ipl_team": "Gujarat Titans",
-      "capped_status": "Unknown",
+      "capped_status": "Uncapped",
       "batting": {
         "runs": 4,
         "balls": 6,
@@ -251,7 +251,7 @@
       },
       "base_points": 4,
       "multiplier": 1,
-      "multiplier_reason": "",
+      "multiplier_reason": "Uncapped but no condition met (4 runs, 0 wickets, 0 dismissals)",
       "total_points": 4
     },
     "Rahul Tewatia": {
@@ -564,7 +564,7 @@
     },
     "Cooper Connolly": {
       "ipl_team": "Punjab Kings",
-      "capped_status": "Unknown",
+      "capped_status": "Capped",
       "batting": {
         "runs": 72,
         "balls": 44,
@@ -834,7 +834,7 @@
     },
     "Vijaykumar Vyshak": {
       "ipl_team": "Punjab Kings",
-      "capped_status": "Unknown",
+      "capped_status": "Uncapped",
       "batting": {
         "runs": 0,
         "balls": 0,
@@ -867,9 +867,9 @@
         "breakdown": []
       },
       "base_points": 70,
-      "multiplier": 1,
-      "multiplier_reason": "",
-      "total_points": 70
+      "multiplier": 2,
+      "multiplier_reason": "3+ wickets (3)",
+      "total_points": 140
     },
     "Arshdeep Singh": {
       "ipl_team": "Punjab Kings",
@@ -1111,18 +1111,18 @@
           "total_points": 0
         },
         {
-          "name": "Robin Minz",
+          "name": "Anshul Kamboj",
           "played": false,
-          "capped_status": "Uncapped",
+          "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
           "total_points": 0
         },
         {
-          "name": "Anshul Kamboj",
+          "name": "Salil Arora",
           "played": false,
-          "capped_status": "Capped",
+          "capped_status": "Uncapped",
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
@@ -1253,15 +1253,6 @@
           "total_points": 31
         },
         {
-          "name": "Umran Malik",
-          "played": false,
-          "capped_status": "Capped",
-          "base_points": 0,
-          "multiplier": 1,
-          "multiplier_reason": "",
-          "total_points": 0
-        },
-        {
           "name": "Khaleel Ahmed",
           "played": false,
           "capped_status": "Capped",
@@ -1296,13 +1287,22 @@
           "multiplier": 1,
           "multiplier_reason": "",
           "total_points": 0
+        },
+        {
+          "name": "Abhinandan Singh",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "total_points": 0
         }
       ]
     },
     {
       "id": 4,
       "name": "Snow Strikers",
-      "total_points": 140,
+      "total_points": 280,
       "players": [
         {
           "name": "Yashasvi Jaiswal",
@@ -1332,25 +1332,7 @@
           "total_points": 0
         },
         {
-          "name": "Mitchell Starc",
-          "played": false,
-          "capped_status": "Capped",
-          "base_points": 0,
-          "multiplier": 1,
-          "multiplier_reason": "",
-          "total_points": 0
-        },
-        {
           "name": "Ravindra Jadeja",
-          "played": false,
-          "capped_status": "Capped",
-          "base_points": 0,
-          "multiplier": 1,
-          "multiplier_reason": "",
-          "total_points": 0
-        },
-        {
-          "name": "Krunal Pandya",
           "played": false,
           "capped_status": "Capped",
           "base_points": 0,
@@ -1456,13 +1438,31 @@
           "multiplier": 1,
           "multiplier_reason": "",
           "total_points": 0
+        },
+        {
+          "name": "Vijaykumar Vyshak",
+          "played": true,
+          "capped_status": "Uncapped",
+          "base_points": 70,
+          "multiplier": 2,
+          "multiplier_reason": "3+ wickets (3)",
+          "total_points": 140
+        },
+        {
+          "name": "Anukul Roy",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "total_points": 0
         }
       ]
     },
     {
       "id": 3,
       "name": "Dracarys Dynamites",
-      "total_points": 0,
+      "total_points": 4,
       "players": [
         {
           "name": "KL Rahul",
@@ -1484,12 +1484,12 @@
         },
         {
           "name": "Shahrukh Khan",
-          "played": false,
+          "played": true,
           "capped_status": "Uncapped",
-          "base_points": 0,
+          "base_points": 4,
           "multiplier": 1,
-          "multiplier_reason": "",
-          "total_points": 0
+          "multiplier_reason": "Uncapped but no condition met (4 runs, 0 wickets, 0 dismissals)",
+          "total_points": 4
         },
         {
           "name": "Hardik Pandya",
@@ -1521,15 +1521,6 @@
         {
           "name": "Mohammed Siraj",
           "played": true,
-          "capped_status": "Capped",
-          "base_points": 0,
-          "multiplier": 1,
-          "multiplier_reason": "",
-          "total_points": 0
-        },
-        {
-          "name": "Ben Duckett",
-          "played": false,
           "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
@@ -1582,15 +1573,6 @@
           "total_points": 0
         },
         {
-          "name": "Akeal Hosein",
-          "played": false,
-          "capped_status": "Capped",
-          "base_points": 0,
-          "multiplier": 1,
-          "multiplier_reason": "",
-          "total_points": 0
-        },
-        {
           "name": "Angkrish Raghuvanshi",
           "played": false,
           "capped_status": "Uncapped",
@@ -1625,13 +1607,31 @@
           "multiplier": 1,
           "multiplier_reason": "",
           "total_points": 0
+        },
+        {
+          "name": "Krunal Pandya",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "total_points": 0
+        },
+        {
+          "name": "Mukul Choudhary",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "total_points": 0
         }
       ]
     },
     {
       "id": 5,
       "name": "Slayers Unsullied Force",
-      "total_points": 20,
+      "total_points": 142,
       "players": [
         {
           "name": "Abhishek Sharma",
@@ -1680,15 +1680,6 @@
         },
         {
           "name": "Kuldeep Yadav",
-          "played": false,
-          "capped_status": "Capped",
-          "base_points": 0,
-          "multiplier": 1,
-          "multiplier_reason": "",
-          "total_points": 0
-        },
-        {
-          "name": "Varun Chakaravarthy",
           "played": false,
           "capped_status": "Capped",
           "base_points": 0,
@@ -1794,6 +1785,15 @@
           "multiplier": 1,
           "multiplier_reason": "",
           "total_points": 0
+        },
+        {
+          "name": "Cooper Connolly",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 122,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "total_points": 122
         }
       ]
     },
@@ -1947,7 +1947,7 @@
           "total_points": 0
         },
         {
-          "name": "Ashwani Kumar",
+          "name": "Prince Yadav",
           "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
@@ -2000,24 +2000,6 @@
         },
         {
           "name": "Quinton de Kock",
-          "played": false,
-          "capped_status": "Capped",
-          "base_points": 0,
-          "multiplier": 1,
-          "multiplier_reason": "",
-          "total_points": 0
-        },
-        {
-          "name": "Josh Hazlewood",
-          "played": false,
-          "capped_status": "Capped",
-          "base_points": 0,
-          "multiplier": 1,
-          "multiplier_reason": "",
-          "total_points": 0
-        },
-        {
-          "name": "Trent Boult",
           "played": false,
           "capped_status": "Capped",
           "base_points": 0,
@@ -2119,6 +2101,24 @@
           "name": "Suyash Sharma",
           "played": false,
           "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "total_points": 0
+        },
+        {
+          "name": "Mohsin Khan",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "total_points": 0
+        },
+        {
+          "name": "Sarfaraz Khan",
+          "played": false,
+          "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
@@ -2258,15 +2258,6 @@
           "total_points": 0
         },
         {
-          "name": "Rasikh Salam",
-          "played": false,
-          "capped_status": "Uncapped",
-          "base_points": 0,
-          "multiplier": 1,
-          "multiplier_reason": "",
-          "total_points": 0
-        },
-        {
           "name": "Manav Suthar",
           "played": false,
           "capped_status": "Uncapped",
@@ -2277,6 +2268,15 @@
         },
         {
           "name": "Blessing Muzarabani",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "total_points": 0
+        },
+        {
+          "name": "Ravichandran Smaran",
           "played": false,
           "capped_status": "Capped",
           "base_points": 0,
@@ -2418,15 +2418,6 @@
           "total_points": 0
         },
         {
-          "name": "Tushar Deshpande",
-          "played": false,
-          "capped_status": "Capped",
-          "base_points": 0,
-          "multiplier": 1,
-          "multiplier_reason": "",
-          "total_points": 0
-        },
-        {
           "name": "Harsh Dubey",
           "played": false,
           "capped_status": "Uncapped",
@@ -2436,7 +2427,7 @@
           "total_points": 0
         },
         {
-          "name": "Ravichandran Smaran",
+          "name": "Mayank Markande",
           "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,
@@ -2445,7 +2436,16 @@
           "total_points": 0
         },
         {
-          "name": "Mayank Markande",
+          "name": "Shivang Kumar",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "total_points": 0
+        },
+        {
+          "name": "Brijesh Sharma",
           "played": false,
           "capped_status": "Uncapped",
           "base_points": 0,

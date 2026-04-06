@@ -767,9 +767,9 @@
       "multiplier_reason": "Uncapped but no condition met (12 runs, 0 wickets, 0 dismissals)",
       "total_points": 18
     },
-    "M Shahrukh Khan": {
+    "Shahrukh Khan": {
       "ipl_team": "Gujarat Titans",
-      "capped_status": "Unknown",
+      "capped_status": "Uncapped",
       "batting": {
         "runs": 11,
         "balls": 4,
@@ -802,7 +802,7 @@
       },
       "base_points": 17,
       "multiplier": 1,
-      "multiplier_reason": "",
+      "multiplier_reason": "Uncapped but no condition met (11 runs, 0 wickets, 0 dismissals)",
       "total_points": 17
     },
     "Rashid Khan": {
@@ -1474,7 +1474,7 @@
     {
       "id": 3,
       "name": "Dracarys Dynamites",
-      "total_points": 21,
+      "total_points": 38,
       "players": [
         {
           "name": "KL Rahul",
@@ -1496,12 +1496,12 @@
         },
         {
           "name": "Shahrukh Khan",
-          "played": false,
+          "played": true,
           "capped_status": "Uncapped",
-          "base_points": 0,
+          "base_points": 17,
           "multiplier": 1,
-          "multiplier_reason": "",
-          "total_points": 0
+          "multiplier_reason": "Uncapped but no condition met (11 runs, 0 wickets, 0 dismissals)",
+          "total_points": 17
         },
         {
           "name": "Hardik Pandya",
@@ -2130,7 +2130,7 @@
         {
           "name": "Sarfaraz Khan",
           "played": false,
-          "capped_status": "Uncapped",
+          "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
