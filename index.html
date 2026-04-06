@@ -435,42 +435,41 @@ function renderStandings() {
   const el = document.getElementById('sec-standings');
   let html = '<h2 class="sec-title">Standings</h2>';
 
-  // Overall cumulative standings
-  const overallPts = {};
-  draft.teams.forEach(t => { overallPts[t.id] = { name: t.name, id: t.id, pts: 0 }; });
-  weeks.forEach(week => {
-    week.games.forEach(g => {
-      g.scoring.fantasy_team_scores.forEach(ft => {
-        if (overallPts[ft.id]) overallPts[ft.id].pts += ft.total_points;
-      });
-    });
-  });
-  const overallSorted = Object.values(overallPts).sort((a, b) => b.pts - a.pts);
+  // Current week (may not have games yet)
+  const currentWeekNum = getWeekNumber(new Date().toISOString());
+  const currentWeekInData = weeks.find(w => w.weekNum === currentWeekNum);
 
-  const overallId = 'standings-overall';
-  html += `<div class="week-section week-current">
-    <div class="week-header open" data-week="${overallId}" onclick="toggleWeek('${overallId}')">
-      <span class="arrow">&#9654;</span>
-      <span>Overall Standings</span>
-    </div>
-    <div class="week-body open" id="week-body-${overallId}">
-      ${renderStandingsList(overallSorted, true)}
-    </div>
-  </div>`;
+  if (!currentWeekInData) {
+    // Current week has no games yet — show all teams at 0
+    const emptyStandings = draft.teams.map(t => ({ name: t.name, id: t.id, pts: 0 }));
+    const cwId = 'standings-w' + currentWeekNum;
+    html += `<div class="week-section week-current">
+      <div class="week-header open" data-week="${cwId}" onclick="toggleWeek('${cwId}')">
+        <span class="arrow">&#9654;</span>
+        <span>This Week</span>
+        <span class="week-date">${getWeekRange(currentWeekNum)}</span>
+      </div>
+      <div class="week-body open" id="week-body-${cwId}">
+        <div class="week-games-list" style="color:var(--text3)">No games played yet</div>
+        ${renderStandingsList(emptyStandings, true)}
+      </div>
+    </div>`;
+  }
 
-  // Per-week standings
+  // Per-week standings (current week highlighted)
   weeks.forEach(week => {
+    const isCurrent = week.weekNum === currentWeekNum;
     const weekId = 'standings-w' + week.weekNum;
     const sorted = getWeekTeamStandings(week);
     const gamesList = week.games.map(g => 'Game ' + g.gameNum + ': ' + g.scoring.match.teams.join(' vs ')).join(' &bull; ');
 
-    html += `<div class="week-section">
-      <div class="week-header" data-week="${weekId}" onclick="toggleWeek('${weekId}')">
+    html += `<div class="week-section ${isCurrent ? 'week-current' : ''}">
+      <div class="week-header ${isCurrent ? 'open' : ''}" data-week="${weekId}" onclick="toggleWeek('${weekId}')">
         <span class="arrow">&#9654;</span>
-        <span>${week.label}</span>
+        <span>${isCurrent ? 'This Week' : week.label}</span>
         <span class="week-date">${week.range}</span>
       </div>
-      <div class="week-body" id="week-body-${weekId}">
+      <div class="week-body ${isCurrent ? 'open' : ''}" id="week-body-${weekId}">
         <div class="week-games-list">${gamesList}</div>
         ${renderStandingsList(sorted, true)}
       </div>
