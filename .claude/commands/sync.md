@@ -11,8 +11,9 @@ This handles everything automatically:
 - Calculates all fantasy points (batting/bowling/fielding)
 - Applies conditional uncapped 2x multiplier
 - Generates `scoring_gameN.json`
+- Extracts player roles from match data
 - Recomputes `draft_data.json` from all scoring files
-- Updates `index.html` (new tab, inlined data, stats)
+- Updates `index.html` (week tab, inlined DRAFT + DRAFT_WEEK1, scoring data)
 - Prints full summary with standings, top scorers, 2x players, and undrafted players
 
 ## 2. Review the output
