@@ -382,11 +382,15 @@ let html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf-8');
 
 const varName  = `SCORING${gameNum}`;
 const prevVar  = `SCORING${gameNum - 1}`;
-const tabId    = `game${gameNum}`;
-const prevTab  = `game${gameNum - 1}`;
-const secId    = `sec-game${gameNum}`;
-const prevSec  = `sec-game${gameNum - 1}`;
 const totalGames = allScoringFiles.length;
+
+// Week calculation (same logic as client-side)
+const WEEK1_START = Date.UTC(2026, 2, 28); // Mar 28, 2026
+const MS_PER_WEEK = 7 * 24 * 60 * 60 * 1000;
+const gameDate = new Date(scoring.match.date).getTime();
+const weekNum = Math.floor((gameDate - WEEK1_START) / MS_PER_WEEK) + 1;
+const weekTabId = `week${weekNum}`;
+const weekSecId = `sec-week${weekNum}`;
 
 // Update inlined DRAFT
 html = html.replace(/^const DRAFT = .+$/m, 'const DRAFT = ' + JSON.stringify(draft) + ';');
@@ -399,19 +403,21 @@ if (!html.includes(`const ${varName}`)) {
   html = html.replace(new RegExp(`^const ${varName} = .+$`, 'm'), `const ${varName} = ${JSON.stringify(scoring)};`);
 }
 
-// Add tab button
-if (!html.includes(`data-tab="${tabId}"`)) {
-  html = html.replace(
-    `<button class="tab" data-tab="${prevTab}">Game ${gameNum - 1} Scorecard</button>`,
-    `<button class="tab" data-tab="${prevTab}">Game ${gameNum - 1} Scorecard</button>\n  <button class="tab" data-tab="${tabId}">Game ${gameNum} Scorecard</button>`
+// Add week tab button if this is a new week
+if (!html.includes(`data-tab="${weekTabId}"`)) {
+  // Find the last existing week tab to insert after
+  const lastWeekTabRe = /(<button class="tab" data-tab="week\d+">Week \d+<\/button>)\n(\s*<button class="tab" data-tab="teams">)/;
+  html = html.replace(lastWeekTabRe,
+    `$1\n  <button class="tab" data-tab="${weekTabId}">Week ${weekNum}</button>\n$2`
   );
 }
 
-// Add section div
-if (!html.includes(`id="${secId}"`)) {
-  html = html.replace(
-    `<div class="section" id="${prevSec}"></div>`,
-    `<div class="section" id="${prevSec}"></div>\n<div class="section" id="${secId}"></div>`
+// Add week section div if this is a new week
+if (!html.includes(`id="${weekSecId}"`)) {
+  // Find the last existing week section to insert after
+  const lastWeekSecRe = /(<div class="section" id="sec-week\d+"><\/div>)\n(<div class="section" id="sec-teams">)/;
+  html = html.replace(lastWeekSecRe,
+    `$1\n<div class="section" id="${weekSecId}"></div>\n$2`
   );
 }
 
@@ -461,14 +467,6 @@ if (!html.includes(`scoring_game${gameNum}.json`)) {
   );
 }
 
-// renderAll: add renderGameScorecard call
-if (!html.includes(`'${secId}'`)) {
-  html = html.replace(
-    `renderGameScorecard('${prevSec}', scoring${gameNum - 1});`,
-    `renderGameScorecard('${prevSec}', scoring${gameNum - 1});\n  renderGameScorecard('${secId}', scoring${gameNum});`
-  );
-}
-
 // renderAll: update allScorings array
 if (!html.includes(`scoring${gameNum}].filter`)) {
   html = html.replace(
@@ -478,7 +476,7 @@ if (!html.includes(`scoring${gameNum}].filter`)) {
 }
 
 fs.writeFileSync(path.join(ROOT, 'index.html'), html);
-console.log(`✅ index.html updated (${totalGames} game tabs)\n`);
+console.log(`✅ index.html updated (${totalGames} games, Week ${weekNum})\n`);
 
 // ─── Summary ────────────────────────────────────────────────────────
 console.log('═══════════════════════════════════════════════');
