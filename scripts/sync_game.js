@@ -422,6 +422,17 @@ const weekSecId = `sec-week${weekNum}`;
 // Update inlined DRAFT
 html = html.replace(/^const DRAFT = .+$/m, 'const DRAFT = ' + JSON.stringify(draft) + ';');
 
+// Update inlined DRAFT_WEEK1 (from frozen snapshot)
+const week1Path = path.join(ROOT, 'draft_data_week1.json');
+if (fs.existsSync(week1Path)) {
+  const week1Draft = JSON.parse(fs.readFileSync(week1Path, 'utf-8'));
+  if (html.includes('const DRAFT_WEEK1')) {
+    html = html.replace(/^const DRAFT_WEEK1 = .+$/m, 'const DRAFT_WEEK1 = ' + JSON.stringify(week1Draft) + ';');
+  } else {
+    html = html.replace(/^(const DRAFT = .+)$/m, '$1\nconst DRAFT_WEEK1 = ' + JSON.stringify(week1Draft) + ';');
+  }
+}
+
 // Add new SCORING constant (if not already present)
 if (!html.includes(`const ${varName}`)) {
   const prevLine = new RegExp(`^(const ${prevVar} = .+)$`, 'm');
@@ -449,7 +460,7 @@ if (!html.includes(`id="${weekSecId}"`)) {
 }
 
 // Update variable declarations — add scoringN
-const varDeclRe = /let draft,([\s\S]*?)playerSkills = \{\};/;
+const varDeclRe = /let draft, draftWeek1,([\s\S]*?)playerSkills = \{\};/;
 const varDeclMatch = html.match(varDeclRe);
 if (varDeclMatch && !varDeclMatch[0].includes(`scoring${gameNum}`)) {
   const old = varDeclMatch[0];
