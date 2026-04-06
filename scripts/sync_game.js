@@ -547,9 +547,34 @@ if (notInTeam.length) {
   notInTeam.forEach(p => console.log(`  ${p.name} (${p.ipl_team}): ${p.base_points} pts`));
 }
 
-// Name mismatch detection: check all game player names against draft
+// ─── Name mismatch detection with fuzzy matching ───────────────────
 const allDraftNames = new Set();
 for (const team of draft.teams) for (const p of team.players) allDraftNames.add(p);
+const draftNamesList = [...allDraftNames];
+
+// Simple fuzzy match: find draft names that share a last name or significant overlap
+function suggestMatch(gameName) {
+  const parts = gameName.toLowerCase().split(/\s+/);
+  const lastName = parts[parts.length - 1];
+  const candidates = [];
+  for (const dn of draftNamesList) {
+    const dp = dn.toLowerCase().split(/\s+/);
+    const dLast = dp[dp.length - 1];
+    // Last name match
+    if (dLast === lastName) {
+      candidates.push(dn);
+      continue;
+    }
+    // Check if any word in game name matches any word in draft name (>3 chars)
+    for (const gw of parts) {
+      if (gw.length > 3 && dp.some(dw => dw === gw)) {
+        candidates.push(dn);
+        break;
+      }
+    }
+  }
+  return candidates;
+}
 
 const unmapped = [];
 for (const inn of innings) {
@@ -564,12 +589,28 @@ for (const inn of innings) {
     if (!allDraftNames.has(dn) && !unmapped.includes(n)) unmapped.push(n);
   }
 }
-// Filter out already-flagged unknowns
+// Filter out already-flagged unknowns (not in any team)
 const newMismatches = unmapped.filter(n => !notInTeam.find(p => p.name === draftName(n)));
+
+let hasMismatches = false;
 if (newMismatches.length) {
-  console.log('\n🔍 Possible name mismatches (not in draft, not in name_map):');
-  newMismatches.forEach(n => console.log(`  "${n}"`));
-  console.log('  → Add to scripts/name_map.json if these are known players under different names.');
+  hasMismatches = true;
+  console.log('\n🚨 POSSIBLE NAME MISMATCHES — these game players are NOT in draft and NOT in name_map:');
+  for (const n of newMismatches) {
+    const suggestions = suggestMatch(n);
+    if (suggestions.length) {
+      console.log(`  "${n}" → likely: ${suggestions.map(s => `"${s}"`).join(', ')}`);
+      console.log(`    Fix: add to scripts/name_map.json: "${n}": "${suggestions[0]}"`);
+    } else {
+      console.log(`  "${n}" → no close match found (probably undrafted)`);
+    }
+  }
+  console.log('\n  ⛔ Fix name_map.json and re-run before committing!');
 }
 
-console.log('\n✅ Done. Review changes, then commit & push.');
+if (hasMismatches) {
+  console.log('\n❌ Sync complete but NAME MISMATCHES DETECTED. Do NOT commit until resolved.');
+  process.exit(1);
+} else {
+  console.log('\n✅ Done. No name mismatches. Review changes, then commit & push.');
+}
