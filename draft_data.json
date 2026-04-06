@@ -66,6 +66,27 @@
         "Yash Dayal": "Uncapped",
         "Robin Minz": "Uncapped",
         "Anshul Kamboj": "Capped"
+      },
+      "player_roles": {
+        "Sanju Samson": "WK",
+        "Lhuan-dre Pretorius": "AR",
+        "Arshdeep Singh": "BOWL",
+        "Nicholas Pooran": "WK",
+        "Yuzvendra Chahal": "BOWL",
+        "Axar Patel": "AR",
+        "Rinku Singh": "BAT",
+        "Ravi Bishnoi": "BOWL",
+        "Tristan Stubbs": "WK",
+        "Tim David": "BAT",
+        "Jacob Bethell": "AR",
+        "Dewald Brevis": "BAT",
+        "Harshal Patel": "AR",
+        "Xavier Bartlett": "BOWL",
+        "Naman Dhir": "AR",
+        "Vaibhav Arora": "BOWL",
+        "Yash Dayal": "BOWL",
+        "Robin Minz": "WK",
+        "Anshul Kamboj": "AR"
       }
     },
     {
@@ -131,6 +152,26 @@
         "Manish Pandey": "Capped",
         "Rahul Tewatia": "Uncapped",
         "Luke Wood": "Capped"
+      },
+      "player_roles": {
+        "Jasprit Bumrah": "BOWL",
+        "Krains Fuletra": "BAT",
+        "Auqib Nabi": "AR",
+        "Vihaan Malhotra": "BAT",
+        "Abishek Porel": "WK",
+        "Cameron Green": "AR",
+        "MS Dhoni": "WK",
+        "Ruturaj Gaikwad": "BAT",
+        "David Miller": "BAT",
+        "Marco Jansen": "AR",
+        "Riyan Parag": "BAT",
+        "Tim Seifert": "WK",
+        "Glenn Phillips": "AR",
+        "Umran Malik": "BOWL",
+        "Khaleel Ahmed": "BOWL",
+        "Manish Pandey": "BAT",
+        "Rahul Tewatia": "AR",
+        "Luke Wood": "BOWL"
       }
     },
     {
@@ -193,6 +234,25 @@
         "Ashutosh Sharma": "Uncapped",
         "Nehal Wadhera": "Uncapped",
         "Onkar Tarmale": "Uncapped"
+      },
+      "player_roles": {
+        "Yashasvi Jaiswal": "BAT",
+        "Kartik Sharma": "WK",
+        "Travis Head": "BAT",
+        "Mitchell Starc": "BOWL",
+        "Ravindra Jadeja": "AR",
+        "Krunal Pandya": "AR",
+        "Venkatesh Iyer": "AR",
+        "Sai Sudharsan": "BAT",
+        "Prabhsimran Singh": "WK",
+        "T Natarajan": "BOWL",
+        "Kamindu Mendis": "AR",
+        "Akash Deep": "BOWL",
+        "Rahul Chahar": "BOWL",
+        "Harpreet Brar": "AR",
+        "Ashutosh Sharma": "AR",
+        "Nehal Wadhera": "BAT",
+        "Onkar Tarmale": "BOWL"
       }
     },
     {
@@ -258,6 +318,26 @@
         "Donovan Ferreira": "Capped",
         "Anuj Rawat": "Uncapped",
         "Zeeshan Ansari": "Uncapped"
+      },
+      "player_roles": {
+        "KL Rahul": "WK",
+        "Arjun Tendulkar": "BOWL",
+        "Shahrukh Khan": "BAT",
+        "Hardik Pandya": "AR",
+        "Virat Kohli": "BAT",
+        "Rishabh Pant": "WK",
+        "Mohammed Siraj": "BOWL",
+        "Ben Duckett": "BAT",
+        "Rovman Powell": "BAT",
+        "Deepak Chahar": "BOWL",
+        "Prithvi Shaw": "BAT",
+        "Rahul Tripathi": "BAT",
+        "Mitchell Santner": "AR",
+        "Akeal Hosein": "AR",
+        "Angkrish Raghuvanshi": "BAT",
+        "Donovan Ferreira": "AR",
+        "Anuj Rawat": "WK",
+        "Zeeshan Ansari": "BOWL"
       }
     },
     {
@@ -323,6 +403,26 @@
         "Dhruv Jurel": "Capped",
         "Pathum Nissanka": "Capped",
         "Jitesh Sharma": "Capped"
+      },
+      "player_roles": {
+        "Abhishek Sharma": "AR",
+        "Prashant Veer": "AR",
+        "Rashid Khan": "AR",
+        "Suryakumar Yadav": "BAT",
+        "Marcus Stoinis": "AR",
+        "Kuldeep Yadav": "BOWL",
+        "Varun Chakaravarthy": "BOWL",
+        "Tilak Varma": "AR",
+        "Rajat Patidar": "BAT",
+        "Shardul Thakur": "AR",
+        "Lungi Ngidi": "BOWL",
+        "Azmatullah Omarzai": "AR",
+        "Tom Banton": "BAT",
+        "Nandre Burger": "BOWL",
+        "Sandeep Sharma": "BOWL",
+        "Dhruv Jurel": "WK",
+        "Pathum Nissanka": "BAT",
+        "Jitesh Sharma": "WK"
       }
     },
     {
@@ -385,6 +485,25 @@
         "Abdul Samad": "Uncapped",
         "Ramandeep Singh": "Uncapped",
         "Ashwani Kumar": "Uncapped"
+      },
+      "player_roles": {
+        "Mitchell Marsh": "AR",
+        "Jason Holder": "AR",
+        "Sunil Narine": "AR",
+        "Pat Cummins": "BOWL",
+        "Rohit Sharma": "BAT",
+        "Josh Inglis": "WK",
+        "Nitish Kumar Reddy": "AR",
+        "Avesh Khan": "BOWL",
+        "Shimron Hetmyer": "BAT",
+        "Ajinkya Rahane": "BAT",
+        "Jamie Overton": "AR",
+        "Jaydev Unadkat": "BOWL",
+        "Karun Nair": "BAT",
+        "Ayush Badoni": "BAT",
+        "Abdul Samad": "BAT",
+        "Ramandeep Singh": "BAT",
+        "Ashwani Kumar": "BOWL"
       }
     },
     {
@@ -450,6 +569,26 @@
         "Sai Kishore": "Capped",
         "Kartik Tyagi": "Uncapped",
         "Suyash Sharma": "Uncapped"
+      },
+      "player_roles": {
+        "Heinrich Klaasen": "WK",
+        "Ashok Sharma": "BOWL",
+        "Priyansh Arya": "BAT",
+        "Shivam Dube": "AR",
+        "Quinton de Kock": "WK",
+        "Josh Hazlewood": "BOWL",
+        "Trent Boult": "BOWL",
+        "Rachin Ravindra": "AR",
+        "Lockie Ferguson": "BOWL",
+        "Matheesha Pathirana": "BOWL",
+        "Shashank Singh": "AR",
+        "Prasidh Krishna": "BOWL",
+        "Devdutt Padikkal": "BAT",
+        "Ishant Sharma": "BOWL",
+        "Noor Ahmad": "BOWL",
+        "Sai Kishore": "BOWL",
+        "Kartik Tyagi": "BOWL",
+        "Suyash Sharma": "BOWL"
       }
     },
     {
@@ -512,6 +651,25 @@
         "Rasikh Salam": "Uncapped",
         "Manav Suthar": "Uncapped",
         "Blessing Muzarabani": "Capped"
+      },
+      "player_roles": {
+        "Vaibhav Sooryavanshi": "BAT",
+        "Digvesh Singh": "BOWL",
+        "Sameer Rizvi": "AR",
+        "Finn Allen": "BAT",
+        "Shreyas Iyer": "BAT",
+        "Jos Buttler": "WK",
+        "Kagiso Rabada": "BOWL",
+        "Mohammad Shami": "BOWL",
+        "Bhuvneshwar Kumar": "BOWL",
+        "Washington Sundar": "AR",
+        "Matt Henry": "BOWL",
+        "Ryan Rickelton": "WK",
+        "Musheer Khan": "AR",
+        "Jacob Duffy": "BOWL",
+        "Rasikh Salam": "BOWL",
+        "Manav Suthar": "BOWL",
+        "Blessing Muzarabani": "BOWL"
       }
     },
     {
@@ -577,6 +735,26 @@
         "Harsh Dubey": "Uncapped",
         "Ravichandran Smaran": "Uncapped",
         "Mayank Markande": "Uncapped"
+      },
+      "player_roles": {
+        "Ayush Mhatre": "BAT",
+        "Ishan Kishan": "WK",
+        "Jofra Archer": "BOWL",
+        "Shubman Gill": "BAT",
+        "Anrich Nortje": "BOWL",
+        "Aiden Markram": "BAT",
+        "Liam Livingstone": "AR",
+        "Phil Salt": "WK",
+        "Nitish Rana": "BAT",
+        "Will Jacks": "AR",
+        "Romario Shepherd": "AR",
+        "Sherfane Rutherford": "BAT",
+        "Vipraj Nigam": "BOWL",
+        "Mayank Yadav": "BOWL",
+        "Tushar Deshpande": "BOWL",
+        "Harsh Dubey": "AR",
+        "Ravichandran Smaran": "BOWL",
+        "Mayank Markande": "BOWL"
       }
     }
   ],

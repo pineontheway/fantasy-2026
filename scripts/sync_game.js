@@ -56,9 +56,36 @@ console.log(`\n📋 Processing ${gameFile} → scoring_game${gameNum}.json`);
 const cappedLookup = {};
 const teamLookup = {};
 for (const team of draft.teams) {
+  if (!team.player_roles) team.player_roles = {};
   for (const player of team.players) {
     cappedLookup[player] = team.player_capped[player];
     teamLookup[player] = { id: team.id, name: team.name };
+  }
+}
+
+// ─── Extract player roles from match data ───────────────────────────
+function roleLabel(playingRoles) {
+  if (!playingRoles || !playingRoles.length) return 'BAT';
+  const r = playingRoles[0].toLowerCase();
+  if (r.includes('wicketkeeper')) return 'WK';
+  if (r.includes('allrounder') || r.includes('all-rounder')) return 'AR';
+  if (r.includes('bowler')) return 'BOWL';
+  return 'BAT';
+}
+
+if (game.content.matchPlayers?.teamPlayers) {
+  for (const tp of game.content.matchPlayers.teamPlayers) {
+    for (const pl of tp.players) {
+      const p = pl.player;
+      const name = draftName(p.longName);
+      const role = roleLabel(p.playingRoles);
+      // Update role in the draft team if this player is drafted
+      for (const team of draft.teams) {
+        if (team.players.includes(name) && !team.player_roles[name]) {
+          team.player_roles[name] = role;
+        }
+      }
+    }
   }
 }
 
