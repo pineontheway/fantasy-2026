@@ -132,19 +132,22 @@
     .game-team-card .gtc-player .name { display: flex; align-items: center; gap: 0.3rem; }
 
     /* Team Cards (overall) */
-    .team-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 1.5rem; }
+    .team-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); gap: 1.5rem; }
     .team-card { background: var(--bg2); border-radius: 12px; padding: 1.25rem; border: 1px solid transparent; transition: 0.2s; }
     .team-card:hover { border-color: rgba(240,184,50,0.2); }
     .tc-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
     .tc-header h3 { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1rem; }
     .tc-header .tc-rank { font-size: 0.7rem; color: var(--text2); }
     .tc-pts-badge { background: var(--gold-dim); color: var(--gold); padding: 0.2rem 0.6rem; border-radius: 15px; font-weight: 700; font-size: 0.9rem; }
-    .tc-player-row { display: flex; align-items: center; gap: 0.5rem; padding: 0.35rem 0; border-bottom: 1px solid rgba(37,51,80,0.4); font-size: 0.82rem; }
+    .tc-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .tc-inner { min-width: 500px; }
+    .tc-player-row { display: flex; align-items: center; gap: 0.3rem; padding: 0.35rem 0; border-bottom: 1px solid rgba(37,51,80,0.4); font-size: 0.82rem; }
     .tc-player-row:last-child { border-bottom: none; }
-    .tc-player-row .name { flex: 1; display: flex; align-items: center; gap: 0.35rem; }
-    .tc-player-row .game-pts { min-width: 45px; text-align: center; font-size: 0.75rem; color: var(--text2); }
-    .tc-player-row .total { min-width: 50px; text-align: right; font-weight: 600; }
-    .tc-game-header { display: flex; align-items: center; gap: 0.5rem; font-size: 0.65rem; color: var(--text3); text-transform: uppercase; letter-spacing: 0.05em; padding: 0.3rem 0; }
+    .tc-player-row .name { min-width: 160px; width: 160px; display: flex; align-items: center; gap: 0.3rem; flex-shrink: 0; }
+    .tc-player-row .name span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .tc-player-row .game-pts { flex: 1; text-align: center; font-size: 0.75rem; color: var(--text2); }
+    .tc-player-row .total { min-width: 50px; text-align: right; font-weight: 600; flex-shrink: 0; }
+    .tc-game-header { display: flex; align-items: center; gap: 0.3rem; font-size: 0.65rem; color: var(--text3); text-transform: uppercase; letter-spacing: 0.05em; padding: 0.3rem 0; }
 
     /* MVP */
     .mvp-table { width: 100%; border-collapse: separate; border-spacing: 0 3px; }
@@ -187,8 +190,9 @@
       .game-standings { grid-template-columns: 1fr; }
       .team-cards { grid-template-columns: 1fr; }
       .tc-header { flex-direction: column; gap: 0.5rem; }
-      .tc-player-row { font-size: 0.75rem; gap: 0.3rem; }
-      .tc-player-row .game-pts { min-width: 35px; font-size: 0.7rem; }
+      .tc-player-row { font-size: 0.75rem; }
+      .tc-player-row .name { min-width: 130px; width: 130px; }
+      .tc-player-row .game-pts { font-size: 0.7rem; }
       .tc-player-row .total { min-width: 40px; }
       .scorecard-table { font-size: 0.75rem; }
       .scorecard-table th { font-size: 0.6rem; padding: 0.3rem 0.4rem; }
@@ -731,10 +735,11 @@ function renderTeams() {
                 </div>
                 <div class="tc-pts-badge">${t.weeklyTotal} pts</div>
               </div>
+              <div class="tc-scroll"><div class="tc-inner">
               <div class="tc-game-header">
-                <span style="flex:1">Player</span>
-                ${week.games.map(g => `<span style="width:45px;text-align:center">G${g.gameNum}</span>`).join('')}
-                <span style="width:50px;text-align:right">Total</span>
+                <span style="min-width:160px;width:160px;flex-shrink:0">Player</span>
+                ${week.games.map(g => `<span style="flex:1;text-align:center">G${g.gameNum}</span>`).join('')}
+                <span style="min-width:50px;text-align:right;flex-shrink:0">Total</span>
               </div>
               ${t.playerData.map(p => `
                 <div class="tc-player-row">
@@ -746,6 +751,7 @@ function renderTeams() {
                   <div class="total ${ptsClass(p.total)}">${p.total}</div>
                 </div>
               `).join('')}
+              </div></div>
             </div>
           `).join('')}
         </div>
