@@ -76,7 +76,7 @@
           "46 runs = +46",
           "6 fours = +12",
           "3 sixes = +12",
-          "SR 219.0 >200 = +15",
+          "SR 219.0 >=200 = +15",
           "≥30 runs bonus = +5"
         ]
       },
@@ -116,7 +116,7 @@
           "48 runs = +48",
           "4 fours = +8",
           "4 sixes = +16",
-          "SR 228.6 >200 = +15",
+          "SR 228.6 >=200 = +15",
           "≥30 runs bonus = +5"
         ]
       },
@@ -402,7 +402,7 @@
         "maidens": 0,
         "points": -10,
         "breakdown": [
-          "Economy 10.25 >10 = -10"
+          "Economy 10.25 >=10 = -10"
         ]
       },
       "fielding": {
@@ -484,7 +484,7 @@
         "maidens": 0,
         "points": -20,
         "breakdown": [
-          "Economy 17.5 >12 = -20"
+          "Economy 17.5 >=12 = -20"
         ]
       },
       "fielding": {
@@ -524,7 +524,7 @@
         "breakdown": [
           "4 wickets = +80",
           "3 wickets bonus = +10",
-          "Economy 10.25 >10 = -10"
+          "Economy 10.25 >=10 = -10"
         ]
       },
       "fielding": {
@@ -871,10 +871,10 @@
         "conceded": 48,
         "economy": 12,
         "maidens": 0,
-        "points": 10,
+        "points": 0,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 12 >10 = -10"
+          "Economy 12 >=12 = -20"
         ]
       },
       "fielding": {
@@ -885,10 +885,10 @@
         "points": 0,
         "breakdown": []
       },
-      "base_points": 17,
+      "base_points": 7,
       "multiplier": 1,
       "multiplier_reason": "Uncapped but no condition met (5 runs, 1 wickets, 0 dismissals)",
-      "total_points": 17
+      "total_points": 7
     },
     "Vaibhav Arora": {
       "ipl_team": "Kolkata Knight Riders",
@@ -913,7 +913,7 @@
         "points": 30,
         "breakdown": [
           "2 wickets = +40",
-          "Economy 11.75 >10 = -10"
+          "Economy 11.75 >=10 = -10"
         ]
       },
       "fielding": {
@@ -951,7 +951,7 @@
         "maidens": 0,
         "points": -20,
         "breakdown": [
-          "Economy 15.5 >12 = -20"
+          "Economy 15.5 >=12 = -20"
         ]
       },
       "fielding": {
@@ -1980,7 +1980,7 @@
     {
       "id": 7,
       "name": "White Walkers",
-      "total_points": 91,
+      "total_points": 81,
       "players": [
         {
           "name": "Heinrich Klaasen",
@@ -2130,10 +2130,10 @@
           "name": "Kartik Tyagi",
           "played": true,
           "capped_status": "Uncapped",
-          "base_points": 17,
+          "base_points": 7,
           "multiplier": 1,
           "multiplier_reason": "Uncapped but no condition met (5 runs, 1 wickets, 0 dismissals)",
-          "total_points": 17
+          "total_points": 7
         },
         {
           "name": "Suyash Sharma",

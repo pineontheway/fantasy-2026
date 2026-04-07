@@ -44,7 +44,7 @@
         "breakdown": [
           "4 wickets = +80",
           "3 wickets bonus = +10",
-          "Economy 10.25 >10 = -10"
+          "Economy 10.25 >=10 = -10"
         ]
       },
       "fielding": {
@@ -320,7 +320,7 @@
         "maidens": 0,
         "points": -20,
         "breakdown": [
-          "Economy 12.5 >12 = -20"
+          "Economy 12.5 >=12 = -20"
         ]
       },
       "fielding": {
@@ -478,7 +478,7 @@
         "maidens": 0,
         "points": -10,
         "breakdown": [
-          "Economy 11.33 >10 = -10"
+          "Economy 11.33 >=10 = -10"
         ]
       },
       "fielding": {
@@ -519,7 +519,7 @@
         "points": 10,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 10.75 >10 = -10"
+          "Economy 10.75 >=10 = -10"
         ]
       },
       "fielding": {
@@ -869,7 +869,7 @@
         "points": 30,
         "breakdown": [
           "2 wickets = +40",
-          "Economy 10.5 >10 = -10"
+          "Economy 10.5 >=10 = -10"
         ]
       },
       "fielding": {
@@ -941,10 +941,10 @@
         "conceded": 48,
         "economy": 12,
         "maidens": 0,
-        "points": 10,
+        "points": 0,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 12 >10 = -10"
+          "Economy 12 >=12 = -20"
         ]
       },
       "fielding": {
@@ -957,10 +957,10 @@
           "Catch (Shimron Hetmyer) = +10"
         ]
       },
-      "base_points": 20,
+      "base_points": 10,
       "multiplier": 1,
       "multiplier_reason": "",
-      "total_points": 20
+      "total_points": 10
     }
   },
   "fantasy_team_scores": [
@@ -1474,7 +1474,7 @@
     {
       "id": 3,
       "name": "Dracarys Dynamites",
-      "total_points": 38,
+      "total_points": 28,
       "players": [
         {
           "name": "KL Rahul",
@@ -1534,10 +1534,10 @@
           "name": "Mohammed Siraj",
           "played": true,
           "capped_status": "Capped",
-          "base_points": 20,
+          "base_points": 10,
           "multiplier": 1,
           "multiplier_reason": "",
-          "total_points": 20
+          "total_points": 10
         },
         {
           "name": "Rovman Powell",

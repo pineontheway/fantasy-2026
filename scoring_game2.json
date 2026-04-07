@@ -43,7 +43,7 @@
         "points": 10,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 10.75 >10 = -10"
+          "Economy 10.75 >=10 = -10"
         ]
       },
       "fielding": {
@@ -113,7 +113,7 @@
           "37 runs = +37",
           "6 fours = +12",
           "2 sixes = +8",
-          "SR 217.6 >200 = +15",
+          "SR 217.6 >=200 = +15",
           "≥30 runs bonus = +5"
         ]
       },
@@ -352,9 +352,10 @@
         "conceded": 30,
         "economy": 10,
         "maidens": 0,
-        "points": 20,
+        "points": 10,
         "breakdown": [
-          "1 wickets = +20"
+          "1 wickets = +20",
+          "Economy 10 >=10 = -10"
         ]
       },
       "fielding": {
@@ -365,10 +366,10 @@
         "points": 0,
         "breakdown": []
       },
-      "base_points": 20,
+      "base_points": 10,
       "multiplier": 1,
       "multiplier_reason": "",
-      "total_points": 20
+      "total_points": 10
     },
     "Varun Chakaravarthy": {
       "ipl_team": "Kolkata Knight Riders",
@@ -390,9 +391,9 @@
         "conceded": 48,
         "economy": 12,
         "maidens": 0,
-        "points": -10,
+        "points": -20,
         "breakdown": [
-          "Economy 12 >10 = -10"
+          "Economy 12 >=12 = -20"
         ]
       },
       "fielding": {
@@ -403,10 +404,10 @@
         "points": 0,
         "breakdown": []
       },
-      "base_points": -10,
+      "base_points": -20,
       "multiplier": 1,
       "multiplier_reason": "",
-      "total_points": -10
+      "total_points": -20
     },
     "Vaibhav Arora": {
       "ipl_team": "Kolkata Knight Riders",
@@ -431,7 +432,7 @@
         "points": 0,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 13 >12 = -20"
+          "Economy 13 >=12 = -20"
         ]
       },
       "fielding": {
@@ -469,7 +470,7 @@
         "maidens": 0,
         "points": -10,
         "breakdown": [
-          "Economy 11.33 >10 = -10"
+          "Economy 11.33 >=10 = -10"
         ]
       },
       "fielding": {
@@ -575,7 +576,7 @@
           "78 runs = +78",
           "6 fours = +12",
           "6 sixes = +24",
-          "SR 205.3 >200 = +15",
+          "SR 205.3 >=200 = +15",
           "≥50 runs bonus = +5",
           "≥30 runs bonus = +5"
         ]
@@ -703,7 +704,7 @@
         "points": 0,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 13 >12 = -20"
+          "Economy 13 >=12 = -20"
         ]
       },
       "fielding": {
@@ -893,7 +894,7 @@
         "maidens": 0,
         "points": -20,
         "breakdown": [
-          "Economy 12.75 >12 = -20"
+          "Economy 12.75 >=12 = -20"
         ]
       },
       "fielding": {
@@ -1662,7 +1663,7 @@
     {
       "id": 5,
       "name": "Slayers Unsullied Force",
-      "total_points": 130,
+      "total_points": 120,
       "players": [
         {
           "name": "Abhishek Sharma",
@@ -1722,10 +1723,10 @@
           "name": "Varun Chakaravarthy",
           "played": true,
           "capped_status": "Capped",
-          "base_points": -10,
+          "base_points": -20,
           "multiplier": 1,
           "multiplier_reason": "",
-          "total_points": -10
+          "total_points": -20
         },
         {
           "name": "Tilak Varma",
@@ -1831,7 +1832,7 @@
     {
       "id": 6,
       "name": "Tyrion Titans",
-      "total_points": 266,
+      "total_points": 256,
       "players": [
         {
           "name": "Mitchell Marsh",
@@ -1855,10 +1856,10 @@
           "name": "Sunil Narine",
           "played": true,
           "capped_status": "Capped",
-          "base_points": 20,
+          "base_points": 10,
           "multiplier": 1,
           "multiplier_reason": "",
-          "total_points": 20
+          "total_points": 10
         },
         {
           "name": "Pat Cummins",

@@ -40,8 +40,10 @@
         "conceded": 20,
         "economy": 10,
         "maidens": 0,
-        "points": 0,
-        "breakdown": []
+        "points": -10,
+        "breakdown": [
+          "Economy 10 >=10 = -10"
+        ]
       },
       "fielding": {
         "catches": 1,
@@ -53,10 +55,10 @@
           "Catch (Pathum Nissanka) = +10"
         ]
       },
-      "base_points": 10,
+      "base_points": 0,
       "multiplier": 1,
       "multiplier_reason": "Uncapped but no condition met (0 runs, 0 wickets, 1 dismissals)",
-      "total_points": 10
+      "total_points": 0
     },
     "Ryan Rickelton": {
       "ipl_team": "Mumbai Indians",
@@ -352,7 +354,7 @@
         "points": 0,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 12.31 >12 = -20"
+          "Economy 12.31 >=12 = -20"
         ]
       },
       "fielding": {
@@ -390,7 +392,7 @@
         "maidens": 0,
         "points": -20,
         "breakdown": [
-          "Economy 13.66 >12 = -20"
+          "Economy 13.66 >=12 = -20"
         ]
       },
       "fielding": {
@@ -466,7 +468,7 @@
         "maidens": 0,
         "points": 15,
         "breakdown": [
-          "Economy 5.25 <6 = +15"
+          "Economy 5.25 <=6 = +15"
         ]
       },
       "fielding": {
@@ -814,7 +816,7 @@
         "points": 35,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 5.5 <6 = +15"
+          "Economy 5.5 <=6 = +15"
         ]
       },
       "fielding": {
@@ -854,7 +856,7 @@
         "maidens": 0,
         "points": -10,
         "breakdown": [
-          "Economy 10.33 >10 = -10"
+          "Economy 10.33 >=10 = -10"
         ]
       },
       "fielding": {
@@ -2285,7 +2287,7 @@
     {
       "id": 9,
       "name": "Telugu Targerions",
-      "total_points": 37,
+      "total_points": 27,
       "players": [
         {
           "name": "Ayush Mhatre",
@@ -2426,10 +2428,10 @@
           "name": "Mayank Markande",
           "played": true,
           "capped_status": "Uncapped",
-          "base_points": 10,
+          "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "Uncapped but no condition met (0 runs, 0 wickets, 1 dismissals)",
-          "total_points": 10
+          "total_points": 0
         },
         {
           "name": "Shivang Kumar",

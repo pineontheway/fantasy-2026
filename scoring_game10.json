@@ -183,7 +183,7 @@
         "breakdown": [
           "14 runs = +14",
           "1 sixes = +4",
-          "SR 70.0 <100 = -10"
+          "SR 70.0 <=100 = -10"
         ]
       },
       "bowling": {
@@ -352,7 +352,7 @@
         "points": 55,
         "breakdown": [
           "2 wickets = +40",
-          "Economy 4.5 <6 = +15"
+          "Economy 4.5 <=6 = +15"
         ]
       },
       "fielding": {
@@ -430,7 +430,7 @@
         "maidens": 0,
         "points": 15,
         "breakdown": [
-          "Economy 5.33 <6 = +15"
+          "Economy 5.33 <=6 = +15"
         ]
       },
       "fielding": {
@@ -468,7 +468,7 @@
         "maidens": 0,
         "points": -20,
         "breakdown": [
-          "Economy 13.04 >12 = -20"
+          "Economy 13.04 >=12 = -20"
         ]
       },
       "fielding": {
@@ -507,7 +507,7 @@
         "points": 65,
         "breakdown": [
           "2 wickets = +40",
-          "Economy 2.25 <3 = +25"
+          "Economy 2.25 <=3 = +25"
         ]
       },
       "fielding": {
@@ -891,7 +891,7 @@
         "points": 10,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 11.5 >10 = -10"
+          "Economy 11.5 >=10 = -10"
         ]
       },
       "fielding": {

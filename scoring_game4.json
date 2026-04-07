@@ -352,7 +352,7 @@
         "points": 10,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 11.33 >10 = -10"
+          "Economy 11.33 >=10 = -10"
         ]
       },
       "fielding": {
@@ -391,7 +391,7 @@
         "points": 10,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 10.33 >10 = -10"
+          "Economy 10.33 >=10 = -10"
         ]
       },
       "fielding": {
@@ -775,7 +775,7 @@
         "points": 35,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 5 <6 = +15"
+          "Economy 5 <=6 = +15"
         ]
       },
       "fielding": {
@@ -893,7 +893,7 @@
         "maidens": 0,
         "points": -10,
         "breakdown": [
-          "Economy 10.5 >10 = -10"
+          "Economy 10.5 >=10 = -10"
         ]
       },
       "fielding": {

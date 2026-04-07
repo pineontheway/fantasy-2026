@@ -185,8 +185,8 @@ for (const inn of innings) {
 
     // SR bonus (tiered — best tier only)
     if (balls >= 15) {
-      if (sr > 300)      { pts += 25; bd.push(`SR ${sr.toFixed(1)} >300 = +25`); }
-      else if (sr > 200) { pts += 15; bd.push(`SR ${sr.toFixed(1)} >200 = +15`); }
+      if (sr >= 300)      { pts += 25; bd.push(`SR ${sr.toFixed(1)} >=300 = +25`); }
+      else if (sr >= 200) { pts += 15; bd.push(`SR ${sr.toFixed(1)} >=200 = +15`); }
     }
 
     // Run milestones (cumulative)
@@ -199,8 +199,8 @@ for (const inn of innings) {
 
     // SR penalty (tiered — worst tier only)
     if (balls >= 15) {
-      if (sr < 60)       { pts -= 25; bd.push(`SR ${sr.toFixed(1)} <60 = -25`); }
-      else if (sr < 100) { pts -= 10; bd.push(`SR ${sr.toFixed(1)} <100 = -10`); }
+      if (sr <= 60)       { pts -= 25; bd.push(`SR ${sr.toFixed(1)} <=60 = -25`); }
+      else if (sr <= 100) { pts -= 10; bd.push(`SR ${sr.toFixed(1)} <=100 = -10`); }
     }
 
     p.batting.points = pts;
@@ -242,14 +242,14 @@ for (const inn of innings) {
 
     // Economy bonus (tiered — best tier only, min 3 overs)
     if (overs >= 3) {
-      if (economy < 3)      { pts += 25; bd.push(`Economy ${economy} <3 = +25`); }
-      else if (economy < 6) { pts += 15; bd.push(`Economy ${economy} <6 = +15`); }
+      if (economy <= 3)      { pts += 25; bd.push(`Economy ${economy} <=3 = +25`); }
+      else if (economy <= 6) { pts += 15; bd.push(`Economy ${economy} <=6 = +15`); }
     }
 
     // Economy penalty (tiered — worst tier only, min 2 overs)
     if (overs >= 2) {
-      if (economy > 12)      { pts -= 20; bd.push(`Economy ${economy} >12 = -20`); }
-      else if (economy > 10) { pts -= 10; bd.push(`Economy ${economy} >10 = -10`); }
+      if (economy >= 12)      { pts -= 20; bd.push(`Economy ${economy} >=12 = -20`); }
+      else if (economy >= 10) { pts -= 10; bd.push(`Economy ${economy} >=10 = -10`); }
     }
 
     // Maidens

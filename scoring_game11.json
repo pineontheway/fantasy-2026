@@ -43,7 +43,7 @@
         "points": 35,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 5.25 <6 = +15"
+          "Economy 5.25 <=6 = +15"
         ]
       },
       "fielding": {
@@ -197,7 +197,7 @@
           "48 runs = +48",
           "1 fours = +2",
           "6 sixes = +24",
-          "SR 252.6 >200 = +15",
+          "SR 252.6 >=200 = +15",
           "≥30 runs bonus = +5"
         ]
       },
@@ -240,7 +240,7 @@
           "70 runs = +70",
           "3 fours = +6",
           "8 sixes = +32",
-          "SR 280.0 >200 = +15",
+          "SR 280.0 >=200 = +15",
           "≥50 runs bonus = +5",
           "≥30 runs bonus = +5"
         ]
@@ -362,10 +362,10 @@
         "conceded": 36,
         "economy": 12,
         "maidens": 0,
-        "points": 30,
+        "points": 20,
         "breakdown": [
           "2 wickets = +40",
-          "Economy 12 >10 = -10"
+          "Economy 12 >=12 = -20"
         ]
       },
       "fielding": {
@@ -376,10 +376,10 @@
         "points": 0,
         "breakdown": []
       },
-      "base_points": 30,
+      "base_points": 20,
       "multiplier": 1,
       "multiplier_reason": "",
-      "total_points": 30
+      "total_points": 20
     },
     "Bhuvneshwar Kumar": {
       "ipl_team": "Royal Challengers Bengaluru",
@@ -405,7 +405,7 @@
         "breakdown": [
           "3 wickets = +60",
           "3 wickets bonus = +10",
-          "Economy 10.25 >10 = -10"
+          "Economy 10.25 >=10 = -10"
         ]
       },
       "fielding": {
@@ -484,7 +484,7 @@
         "points": 20,
         "breakdown": [
           "2 wickets = +40",
-          "Economy 14.5 >12 = -20"
+          "Economy 14.5 >=12 = -20"
         ]
       },
       "fielding": {
@@ -655,11 +655,12 @@
         "fours": 8,
         "sixes": 2,
         "is_out": true,
-        "points": 84,
+        "points": 99,
         "breakdown": [
           "50 runs = +50",
           "8 fours = +16",
           "2 sixes = +8",
+          "SR 200.0 >=200 = +15",
           "≥50 runs bonus = +5",
           "≥30 runs bonus = +5"
         ]
@@ -681,10 +682,10 @@
         "points": 0,
         "breakdown": []
       },
-      "base_points": 84,
+      "base_points": 99,
       "multiplier": 1,
       "multiplier_reason": "",
-      "total_points": 84
+      "total_points": 99
     },
     "Kartik Sharma": {
       "ipl_team": "Chennai Super Kings",
@@ -748,7 +749,7 @@
         "points": 0,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 15 >12 = -20"
+          "Economy 15 >=12 = -20"
         ]
       },
       "fielding": {
@@ -819,7 +820,7 @@
           "37 runs = +37",
           "4 fours = +8",
           "2 sixes = +8",
-          "SR 231.3 >200 = +15",
+          "SR 231.3 >=200 = +15",
           "≥30 runs bonus = +5"
         ]
       },
@@ -832,7 +833,7 @@
         "points": 0,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 14 >12 = -20"
+          "Economy 14 >=12 = -20"
         ]
       },
       "fielding": {
@@ -873,7 +874,7 @@
         "points": 0,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 13 >12 = -20"
+          "Economy 13 >=12 = -20"
         ]
       },
       "fielding": {
@@ -912,7 +913,7 @@
         "maidens": 0,
         "points": -20,
         "breakdown": [
-          "Economy 12.25 >12 = -20"
+          "Economy 12.25 >=12 = -20"
         ]
       },
       "fielding": {
@@ -950,9 +951,9 @@
         "conceded": 36,
         "economy": 12,
         "maidens": 0,
-        "points": -10,
+        "points": -20,
         "breakdown": [
-          "Economy 12 >10 = -10"
+          "Economy 12 >=12 = -20"
         ]
       },
       "fielding": {
@@ -963,10 +964,10 @@
         "points": 0,
         "breakdown": []
       },
-      "base_points": -8,
+      "base_points": -18,
       "multiplier": 1,
       "multiplier_reason": "",
-      "total_points": -8
+      "total_points": -18
     },
     "Jacob Bethell": {
       "ipl_team": "Royal Challengers Bengaluru",
@@ -1516,7 +1517,7 @@
     {
       "id": 3,
       "name": "Dracarys Dynamites",
-      "total_points": 76,
+      "total_points": 66,
       "players": [
         {
           "name": "KL Rahul",
@@ -1666,10 +1667,10 @@
           "name": "Krunal Pandya",
           "played": true,
           "capped_status": "Capped",
-          "base_points": 30,
+          "base_points": 20,
           "multiplier": 1,
           "multiplier_reason": "",
-          "total_points": 30
+          "total_points": 20
         },
         {
           "name": "Mukul Choudhary",
@@ -2014,7 +2015,7 @@
     {
       "id": 7,
       "name": "White Walkers",
-      "total_points": 255,
+      "total_points": 270,
       "players": [
         {
           "name": "Heinrich Klaasen",
@@ -2173,17 +2174,17 @@
           "name": "Sarfaraz Khan",
           "played": true,
           "capped_status": "Capped",
-          "base_points": 84,
+          "base_points": 99,
           "multiplier": 1,
           "multiplier_reason": "",
-          "total_points": 84
+          "total_points": 99
         }
       ]
     },
     {
       "id": 8,
       "name": "Dothraki Khaleesi Gang",
-      "total_points": 72,
+      "total_points": 62,
       "players": [
         {
           "name": "Vaibhav Sooryavanshi",
@@ -2279,10 +2280,10 @@
           "name": "Matt Henry",
           "played": true,
           "capped_status": "Capped",
-          "base_points": -8,
+          "base_points": -18,
           "multiplier": 1,
           "multiplier_reason": "",
-          "total_points": -8
+          "total_points": -18
         },
         {
           "name": "Ryan Rickelton",

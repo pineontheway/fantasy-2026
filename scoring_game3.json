@@ -339,9 +339,9 @@
         "conceded": 24,
         "economy": 12,
         "maidens": 0,
-        "points": -10,
+        "points": -20,
         "breakdown": [
-          "Economy 12 >10 = -10"
+          "Economy 12 >=12 = -20"
         ]
       },
       "fielding": {
@@ -352,10 +352,10 @@
         "points": 0,
         "breakdown": []
       },
-      "base_points": -9,
+      "base_points": -19,
       "multiplier": 1,
       "multiplier_reason": "",
-      "total_points": -9
+      "total_points": -19
     },
     "Matt Henry": {
       "ipl_team": "Chennai Super Kings",
@@ -380,7 +380,7 @@
         "maidens": 0,
         "points": -20,
         "breakdown": [
-          "Economy 13.33 >12 = -20"
+          "Economy 13.33 >=12 = -20"
         ]
       },
       "fielding": {
@@ -457,7 +457,7 @@
         "maidens": 0,
         "points": 15,
         "breakdown": [
-          "Economy 5.66 <6 = +15"
+          "Economy 5.66 <=6 = +15"
         ]
       },
       "fielding": {
@@ -528,7 +528,7 @@
           "52 runs = +52",
           "4 fours = +8",
           "5 sixes = +20",
-          "SR 305.9 >300 = +25",
+          "SR 305.9 >=300 = +25",
           "≥50 runs bonus = +5",
           "≥30 runs bonus = +5"
         ]
@@ -692,9 +692,10 @@
         "conceded": 18,
         "economy": 6,
         "maidens": 0,
-        "points": 40,
+        "points": 55,
         "breakdown": [
-          "2 wickets = +40"
+          "2 wickets = +40",
+          "Economy 6 <=6 = +15"
         ]
       },
       "fielding": {
@@ -705,10 +706,10 @@
         "points": 0,
         "breakdown": []
       },
-      "base_points": 40,
+      "base_points": 55,
       "multiplier": 1,
       "multiplier_reason": "",
-      "total_points": 40
+      "total_points": 55
     },
     "Jofra Archer": {
       "ipl_team": "Rajasthan Royals",
@@ -733,7 +734,7 @@
         "points": 55,
         "breakdown": [
           "2 wickets = +40",
-          "Economy 4.75 <6 = +15"
+          "Economy 4.75 <=6 = +15"
         ]
       },
       "fielding": {
@@ -848,7 +849,7 @@
         "points": 35,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 5.33 <6 = +15"
+          "Economy 5.33 <=6 = +15"
         ]
       },
       "fielding": {
@@ -890,7 +891,7 @@
         "points": 35,
         "breakdown": [
           "1 wickets = +20",
-          "Economy 5.66 <6 = +15"
+          "Economy 5.66 <=6 = +15"
         ]
       },
       "fielding": {
@@ -1258,7 +1259,7 @@
     {
       "id": 4,
       "name": "Snow Strikers",
-      "total_points": 125,
+      "total_points": 140,
       "players": [
         {
           "name": "Yashasvi Jaiswal",
@@ -1300,10 +1301,10 @@
           "name": "Ravindra Jadeja",
           "played": true,
           "capped_status": "Capped",
-          "base_points": 40,
+          "base_points": 55,
           "multiplier": 1,
           "multiplier_reason": "",
-          "total_points": 40
+          "total_points": 55
         },
         {
           "name": "Krunal Pandya",
@@ -1916,7 +1917,7 @@
     {
       "id": 7,
       "name": "White Walkers",
-      "total_points": 1,
+      "total_points": -9,
       "players": [
         {
           "name": "Heinrich Klaasen",
@@ -2048,10 +2049,10 @@
           "name": "Noor Ahmad",
           "played": true,
           "capped_status": "Capped",
-          "base_points": -9,
+          "base_points": -19,
           "multiplier": 1,
           "multiplier_reason": "",
-          "total_points": -9
+          "total_points": -19
         },
         {
           "name": "Sai Kishore",
