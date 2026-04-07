@@ -596,7 +596,7 @@
       "name": "Dothraki Khaleesi Gang",
       "players": [
         "Vaibhav Sooryavanshi",
-        "Digvesh Singh",
+        "Digvesh Rathi",
         "Sameer Rizvi",
         "Finn Allen",
         "Shreyas Iyer",
@@ -615,7 +615,6 @@
       ],
       "player_points": {
         "Vaibhav Sooryavanshi": 230,
-        "Digvesh Singh": 0,
         "Sameer Rizvi": 212,
         "Finn Allen": 121,
         "Shreyas Iyer": 116,
@@ -630,12 +629,12 @@
         "Jacob Duffy": 85,
         "Rasikh Salam": 0,
         "Manav Suthar": 0,
-        "Blessing Muzarabani": 70
+        "Blessing Muzarabani": 70,
+        "Digvesh Rathi": 0
       },
       "total_points": 1131,
       "player_capped": {
         "Vaibhav Sooryavanshi": "Uncapped",
-        "Digvesh Singh": "Uncapped",
         "Sameer Rizvi": "Uncapped",
         "Finn Allen": "Capped",
         "Shreyas Iyer": "Capped",
@@ -650,11 +649,11 @@
         "Jacob Duffy": "Capped",
         "Rasikh Salam": "Uncapped",
         "Manav Suthar": "Uncapped",
-        "Blessing Muzarabani": "Capped"
+        "Blessing Muzarabani": "Capped",
+        "Digvesh Rathi": "Uncapped"
       },
       "player_roles": {
         "Vaibhav Sooryavanshi": "BAT",
-        "Digvesh Singh": "BOWL",
         "Sameer Rizvi": "BAT",
         "Finn Allen": "BAT",
         "Shreyas Iyer": "BAT",
@@ -669,7 +668,8 @@
         "Jacob Duffy": "BOWL",
         "Rasikh Salam": "BOWL",
         "Manav Suthar": "BOWL",
-        "Blessing Muzarabani": "BOWL"
+        "Blessing Muzarabani": "BOWL",
+        "Digvesh Rathi": "BOWL"
       }
     },
     {

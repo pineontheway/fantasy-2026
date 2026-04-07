@@ -870,7 +870,7 @@
     },
     "Digvesh Rathi": {
       "ipl_team": "Lucknow Super Giants",
-      "capped_status": "Unknown",
+      "capped_status": "Uncapped",
       "batting": {
         "runs": 0,
         "balls": 0,
@@ -904,7 +904,7 @@
       },
       "base_points": 10,
       "multiplier": 1,
-      "multiplier_reason": "",
+      "multiplier_reason": "Uncapped but no condition met (0 runs, 1 wickets, 0 dismissals)",
       "total_points": 10
     },
     "Prince Yadav": {
@@ -2126,7 +2126,7 @@
     {
       "id": 8,
       "name": "Dothraki Khaleesi Gang",
-      "total_points": 65,
+      "total_points": 75,
       "players": [
         {
           "name": "Vaibhav Sooryavanshi",
@@ -2138,13 +2138,13 @@
           "total_points": 0
         },
         {
-          "name": "Digvesh Singh",
-          "played": false,
+          "name": "Digvesh Rathi",
+          "played": true,
           "capped_status": "Uncapped",
-          "base_points": 0,
+          "base_points": 10,
           "multiplier": 1,
-          "multiplier_reason": "",
-          "total_points": 0
+          "multiplier_reason": "Uncapped but no condition met (0 runs, 1 wickets, 0 dismissals)",
+          "total_points": 10
         },
         {
           "name": "Sameer Rizvi",
