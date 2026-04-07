@@ -18,6 +18,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const NAME_MAP = require('./name_map.json');
+const WEEK_CONFIG = require('./week_config.json');
 
 // ─── CLI ────────────────────────────────────────────────────────────
 const gameFile = process.argv[2];
@@ -52,10 +53,30 @@ if (!gameNum) {
 const scoringPath = path.join(ROOT, `scoring_game${gameNum}.json`);
 console.log(`\n📋 Processing ${gameFile} → scoring_game${gameNum}.json`);
 
-// ─── Build lookups from draft_data ──────────────────────────────────
+// ─── Look up week and roster from config ────────────────────────────
+const weekEntry = WEEK_CONFIG.weeks.find(w => w.games.includes(gameNum));
+const gameWeekNum = weekEntry ? weekEntry.week : null;
+if (!gameWeekNum) {
+  console.error(`❌ Game ${gameNum} is not assigned to any week in scripts/week_config.json`);
+  console.error(`   Add it to an existing week or create a new week entry.`);
+  process.exit(1);
+}
+const rosterFile = weekEntry.roster;
+const rosterPath = path.join(ROOT, rosterFile);
+if (!fs.existsSync(rosterPath)) {
+  console.error(`❌ Roster file not found: ${rosterFile}`);
+  process.exit(1);
+}
+const scoringDraft = (rosterFile === 'draft_data.json')
+  ? draft
+  : JSON.parse(fs.readFileSync(rosterPath, 'utf-8'));
+const week1Path = path.join(ROOT, 'draft_data_week1.json');
+console.log(`   Week ${gameWeekNum} — using roster: ${rosterFile}`);
+
+// ─── Build lookups from scoring roster (week-appropriate) ──────────
 const cappedLookup = {};
 const teamLookup = {};
-for (const team of draft.teams) {
+for (const team of scoringDraft.teams) {
   if (!team.player_roles) team.player_roles = {};
   for (const player of team.players) {
     cappedLookup[player] = team.player_capped[player];
@@ -79,10 +100,12 @@ if (game.content.matchPlayers?.teamPlayers) {
       const p = pl.player;
       const name = draftName(p.longName);
       const role = roleLabel(p.playingRoles);
-      // Update role in the draft team if this player is drafted
-      for (const team of draft.teams) {
-        if (team.players.includes(name) && !team.player_roles[name]) {
-          team.player_roles[name] = role;
+      // Update role in both draft files if this player is drafted
+      for (const d of [draft, scoringDraft]) {
+        for (const team of d.teams) {
+          if (team.players.includes(name) && !team.player_roles[name]) {
+            team.player_roles[name] = role;
+          }
         }
       }
     }
@@ -324,8 +347,8 @@ for (const [name, p] of Object.entries(playerScores)) {
   p.total_points = p.base_points * p.multiplier;
 }
 
-// ─── Fantasy team scores ────────────────────────────────────────────
-const fantasyTeamScores = draft.teams.map(team => {
+// ─── Fantasy team scores (using week-appropriate roster) ────────────
+const fantasyTeamScores = scoringDraft.teams.map(team => {
   let total = 0;
   const players = team.players.map(pn => {
     const ps = playerScores[pn];
@@ -390,15 +413,15 @@ for (const sf of allScoringFiles) {
   for (const ft of sf.fantasy_team_scores) {
     const dt = draft.teams.find(t => t.id === ft.id);
     if (!dt) continue;
+    // Credit current roster players their individual points
     for (const pl of ft.players) {
       if (dt.player_points.hasOwnProperty(pl.name)) {
         dt.player_points[pl.name] += pl.total_points;
       }
     }
+    // Team total includes ALL players (including swapped-out) — points earned are kept
+    dt.total_points += ft.total_points;
   }
-}
-for (const team of draft.teams) {
-  team.total_points = Object.values(team.player_points).reduce((s, v) => s + v, 0);
 }
 
 fs.writeFileSync(path.join(ROOT, 'draft_data.json'), JSON.stringify(draft, null, 2));
@@ -411,11 +434,8 @@ const varName  = `SCORING${gameNum}`;
 const prevVar  = `SCORING${gameNum - 1}`;
 const totalGames = allScoringFiles.length;
 
-// Week calculation (same logic as client-side)
-const WEEK1_START = Date.UTC(2026, 2, 28); // Mar 28, 2026
-const MS_PER_WEEK = 7 * 24 * 60 * 60 * 1000;
-const gameDate = new Date(scoring.match.date).getTime();
-const weekNum = Math.floor((gameDate - WEEK1_START) / MS_PER_WEEK) + 1;
+// Reuse week calculation from earlier
+const weekNum = gameWeekNum;
 const weekTabId = `week${weekNum}`;
 const weekSecId = `sec-week${weekNum}`;
 
@@ -423,7 +443,6 @@ const weekSecId = `sec-week${weekNum}`;
 html = html.replace(/^const DRAFT = .+$/m, 'const DRAFT = ' + JSON.stringify(draft) + ';');
 
 // Update inlined DRAFT_WEEK1 (from frozen snapshot)
-const week1Path = path.join(ROOT, 'draft_data_week1.json');
 if (fs.existsSync(week1Path)) {
   const week1Draft = JSON.parse(fs.readFileSync(week1Path, 'utf-8'));
   if (html.includes('const DRAFT_WEEK1')) {
@@ -541,41 +560,33 @@ if (uncapped2x.length) {
   console.log('\n  No uncapped players earned 2x this game.');
 }
 
-const notInTeam = topPlayers.filter(p => p.capped_status === 'Unknown');
-if (notInTeam.length) {
-  console.log('\n⚠️  Players NOT in any fantasy team:');
-  notInTeam.forEach(p => console.log(`  ${p.name} (${p.ipl_team}): ${p.base_points} pts`));
-}
-
 // ─── Name mismatch detection with fuzzy matching ───────────────────
+// Check against BOTH current and scoring rosters (covers swapped players)
 const allDraftNames = new Set();
 for (const team of draft.teams) for (const p of team.players) allDraftNames.add(p);
+for (const team of scoringDraft.teams) for (const p of team.players) allDraftNames.add(p);
 const draftNamesList = [...allDraftNames];
 
-// Simple fuzzy match: find draft names that share a last name or significant overlap
+// Fuzzy match: last name must match AND first initial must match
+// This avoids false positives from common surnames like "Kumar", "Ahmed", "Singh", "Khan"
 function suggestMatch(gameName) {
   const parts = gameName.toLowerCase().split(/\s+/);
   const lastName = parts[parts.length - 1];
+  const firstInitial = parts[0][0];
   const candidates = [];
   for (const dn of draftNamesList) {
     const dp = dn.toLowerCase().split(/\s+/);
     const dLast = dp[dp.length - 1];
-    // Last name match
-    if (dLast === lastName) {
+    const dFirstInitial = dp[0][0];
+    // Last name must match AND first initial must match
+    if (dLast === lastName && dFirstInitial === firstInitial) {
       candidates.push(dn);
-      continue;
-    }
-    // Check if any word in game name matches any word in draft name (>3 chars)
-    for (const gw of parts) {
-      if (gw.length > 3 && dp.some(dw => dw === gw)) {
-        candidates.push(dn);
-        break;
-      }
     }
   }
   return candidates;
 }
 
+// Collect ALL unmatched game player names
 const unmapped = [];
 for (const inn of innings) {
   const allNames = [
@@ -589,26 +600,40 @@ for (const inn of innings) {
     if (!allDraftNames.has(dn) && !unmapped.includes(n)) unmapped.push(n);
   }
 }
-// Filter out already-flagged unknowns (not in any team)
-const newMismatches = unmapped.filter(n => !notInTeam.find(p => p.name === draftName(n)));
 
-let hasMismatches = false;
-if (newMismatches.length) {
-  hasMismatches = true;
-  console.log('\n🚨 POSSIBLE NAME MISMATCHES — these game players are NOT in draft and NOT in name_map:');
-  for (const n of newMismatches) {
-    const suggestions = suggestMatch(n);
-    if (suggestions.length) {
-      console.log(`  "${n}" → likely: ${suggestions.map(s => `"${s}"`).join(', ')}`);
-      console.log(`    Fix: add to scripts/name_map.json: "${n}": "${suggestions[0]}"`);
-    } else {
-      console.log(`  "${n}" → no close match found (probably undrafted)`);
-    }
+// Run fuzzy matching on ALL unmatched players first
+const likelyMismatches = [];
+const trulyUndrafted = [];
+for (const n of unmapped) {
+  const suggestions = suggestMatch(n);
+  if (suggestions.length) {
+    likelyMismatches.push({ game: n, suggestions });
+  } else {
+    trulyUndrafted.push(n);
   }
-  console.log('\n  ⛔ Fix name_map.json and re-run before committing!');
 }
 
-if (hasMismatches) {
+// Show truly undrafted players (no fuzzy match — safe to ignore)
+if (trulyUndrafted.length) {
+  const undraftedWithPts = trulyUndrafted.map(n => {
+    const dn = draftName(n);
+    const ps = playerScores[dn];
+    return { name: n, pts: ps ? ps.base_points : 0, ipl: ps ? ps.ipl_team : '?' };
+  });
+  console.log('\n⚠️  Players NOT in any fantasy team (no close name match):');
+  undraftedWithPts.forEach(p => console.log(`  ${p.name} (${p.ipl}): ${p.pts} pts`));
+}
+
+// Show likely mismatches — these BLOCK the commit
+if (likelyMismatches.length) {
+  console.log('\n🚨 LIKELY NAME MISMATCHES — these game players fuzzy-match a drafted player:');
+  for (const { game, suggestions } of likelyMismatches) {
+    const ps = playerScores[draftName(game)];
+    const pts = ps ? ps.base_points : 0;
+    console.log(`  "${game}" (${pts} pts) → likely: ${suggestions.map(s => `"${s}"`).join(', ')}`);
+    console.log(`    Fix: add to scripts/name_map.json: "${game}": "${suggestions[0]}"`);
+  }
+  console.log('\n  ⛔ Fix name_map.json and re-run before committing!');
   console.log('\n❌ Sync complete but NAME MISMATCHES DETECTED. Do NOT commit until resolved.');
   process.exit(1);
 } else {

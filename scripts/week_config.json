@@ -1,0 +1,14 @@
+{
+  "weeks": [
+    {
+      "week": 1,
+      "games": [1, 2, 3, 4, 5, 6, 7],
+      "roster": "draft_data_week1.json"
+    },
+    {
+      "week": 2,
+      "games": [8, 9, 10, 11],
+      "roster": "draft_data.json"
+    }
+  ]
+}

@@ -484,9 +484,9 @@
       "multiplier_reason": "",
       "total_points": -20
     },
-    "Mohammed Shami": {
+    "Mohammad Shami": {
       "ipl_team": "Lucknow Super Giants",
-      "capped_status": "Unknown",
+      "capped_status": "Capped",
       "batting": {
         "runs": 0,
         "balls": 0,
@@ -2115,7 +2115,7 @@
         {
           "name": "Sarfaraz Khan",
           "played": false,
-          "capped_status": "Uncapped",
+          "capped_status": "Capped",
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
@@ -2126,7 +2126,7 @@
     {
       "id": 8,
       "name": "Dothraki Khaleesi Gang",
-      "total_points": 0,
+      "total_points": 65,
       "players": [
         {
           "name": "Vaibhav Sooryavanshi",
@@ -2193,12 +2193,12 @@
         },
         {
           "name": "Mohammad Shami",
-          "played": false,
+          "played": true,
           "capped_status": "Capped",
-          "base_points": 0,
+          "base_points": 65,
           "multiplier": 1,
           "multiplier_reason": "",
-          "total_points": 0
+          "total_points": 65
         },
         {
           "name": "Bhuvneshwar Kumar",
