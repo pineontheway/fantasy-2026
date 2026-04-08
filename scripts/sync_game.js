@@ -118,8 +118,9 @@ function draftName(gameName) {
 
 // ─── Parse innings ──────────────────────────────────────────────────
 const innings = game.content.innings;
-const team1Name = innings[0].team?.longName || innings[0].team?.name;
-const team2Name = innings[1].team?.longName || innings[1].team?.name;
+const team1Name = innings[0]?.team?.longName || innings[0]?.team?.name || 'Team 1';
+const team2Name = innings[1]?.team?.longName || innings[1]?.team?.name ||
+  game.match.teams?.[1]?.team?.longName || game.match.teams?.[1]?.team?.name || 'Team 2';
 
 console.log(`   ${team1Name} vs ${team2Name}`);
 console.log(`   ${game.match.statusText || game.match.statusEng}\n`);
