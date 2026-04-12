@@ -592,24 +592,24 @@ function renderWeekTabs() {
 
     // Week standings (clickable — scrolls to team section)
     const weekSorted = getWeekTeamStandings(week);
-    html += `<h3 class="sec-title" style="font-size:1rem; margin-top:1rem">Team Standings</h3>`;
-    const max = weekSorted[0]?.pts || 1;
-    html += `<div class="standings-list">
-      ${weekSorted.map((t, i) => {
-        const pct = max > 0 ? Math.max(0, (t.pts / max) * 100) : 0;
-        const rc = i < 3 ? 'rank-' + (i + 1) : 'rank-n';
-        const targetId = 'wk' + week.weekNum + '-team-' + t.id;
-        return `<div class="standing-row" onclick="document.getElementById('${targetId}').scrollIntoView({behavior:'smooth',block:'start'})" style="cursor:pointer;animation:fadeIn 0.4s ease ${i*0.05}s both">
-          <div class="standing-bar" style="width:${pct}%"></div>
-          <div class="rank-badge ${rc}">${i + 1}</div>
-          <span class="team-name">${t.name}${t.owner ? `<span class="owner-name">${t.owner}</span>` : ''}</span>
-          <span class="pts">${t.pts}</span>
-        </div>`;
-      }).join('')}
-    </div>`;
-
     if (GROUPS_CONFIG[week.weekNum]) {
       html += renderGroupStandings(weekSorted, GROUPS_CONFIG[week.weekNum]);
+    } else {
+      html += `<h3 class="sec-title" style="font-size:1rem; margin-top:1rem">Team Standings</h3>`;
+      const max = weekSorted[0]?.pts || 1;
+      html += `<div class="standings-list">
+        ${weekSorted.map((t, i) => {
+          const pct = max > 0 ? Math.max(0, (t.pts / max) * 100) : 0;
+          const rc = i < 3 ? 'rank-' + (i + 1) : 'rank-n';
+          const targetId = 'wk' + week.weekNum + '-team-' + t.id;
+          return `<div class="standing-row" onclick="document.getElementById('${targetId}').scrollIntoView({behavior:'smooth',block:'start'})" style="cursor:pointer;animation:fadeIn 0.4s ease ${i*0.05}s both">
+            <div class="standing-bar" style="width:${pct}%"></div>
+            <div class="rank-badge ${rc}">${i + 1}</div>
+            <span class="team-name">${t.name}${t.owner ? `<span class="owner-name">${t.owner}</span>` : ''}</span>
+            <span class="pts">${t.pts}</span>
+          </div>`;
+        }).join('')}
+      </div>`;
     }
 
     // Grouped by team sections
