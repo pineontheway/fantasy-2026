@@ -12,7 +12,7 @@
     },
     {
       "week": 3,
-      "games": [],
+      "games": [17, 18, 19],
       "roster": "draft_data.json"
     }
   ]
