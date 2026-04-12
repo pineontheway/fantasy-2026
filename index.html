@@ -524,7 +524,7 @@ function renderStandings() {
       </div>
       <div class="week-body open" id="week-body-${cwId}">
         <div class="week-games-list" style="color:var(--text3)">No games played yet</div>
-        ${renderStandingsList(emptyStandings, true)}
+        ${GROUPS_CONFIG[currentWeekNum] ? renderGroupStandings(emptyStandings, GROUPS_CONFIG[currentWeekNum]) : renderStandingsList(emptyStandings, true)}
       </div>
     </div>`;
   }
@@ -544,8 +544,7 @@ function renderStandings() {
       </div>
       <div class="week-body ${isCurrent ? 'open' : ''}" id="week-body-${weekId}">
         <div class="week-games-list">${gamesList}</div>
-        ${renderStandingsList(sorted, true)}
-        ${GROUPS_CONFIG[week.weekNum] ? renderGroupStandings(sorted, GROUPS_CONFIG[week.weekNum]) : ''}
+        ${GROUPS_CONFIG[week.weekNum] ? renderGroupStandings(sorted, GROUPS_CONFIG[week.weekNum]) : renderStandingsList(sorted, true)}
       </div>
     </div>`;
   });
