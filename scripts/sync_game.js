@@ -458,6 +458,16 @@ for (const wc of WEEK_CONFIG.weeks) {
   }
 }
 
+// Update GROUPS_CONFIG from week_config.json
+const groupsCfg = {};
+for (const wc of WEEK_CONFIG.weeks) {
+  if (wc.groups) groupsCfg[wc.week] = wc.groups;
+}
+html = html.replace(
+  /const GROUPS_CONFIG = \{[\s\S]*?\};/,
+  'const GROUPS_CONFIG = ' + JSON.stringify(groupsCfg) + ';'
+);
+
 // Add new SCORING constant (if not already present)
 if (!html.includes(`const ${varName}`)) {
   const prevLine = new RegExp(`^(const ${prevVar} = .+)$`, 'm');

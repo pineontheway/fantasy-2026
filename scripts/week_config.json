@@ -13,7 +13,12 @@
     {
       "week": 3,
       "games": [17, 18, 19],
-      "roster": "draft_data.json"
+      "roster": "draft_data.json",
+      "groups": [
+        { "name": "Group 1", "teams": [8, 4, 6] },
+        { "name": "Group 2", "teams": [1, 9, 5] },
+        { "name": "Group 3", "teams": [7, 3, 2] }
+      ]
     }
   ]
 }

@@ -87,7 +87,8 @@
         "Yash Dayal": "BOWL",
         "Anshul Kamboj": "AR",
         "Salil Arora": "WK"
-      }
+      },
+      "owner": "Nishant"
     },
     {
       "id": 2,
@@ -172,7 +173,8 @@
         "Rahul Tewatia": "BOWL",
         "Luke Wood": "BOWL",
         "Abhinandan Singh": "BOWL"
-      }
+      },
+      "owner": "Harsha"
     },
     {
       "id": 4,
@@ -253,7 +255,8 @@
         "Onkar Tarmale": "BOWL",
         "Vijaykumar Vyshak": "BOWL",
         "Anukul Roy": "AR"
-      }
+      },
+      "owner": "Praveen"
     },
     {
       "id": 3,
@@ -338,7 +341,8 @@
         "Zeeshan Ansari": "BOWL",
         "Krunal Pandya": "AR",
         "Mukul Choudhary": "WK"
-      }
+      },
+      "owner": "Akshay"
     },
     {
       "id": 5,
@@ -423,7 +427,8 @@
         "Pathum Nissanka": "BAT",
         "Jitesh Sharma": "WK",
         "Cooper Connolly": "AR"
-      }
+      },
+      "owner": "Satish"
     },
     {
       "id": 6,
@@ -504,7 +509,8 @@
         "Abdul Samad": "AR",
         "Ramandeep Singh": "AR",
         "Prince Yadav": "BOWL"
-      }
+      },
+      "owner": "Nagarjuna"
     },
     {
       "id": 7,
@@ -589,7 +595,8 @@
         "Suyash Sharma": "BOWL",
         "Mohsin Khan": "BOWL",
         "Sarfaraz Khan": "BAT"
-      }
+      },
+      "owner": "Vijay"
     },
     {
       "id": 8,
@@ -670,7 +677,8 @@
         "Blessing Muzarabani": "BOWL",
         "Ravichandran Smaran": "BAT",
         "Digvesh Rathi": "BOWL"
-      }
+      },
+      "owner": "Prakash"
     },
     {
       "id": 9,
@@ -755,7 +763,8 @@
         "Mayank Markande": "BOWL",
         "Shivang Kumar": "AR",
         "Brijesh Sharma": "BOWL"
-      }
+      },
+      "owner": "Karthik"
     }
   ],
   "points_system": {
