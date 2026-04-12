@@ -22,7 +22,7 @@
         "Vaibhav Arora",
         "Yash Dayal",
         "Anshul Kamboj",
-        "Manimaran Siddharth"
+        "Salil Arora"
       ],
       "player_points": {
         "Sanju Samson": 30,
@@ -43,7 +43,7 @@
         "Vaibhav Arora": 71,
         "Yash Dayal": 0,
         "Anshul Kamboj": 104,
-        "Manimaran Siddharth": 0
+        "Salil Arora": 0
       },
       "total_points": 1112,
       "player_capped": {
@@ -65,7 +65,7 @@
         "Vaibhav Arora": "Uncapped",
         "Yash Dayal": "Uncapped",
         "Anshul Kamboj": "Capped",
-        "Manimaran Siddharth": "Uncapped"
+        "Salil Arora": "Uncapped"
       },
       "player_roles": {
         "Sanju Samson": "WK",
@@ -86,7 +86,7 @@
         "Vaibhav Arora": "BOWL",
         "Yash Dayal": "BOWL",
         "Anshul Kamboj": "AR",
-        "Manimaran Siddharth": "BOWL"
+        "Salil Arora": "WK"
       }
     },
     {
@@ -107,7 +107,7 @@
         "Tim Seifert",
         "Glenn Phillips",
         "Khaleel Ahmed",
-        "Aniket Verma",
+        "Manish Pandey",
         "Rahul Tewatia",
         "Luke Wood",
         "Abhinandan Singh"
@@ -127,10 +127,10 @@
         "Tim Seifert": 0,
         "Glenn Phillips": 84,
         "Khaleel Ahmed": 15,
+        "Manish Pandey": 10,
         "Rahul Tewatia": 42,
         "Luke Wood": 0,
-        "Abhinandan Singh": 30,
-        "Aniket Verma": 0
+        "Abhinandan Singh": 30
       },
       "total_points": 619,
       "player_capped": {
@@ -148,10 +148,10 @@
         "Tim Seifert": "Capped",
         "Glenn Phillips": "Capped",
         "Khaleel Ahmed": "Capped",
+        "Manish Pandey": "Capped",
         "Rahul Tewatia": "Uncapped",
         "Luke Wood": "Capped",
-        "Abhinandan Singh": "Uncapped",
-        "Aniket Verma": "Uncapped"
+        "Abhinandan Singh": "Uncapped"
       },
       "player_roles": {
         "Jasprit Bumrah": "BOWL",
@@ -168,10 +168,10 @@
         "Tim Seifert": "WK",
         "Glenn Phillips": "BAT",
         "Khaleel Ahmed": "BOWL",
+        "Manish Pandey": "BAT",
         "Rahul Tewatia": "BOWL",
         "Luke Wood": "BOWL",
-        "Abhinandan Singh": "BOWL",
-        "Aniket Verma": "BAT"
+        "Abhinandan Singh": "BOWL"
       }
     },
     {
@@ -187,7 +187,7 @@
         "Prabhsimran Singh",
         "T Natarajan",
         "Kamindu Mendis",
-        "Trent Boult",
+        "Akash Deep",
         "Rahul Chahar",
         "Harpreet Brar",
         "Ashutosh Sharma",
@@ -206,14 +206,14 @@
         "Prabhsimran Singh": 288,
         "T Natarajan": 90,
         "Kamindu Mendis": 0,
+        "Akash Deep": 0,
         "Rahul Chahar": 0,
         "Harpreet Brar": 0,
         "Ashutosh Sharma": 0,
         "Nehal Wadhera": 37,
         "Onkar Tarmale": 0,
         "Vijaykumar Vyshak": 0,
-        "Anukul Roy": 50,
-        "Trent Boult": 0
+        "Anukul Roy": 50
       },
       "total_points": 1213,
       "player_capped": {
@@ -226,14 +226,14 @@
         "Prabhsimran Singh": "Uncapped",
         "T Natarajan": "Capped",
         "Kamindu Mendis": "Capped",
+        "Akash Deep": "Capped",
         "Rahul Chahar": "Capped",
         "Harpreet Brar": "Uncapped",
         "Ashutosh Sharma": "Uncapped",
         "Nehal Wadhera": "Uncapped",
         "Onkar Tarmale": "Uncapped",
         "Vijaykumar Vyshak": "Uncapped",
-        "Anukul Roy": "Uncapped",
-        "Trent Boult": "Capped"
+        "Anukul Roy": "Uncapped"
       },
       "player_roles": {
         "Yashasvi Jaiswal": "BAT",
@@ -245,14 +245,14 @@
         "Prabhsimran Singh": "WK",
         "T Natarajan": "BOWL",
         "Kamindu Mendis": "AR",
+        "Akash Deep": "BOWL",
         "Rahul Chahar": "BOWL",
         "Harpreet Brar": "AR",
         "Ashutosh Sharma": "AR",
         "Nehal Wadhera": "BAT",
         "Onkar Tarmale": "BOWL",
         "Vijaykumar Vyshak": "BOWL",
-        "Anukul Roy": "AR",
-        "Trent Boult": "BOWL"
+        "Anukul Roy": "AR"
       }
     },
     {
@@ -274,7 +274,7 @@
         "Angkrish Raghuvanshi",
         "Donovan Ferreira",
         "Anuj Rawat",
-        "Josh Hazlewood",
+        "Zeeshan Ansari",
         "Krunal Pandya",
         "Mukul Choudhary"
       ],
@@ -294,9 +294,9 @@
         "Angkrish Raghuvanshi": 489,
         "Donovan Ferreira": 11,
         "Anuj Rawat": 0,
+        "Zeeshan Ansari": 0,
         "Krunal Pandya": 71,
-        "Mukul Choudhary": 224,
-        "Josh Hazlewood": 0
+        "Mukul Choudhary": 224
       },
       "total_points": 1552,
       "player_capped": {
@@ -315,9 +315,9 @@
         "Angkrish Raghuvanshi": "Uncapped",
         "Donovan Ferreira": "Capped",
         "Anuj Rawat": "Uncapped",
+        "Zeeshan Ansari": "Uncapped",
         "Krunal Pandya": "Capped",
-        "Mukul Choudhary": "Uncapped",
-        "Josh Hazlewood": "Capped"
+        "Mukul Choudhary": "Uncapped"
       },
       "player_roles": {
         "KL Rahul": "BAT",
@@ -335,9 +335,9 @@
         "Angkrish Raghuvanshi": "BAT",
         "Donovan Ferreira": "WK",
         "Anuj Rawat": "WK",
+        "Zeeshan Ansari": "BOWL",
         "Krunal Pandya": "AR",
-        "Mukul Choudhary": "WK",
-        "Josh Hazlewood": "BOWL"
+        "Mukul Choudhary": "WK"
       }
     },
     {
@@ -355,7 +355,7 @@
         "Shardul Thakur",
         "Lungi Ngidi",
         "Azmatullah Omarzai",
-        "Mukesh Kumar",
+        "Tom Banton",
         "Nandre Burger",
         "Sandeep Sharma",
         "Dhruv Jurel",
@@ -375,13 +375,13 @@
         "Shardul Thakur": 60,
         "Lungi Ngidi": 125,
         "Azmatullah Omarzai": 0,
+        "Tom Banton": 0,
         "Nandre Burger": 80,
         "Sandeep Sharma": 80,
         "Dhruv Jurel": 332,
         "Pathum Nissanka": 128,
         "Jitesh Sharma": 35,
-        "Cooper Connolly": 0,
-        "Mukesh Kumar": 0
+        "Cooper Connolly": 0
       },
       "total_points": 1724,
       "player_capped": {
@@ -396,13 +396,13 @@
         "Shardul Thakur": "Capped",
         "Lungi Ngidi": "Capped",
         "Azmatullah Omarzai": "Capped",
+        "Tom Banton": "Capped",
         "Nandre Burger": "Capped",
         "Sandeep Sharma": "Uncapped",
         "Dhruv Jurel": "Capped",
         "Pathum Nissanka": "Capped",
         "Jitesh Sharma": "Capped",
-        "Cooper Connolly": "Capped",
-        "Mukesh Kumar": "Uncapped"
+        "Cooper Connolly": "Capped"
       },
       "player_roles": {
         "Abhishek Sharma": "BAT",
@@ -416,13 +416,13 @@
         "Shardul Thakur": "BOWL",
         "Lungi Ngidi": "BOWL",
         "Azmatullah Omarzai": "AR",
+        "Tom Banton": "WK",
         "Nandre Burger": "BOWL",
         "Sandeep Sharma": "BOWL",
         "Dhruv Jurel": "WK",
         "Pathum Nissanka": "BAT",
         "Jitesh Sharma": "WK",
-        "Cooper Connolly": "AR",
-        "Mukesh Kumar": "BOWL"
+        "Cooper Connolly": "AR"
       }
     },
     {
@@ -605,7 +605,7 @@
         "Mohammad Shami",
         "Bhuvneshwar Kumar",
         "Washington Sundar",
-        "Mangesh Yadav",
+        "Matt Henry",
         "Ryan Rickelton",
         "Musheer Khan",
         "Jacob Duffy",
@@ -623,14 +623,14 @@
         "Mohammad Shami": 97,
         "Bhuvneshwar Kumar": 91,
         "Washington Sundar": 143,
+        "Matt Henry": -1,
         "Ryan Rickelton": 166,
         "Musheer Khan": 0,
         "Jacob Duffy": 105,
         "Manav Suthar": 0,
         "Blessing Muzarabani": 70,
         "Ravichandran Smaran": 0,
-        "Digvesh Rathi": 40,
-        "Mangesh Yadav": 0
+        "Digvesh Rathi": 40
       },
       "total_points": 2525,
       "player_capped": {
@@ -643,14 +643,14 @@
         "Mohammad Shami": "Capped",
         "Bhuvneshwar Kumar": "Capped",
         "Washington Sundar": "Capped",
+        "Matt Henry": "Capped",
         "Ryan Rickelton": "Capped",
         "Musheer Khan": "Uncapped",
         "Jacob Duffy": "Capped",
         "Manav Suthar": "Uncapped",
         "Blessing Muzarabani": "Capped",
         "Ravichandran Smaran": "Capped",
-        "Digvesh Rathi": "Uncapped",
-        "Mangesh Yadav": "Uncapped"
+        "Digvesh Rathi": "Uncapped"
       },
       "player_roles": {
         "Vaibhav Sooryavanshi": "BAT",
@@ -662,14 +662,14 @@
         "Mohammad Shami": "BOWL",
         "Bhuvneshwar Kumar": "BOWL",
         "Washington Sundar": "AR",
+        "Matt Henry": "BOWL",
         "Ryan Rickelton": "WK",
         "Musheer Khan": "AR",
         "Jacob Duffy": "BOWL",
         "Manav Suthar": "BOWL",
         "Blessing Muzarabani": "BOWL",
         "Ravichandran Smaran": "BAT",
-        "Digvesh Rathi": "BOWL",
-        "Mangesh Yadav": "BOWL"
+        "Digvesh Rathi": "BOWL"
       }
     },
     {
@@ -680,7 +680,7 @@
         "Ishan Kishan",
         "Jofra Archer",
         "Shubman Gill",
-        "Varun Chakaravarthy",
+        "Anrich Nortje",
         "Aiden Markram",
         "Liam Livingstone",
         "Phil Salt",
@@ -700,6 +700,7 @@
         "Ishan Kishan": 192,
         "Jofra Archer": 146,
         "Shubman Gill": 194,
+        "Anrich Nortje": -10,
         "Aiden Markram": 137,
         "Liam Livingstone": 28,
         "Phil Salt": 117,
@@ -712,8 +713,7 @@
         "Harsh Dubey": 111,
         "Mayank Markande": 0,
         "Shivang Kumar": 27,
-        "Brijesh Sharma": 50,
-        "Varun Chakaravarthy": 0
+        "Brijesh Sharma": 50
       },
       "total_points": 1423,
       "player_capped": {
@@ -721,6 +721,7 @@
         "Ishan Kishan": "Capped",
         "Jofra Archer": "Capped",
         "Shubman Gill": "Capped",
+        "Anrich Nortje": "Capped",
         "Aiden Markram": "Capped",
         "Liam Livingstone": "Capped",
         "Phil Salt": "Capped",
@@ -733,14 +734,14 @@
         "Harsh Dubey": "Uncapped",
         "Mayank Markande": "Uncapped",
         "Shivang Kumar": "Uncapped",
-        "Brijesh Sharma": "Uncapped",
-        "Varun Chakaravarthy": "Capped"
+        "Brijesh Sharma": "Uncapped"
       },
       "player_roles": {
         "Ayush Mhatre": "BAT",
         "Ishan Kishan": "WK",
         "Jofra Archer": "BOWL",
         "Shubman Gill": "BAT",
+        "Anrich Nortje": "BOWL",
         "Aiden Markram": "BAT",
         "Liam Livingstone": "BAT",
         "Phil Salt": "BAT",
@@ -753,8 +754,7 @@
         "Harsh Dubey": "AR",
         "Mayank Markande": "BOWL",
         "Shivang Kumar": "AR",
-        "Brijesh Sharma": "BOWL",
-        "Varun Chakaravarthy": "BOWL"
+        "Brijesh Sharma": "BOWL"
       }
     }
   ],

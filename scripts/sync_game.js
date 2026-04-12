@@ -443,13 +443,18 @@ const weekSecId = `sec-week${weekNum}`;
 // Update inlined DRAFT
 html = html.replace(/^const DRAFT = .+$/m, 'const DRAFT = ' + JSON.stringify(draft) + ';');
 
-// Update inlined DRAFT_WEEK1 (from frozen snapshot)
-if (fs.existsSync(week1Path)) {
-  const week1Draft = JSON.parse(fs.readFileSync(week1Path, 'utf-8'));
-  if (html.includes('const DRAFT_WEEK1')) {
-    html = html.replace(/^const DRAFT_WEEK1 = .+$/m, 'const DRAFT_WEEK1 = ' + JSON.stringify(week1Draft) + ';');
+// Update inlined frozen week snapshots
+for (const wc of WEEK_CONFIG.weeks) {
+  if (wc.roster === 'draft_data.json') continue; // current roster, already inlined as DRAFT
+  const weekN = wc.week;
+  const constName = `DRAFT_WEEK${weekN}`;
+  const snapPath = path.join(ROOT, wc.roster);
+  if (!fs.existsSync(snapPath)) continue;
+  const snapDraft = JSON.parse(fs.readFileSync(snapPath, 'utf-8'));
+  if (html.includes(`const ${constName}`)) {
+    html = html.replace(new RegExp(`^const ${constName} = .+$`, 'm'), `const ${constName} = ${JSON.stringify(snapDraft)};`);
   } else {
-    html = html.replace(/^(const DRAFT = .+)$/m, '$1\nconst DRAFT_WEEK1 = ' + JSON.stringify(week1Draft) + ';');
+    html = html.replace(/^(const DRAFT = .+)$/m, `$1\nconst ${constName} = ${JSON.stringify(snapDraft)};`);
   }
 }
 
@@ -480,7 +485,7 @@ if (!html.includes(`id="${weekSecId}"`)) {
 }
 
 // Update variable declarations — add scoringN
-const varDeclRe = /let draft, draftWeek1,([\s\S]*?)playerSkills = \{\};/;
+const varDeclRe = /let draft, draftWeek1, draftWeek2,([\s\S]*?)playerSkills = \{\};/;
 const varDeclMatch = html.match(varDeclRe);
 if (varDeclMatch && !varDeclMatch[0].includes(`scoring${gameNum}`)) {
   const old = varDeclMatch[0];
