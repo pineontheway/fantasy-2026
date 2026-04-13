@@ -26,13 +26,13 @@
       ],
       "player_points": {
         "Sanju Samson": 226,
-        "Lhuan-dre Pretorius": 0,
+        "Lhuan-dre Pretorius": -10,
         "Arshdeep Singh": 30,
         "Nicholas Pooran": 35,
         "Yuzvendra Chahal": 60,
         "Axar Patel": 83,
         "Rinku Singh": 142,
-        "Ravi Bishnoi": 205,
+        "Ravi Bishnoi": 195,
         "Tristan Stubbs": 184,
         "Tim David": 242,
         "Jacob Bethell": 10,
@@ -45,7 +45,7 @@
         "Anshul Kamboj": 184,
         "Manimaran Siddharth": 0
       },
-      "total_points": 1657,
+      "total_points": 1637,
       "player_capped": {
         "Sanju Samson": "Capped",
         "Lhuan-dre Pretorius": "Capped",
@@ -124,16 +124,16 @@
         "Ruturaj Gaikwad": 63,
         "David Miller": 141,
         "Marco Jansen": 68,
-        "Riyan Parag": 85,
+        "Riyan Parag": 121,
         "Tim Seifert": 0,
         "Glenn Phillips": 104,
         "Khaleel Ahmed": 15,
         "Rahul Tewatia": 64,
         "Luke Wood": 0,
         "Abhinandan Singh": 30,
-        "Aniket Verma": 34
+        "Aniket Verma": 42
       },
-      "total_points": 731,
+      "total_points": 775,
       "player_capped": {
         "Jasprit Bumrah": "Capped",
         "Krains Fuletra": "Uncapped",
@@ -199,10 +199,10 @@
         "Anukul Roy"
       ],
       "player_points": {
-        "Yashasvi Jaiswal": 321,
+        "Yashasvi Jaiswal": 322,
         "Kartik Sharma": 33,
-        "Travis Head": 171,
-        "Ravindra Jadeja": 95,
+        "Travis Head": 185,
+        "Ravindra Jadeja": 155,
         "Venkatesh Iyer": 39,
         "Sai Sudharsan": 187,
         "Prabhsimran Singh": 498,
@@ -217,7 +217,7 @@
         "Anukul Roy": 50,
         "Trent Boult": 0
       },
-      "total_points": 1509,
+      "total_points": 1584,
       "player_capped": {
         "Yashasvi Jaiswal": "Capped",
         "Kartik Sharma": "Uncapped",
@@ -295,13 +295,13 @@
         "Rahul Tripathi": 0,
         "Mitchell Santner": 62,
         "Angkrish Raghuvanshi": 489,
-        "Donovan Ferreira": 11,
+        "Donovan Ferreira": 126,
         "Anuj Rawat": 0,
         "Krunal Pandya": 91,
         "Mukul Choudhary": 248,
         "Josh Hazlewood": 0
       },
-      "total_points": 1888,
+      "total_points": 2003,
       "player_capped": {
         "KL Rahul": "Capped",
         "Arjun Tendulkar": "Uncapped",
@@ -379,15 +379,15 @@
         "Shardul Thakur": 60,
         "Lungi Ngidi": 118,
         "Azmatullah Omarzai": 0,
-        "Nandre Burger": 80,
-        "Sandeep Sharma": 80,
-        "Dhruv Jurel": 332,
+        "Nandre Burger": 83,
+        "Sandeep Sharma": 90,
+        "Dhruv Jurel": 337,
         "Pathum Nissanka": 202,
         "Jitesh Sharma": 47,
         "Cooper Connolly": 23,
         "Mukesh Kumar": 0
       },
-      "total_points": 2141,
+      "total_points": 2159,
       "player_capped": {
         "Abhishek Sharma": "Capped",
         "Prashant Veer": "Uncapped",
@@ -459,7 +459,7 @@
         "Pat Cummins": 0,
         "Rohit Sharma": 225,
         "Josh Inglis": 0,
-        "Nitish Kumar Reddy": 209,
+        "Nitish Kumar Reddy": 273,
         "Avesh Khan": 47,
         "Shimron Hetmyer": 89,
         "Ajinkya Rahane": 193,
@@ -471,7 +471,7 @@
         "Ramandeep Singh": 36,
         "Prince Yadav": 80
       },
-      "total_points": 1731,
+      "total_points": 1795,
       "player_capped": {
         "Mitchell Marsh": "Capped",
         "Jason Holder": "Capped",
@@ -536,7 +536,7 @@
         "Sarfaraz Khan"
       ],
       "player_points": {
-        "Heinrich Klaasen": 288,
+        "Heinrich Klaasen": 347,
         "Ashok Sharma": 60,
         "Priyansh Arya": 367,
         "Shivam Dube": 138,
@@ -555,7 +555,7 @@
         "Mohsin Khan": 0,
         "Sarfaraz Khan": 109
       },
-      "total_points": 1645,
+      "total_points": 1704,
       "player_capped": {
         "Heinrich Klaasen": "Capped",
         "Ashok Sharma": "Uncapped",
@@ -621,7 +621,7 @@
         "Ravichandran Smaran"
       ],
       "player_points": {
-        "Vaibhav Sooryavanshi": 776,
+        "Vaibhav Sooryavanshi": 766,
         "Sameer Rizvi": 494,
         "Finn Allen": 142,
         "Shreyas Iyer": 240,
@@ -639,7 +639,7 @@
         "Digvesh Rathi": 60,
         "Mangesh Yadav": 0
       },
-      "total_points": 2936,
+      "total_points": 2926,
       "player_capped": {
         "Vaibhav Sooryavanshi": "Uncapped",
         "Sameer Rizvi": "Uncapped",
@@ -705,8 +705,8 @@
       ],
       "player_points": {
         "Ayush Mhatre": 403,
-        "Ishan Kishan": 229,
-        "Jofra Archer": 146,
+        "Ishan Kishan": 405,
+        "Jofra Archer": 188,
         "Shubman Gill": 296,
         "Aiden Markram": 196,
         "Liam Livingstone": 28,
@@ -717,13 +717,13 @@
         "Sherfane Rutherford": 188,
         "Vipraj Nigam": 36,
         "Mayank Yadav": 0,
-        "Harsh Dubey": 132,
+        "Harsh Dubey": 122,
         "Mayank Markande": -20,
         "Shivang Kumar": 167,
         "Brijesh Sharma": 50,
         "Varun Chakaravarthy": 0
       },
-      "total_points": 2229,
+      "total_points": 2437,
       "player_capped": {
         "Ayush Mhatre": "Uncapped",
         "Ishan Kishan": "Capped",
