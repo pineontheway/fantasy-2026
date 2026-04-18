@@ -22,7 +22,7 @@
     },
     {
       "week": 4,
-      "games": [26],
+      "games": [26, 27],
       "roster": "draft_data.json",
       "groups": [
         { "name": "Group 1", "teams": [8, 6, 9] },
