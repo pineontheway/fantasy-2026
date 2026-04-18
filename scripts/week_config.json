@@ -19,6 +19,16 @@
         { "name": "Group 2", "teams": [1, 9, 5] },
         { "name": "Group 3", "teams": [7, 3, 2] }
       ]
+    },
+    {
+      "week": 4,
+      "games": [26],
+      "roster": "draft_data.json",
+      "groups": [
+        { "name": "Group 1", "teams": [8, 6, 9] },
+        { "name": "Group 2", "teams": [7, 1, 4] },
+        { "name": "Group 3", "teams": [3, 5, 2] }
+      ]
     }
   ]
 }
