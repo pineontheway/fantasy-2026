@@ -779,8 +779,118 @@ function renderWeekTabs() {
       html += '</div>';
     });
 
-    el.innerHTML = html;
+    // Upcoming games preview (from schedule.json)
+    const playedGameNums = new Set(week.games.map(g => g.gameNum));
+    renderUpcomingGames(el, html, week, playedGameNums);
   });
+}
+
+// Build player → IPL team mapping from all past scoring data
+function buildPlayerIplTeamMap() {
+  const map = {};
+  allScorings.forEach(s => {
+    Object.entries(s.player_scores).forEach(([name, ps]) => {
+      if (ps.ipl_team) map[name] = ps.ipl_team;
+    });
+  });
+  return map;
+}
+
+// IPL team name aliases (schedule slug → full name used in scoring)
+const IPL_TEAM_ALIASES = {
+  'chennai super kings': 'Chennai Super Kings',
+  'mumbai indians': 'Mumbai Indians',
+  'royal challengers bengaluru': 'Royal Challengers Bengaluru',
+  'kolkata knight riders': 'Kolkata Knight Riders',
+  'delhi capitals': 'Delhi Capitals',
+  'rajasthan royals': 'Rajasthan Royals',
+  'sunrisers hyderabad': 'Sunrisers Hyderabad',
+  'punjab kings': 'Punjab Kings',
+  'lucknow super giants': 'Lucknow Super Giants',
+  'gujarat titans': 'Gujarat Titans'
+};
+
+function renderUpcomingGames(el, html, week, playedGameNums) {
+  if (!scheduleData) {
+    fetch('schedule.json').then(r => r.json()).then(data => {
+      scheduleData = data.content.matches;
+      doRenderUpcoming(el, html, week, playedGameNums);
+    }).catch(() => { el.innerHTML = html; });
+  } else {
+    doRenderUpcoming(el, html, week, playedGameNums);
+  }
+}
+
+function doRenderUpcoming(el, html, week, playedGameNums) {
+  const playerIplMap = buildPlayerIplTeamMap();
+
+  // Find upcoming games for this week from schedule
+  const upcomingGames = scheduleData.filter(m => {
+    const gn = parseInt((m.title.match(/(\d+)/) || [])[1]);
+    if (!gn) return false;
+    const wn = getWeekNumber(m.startDate);
+    return wn === week.weekNum && !playedGameNums.has(gn);
+  }).sort((a, b) => {
+    const gnA = parseInt((a.title.match(/(\d+)/) || [])[1]);
+    const gnB = parseInt((b.title.match(/(\d+)/) || [])[1]);
+    return gnA - gnB;
+  });
+
+  if (upcomingGames.length > 0) {
+    html += `<h3 class="sec-title" style="font-size:1rem; margin-top:2.5rem; color:var(--blue)">Upcoming Games</h3>`;
+
+    upcomingGames.forEach(m => {
+      const gn = parseInt((m.title.match(/(\d+)/) || [])[1]);
+      // Extract team names from slug
+      const slugTeams = m.slug.replace(/-\d+\w*-match$/, '').split('-vs-');
+      const iplTeams = slugTeams.map(s => {
+        const key = s.replace(/-/g, ' ');
+        return IPL_TEAM_ALIASES[key] || key.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      });
+      const dateStr = new Date(m.startDate).toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
+
+      html += `
+        <div class="game-header" style="margin-top:1.5rem;border-left:3px solid var(--blue)">
+          <div>
+            <div class="match-title">Game ${gn} &mdash; ${iplTeams.join(' vs ')}</div>
+            <div style="color:var(--blue);font-size:0.85rem">Upcoming</div>
+          </div>
+          <div class="match-meta">${dateStr}</div>
+        </div>
+      `;
+
+      // Find fantasy teams with players on these IPL teams
+      const weekDraft = getDraftForWeek(week.weekNum);
+      html += '<div class="game-standings">';
+      weekDraft.teams.forEach(t => {
+        const playersInGame = t.players.filter(p => {
+          const iplTeam = playerIplMap[p];
+          return iplTeam && iplTeams.includes(iplTeam);
+        });
+        if (playersInGame.length === 0) return;
+
+        html += `<div class="game-team-card" style="border-top:2px solid var(--bg4)">
+          <h4>${t.name}</h4>
+          <div style="font-size:0.8rem;color:var(--text3);margin:0.25rem 0 0.5rem">${playersInGame.length} player${playersInGame.length > 1 ? 's' : ''} in this match</div>
+          ${playersInGame.map(p => {
+            const iplTeam = playerIplMap[p];
+            const capped = t.player_capped[p];
+            return `
+            <div class="gtc-player">
+              <div class="name">
+                ${roleBadge(p)}${capped === 'Uncapped' ? '<span class="badge badge-uncapped">UC</span>' : ''}
+                <span>${p}</span>
+              </div>
+              <span style="font-size:0.7rem;color:var(--text3)">${iplTeam || ''}</span>
+            </div>`;
+          }).join('')}
+        </div>`;
+      });
+      html += '</div>';
+    });
+  }
+
+  el.innerHTML = html;
 }
 
 function toggleBD(id) {
