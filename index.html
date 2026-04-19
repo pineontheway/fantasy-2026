@@ -963,6 +963,7 @@ function renderSchedule() {
   function doRender(matches) {
     const now = new Date();
     const todayStr = now.toISOString().split('T')[0];
+    const currentWeek = getWeekNumber(now.toISOString());
 
     // Extract game number from title
     function gameNum(title) { const m = title.match(/(\d+)/); return m ? parseInt(m[1]) : 0; }
@@ -973,23 +974,15 @@ function renderSchedule() {
       return parts.map(p => p.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '));
     }
 
-    // Format time (IST)
-    function fmtTime(dateStr) {
-      if (!dateStr) return '';
-      const d = new Date(dateStr);
-      return d.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Kolkata' });
-    }
-
-    // Group by date
-    const byDate = {};
+    // Group by week
+    const byWeek = {};
     for (const m of matches) {
-      const date = m.startDate.split('T')[0];
-      if (!byDate[date]) byDate[date] = [];
-      byDate[date].push(m);
+      const wn = getWeekNumber(m.startDate);
+      if (!byWeek[wn]) byWeek[wn] = [];
+      byWeek[wn].push(m);
     }
 
     const finished = matches.filter(m => m.stage === 'FINISHED' || m.state === 'POST').length;
-    const live = matches.filter(m => m.stage === 'RUNNING' && m.state !== 'POST');
     const nextMatch = matches.find(m => m.stage === 'SCHEDULED' || (m.stage === 'RUNNING' && m.state !== 'POST'));
 
     let html = '<h2 class="sec-title">Schedule</h2>';
@@ -1002,20 +995,19 @@ function renderSchedule() {
     }
     html += '</div>';
 
-    const dates = Object.keys(byDate).sort();
+    const weekNums = Object.keys(byWeek).map(Number).sort((a, b) => a - b).filter(wn => wn >= currentWeek);
     let foundNext = false;
-    for (const date of dates) {
-      const d = new Date(date + 'T00:00:00Z');
-      const label = d.toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
-      const isToday = date === todayStr;
-      const weekNum = getWeekNumber(date + 'T00:00:00Z');
+    for (const wn of weekNums) {
+      const weekRange = getWeekRange(wn);
+      const isCurrent = wn === currentWeek;
 
       html += `<div class="schedule-date-group">`;
-      html += `<div class="schedule-date-header${isToday ? ' today' : ''}">${label} — Week ${weekNum}${isToday ? ' (Today)' : ''}</div>`;
+      html += `<div class="schedule-date-header${isCurrent ? ' today' : ''}">Week ${wn} — ${weekRange}${isCurrent ? ' (Current)' : ''}</div>`;
 
-      for (const m of byDate[date]) {
+      for (const m of byWeek[wn]) {
         const gn = gameNum(m.title);
         const teams = teamsFromSlug(m.slug);
+        const date = new Date(m.startDate).toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
         const isFinished = m.stage === 'FINISHED' || m.state === 'POST';
         const isLive = m.stage === 'RUNNING' && m.state !== 'POST';
         const isNext = !foundNext && !isFinished && !isLive;
@@ -1029,7 +1021,7 @@ function renderSchedule() {
 
         html += `<div class="schedule-match${isNext ? ' next-up' : ''}">`;
         html += `<span class="match-num">#${gn}</span>`;
-        html += `<span class="match-teams">${teams.join(' vs ')}`;
+        html += `<span class="match-teams">${teams.join(' vs ')} <span class="schedule-result" style="opacity:0.6">— ${date}</span>`;
         if (isFinished && m.statusText) html += ` <span class="schedule-result">— ${m.statusText}</span>`;
         html += `</span>`;
         html += `<span class="schedule-status ${statusClass}">${statusText}</span>`;
