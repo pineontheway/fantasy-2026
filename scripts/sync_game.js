@@ -18,6 +18,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const NAME_MAP = require('./name_map.json');
+const NAME_IGNORE = new Set(require('./name_ignore.json'));
 const WEEK_CONFIG = require('./week_config.json');
 
 // ─── CLI ────────────────────────────────────────────────────────────
@@ -622,7 +623,7 @@ const likelyMismatches = [];
 const trulyUndrafted = [];
 for (const n of unmapped) {
   const suggestions = suggestMatch(n);
-  if (suggestions.length) {
+  if (suggestions.length && !NAME_IGNORE.has(n)) {
     likelyMismatches.push({ game: n, suggestions });
   } else {
     trulyUndrafted.push(n);
