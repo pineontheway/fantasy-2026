@@ -353,13 +353,13 @@
       "bowling": {
         "overs": 4,
         "wickets": 2,
-        "conceded": 23,
-        "economy": 5.75,
+        "conceded": 24,
+        "economy": 6,
         "maidens": 0,
         "points": 55,
         "breakdown": [
           "2 wickets = +40",
-          "Economy 5.75 <=6 = +15"
+          "Economy 6 <=6 = +15"
         ]
       },
       "fielding": {
@@ -416,9 +416,9 @@
       "multiplier_reason": "",
       "total_points": 45
     },
-    "Mukul Choudhary": {
+    "Mukesh Choudhary": {
       "ipl_team": "Chennai Super Kings",
-      "capped_status": "Uncapped",
+      "capped_status": "Unknown",
       "batting": {
         "runs": 0,
         "balls": 0,
@@ -453,7 +453,7 @@
       },
       "base_points": 30,
       "multiplier": 1,
-      "multiplier_reason": "Uncapped but no condition met (0 runs, 1 wickets, 1 dismissals)",
+      "multiplier_reason": "",
       "total_points": 30
     },
     "Gurjapneet Singh": {
@@ -495,6 +495,85 @@
       "multiplier": 1,
       "multiplier_reason": "",
       "total_points": 30
+    },
+    "AM Ghazanfar": {
+      "ipl_team": "Mumbai Indians",
+      "capped_status": "Unknown",
+      "batting": {
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "is_out": false,
+        "points": 0,
+        "breakdown": [
+          "Did not bat"
+        ]
+      },
+      "bowling": {
+        "overs": 4,
+        "wickets": 2,
+        "conceded": 25,
+        "economy": 6.25,
+        "maidens": 0,
+        "points": 40,
+        "breakdown": [
+          "2 wickets = +40"
+        ]
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "base_points": 40,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 40
+    },
+    "Mitchell Santner": {
+      "ipl_team": "Mumbai Indians",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "is_out": false,
+        "points": 0,
+        "breakdown": [
+          "Did not bat"
+        ]
+      },
+      "bowling": {
+        "overs": 4,
+        "wickets": 1,
+        "conceded": 44,
+        "economy": 11,
+        "maidens": 0,
+        "points": 10,
+        "breakdown": [
+          "1 wickets = +20",
+          "Economy 11 >=10 = -10"
+        ]
+      },
+      "fielding": {
+        "catches": 1,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 10,
+        "breakdown": [
+          "Catch (Kartik Sharma) = +10"
+        ]
+      },
+      "base_points": 20,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 20
     },
     "Quinton de Kock": {
       "ipl_team": "Mumbai Indians",
@@ -611,14 +690,14 @@
       "ipl_team": "Mumbai Indians",
       "capped_status": "Capped",
       "batting": {
-        "runs": 35,
+        "runs": 36,
         "balls": 30,
         "fours": 5,
         "sixes": 0,
         "is_out": true,
-        "points": 50,
+        "points": 51,
         "breakdown": [
-          "35 runs = +35",
+          "36 runs = +36",
           "5 fours = +10",
           "≥30 runs bonus = +5"
         ]
@@ -640,10 +719,10 @@
         "points": 0,
         "breakdown": []
       },
-      "base_points": 50,
+      "base_points": 51,
       "multiplier": 1,
       "multiplier_reason": "",
-      "total_points": 50
+      "total_points": 51
     },
     "Tilak Varma": {
       "ipl_team": "Mumbai Indians",
@@ -911,85 +990,6 @@
       "multiplier": 1,
       "multiplier_reason": "",
       "total_points": 32
-    },
-    "Mitchell Santner": {
-      "ipl_team": "Mumbai Indians",
-      "capped_status": "Capped",
-      "batting": {
-        "runs": 0,
-        "balls": 0,
-        "fours": 0,
-        "sixes": 0,
-        "is_out": false,
-        "points": 0,
-        "breakdown": [
-          "Did not bat"
-        ]
-      },
-      "bowling": {
-        "overs": 4,
-        "wickets": 1,
-        "conceded": 44,
-        "economy": 11,
-        "maidens": 0,
-        "points": 10,
-        "breakdown": [
-          "1 wickets = +20",
-          "Economy 11 >=10 = -10"
-        ]
-      },
-      "fielding": {
-        "catches": 1,
-        "runouts": 0,
-        "runout_direct_hits": 0,
-        "stumpings": 0,
-        "points": 10,
-        "breakdown": [
-          "Catch (Kartik Sharma) = +10"
-        ]
-      },
-      "base_points": 20,
-      "multiplier": 1,
-      "multiplier_reason": "",
-      "total_points": 20
-    },
-    "AM Ghazanfar": {
-      "ipl_team": "Mumbai Indians",
-      "capped_status": "Unknown",
-      "batting": {
-        "runs": 0,
-        "balls": 0,
-        "fours": 0,
-        "sixes": 0,
-        "is_out": false,
-        "points": 0,
-        "breakdown": [
-          "Did not bat"
-        ]
-      },
-      "bowling": {
-        "overs": 4,
-        "wickets": 2,
-        "conceded": 25,
-        "economy": 6.25,
-        "maidens": 0,
-        "points": 40,
-        "breakdown": [
-          "2 wickets = +40"
-        ]
-      },
-      "fielding": {
-        "catches": 0,
-        "runouts": 0,
-        "runout_direct_hits": 0,
-        "stumpings": 0,
-        "points": 0,
-        "breakdown": []
-      },
-      "base_points": 40,
-      "multiplier": 1,
-      "multiplier_reason": "",
-      "total_points": 40
     }
   },
   "fantasy_team_scores": [
@@ -1503,7 +1503,7 @@
     {
       "id": 3,
       "name": "Dracarys Dynamites",
-      "total_points": 31,
+      "total_points": 1,
       "players": [
         {
           "name": "KL Rahul",
@@ -1660,19 +1660,19 @@
         },
         {
           "name": "Mukul Choudhary",
-          "played": true,
+          "played": false,
           "capped_status": "Uncapped",
-          "base_points": 30,
+          "base_points": 0,
           "multiplier": 1,
-          "multiplier_reason": "Uncapped but no condition met (0 runs, 1 wickets, 1 dismissals)",
-          "total_points": 30
+          "multiplier_reason": "",
+          "total_points": 0
         }
       ]
     },
     {
       "id": 5,
       "name": "Slayers Unsullied Force",
-      "total_points": 118,
+      "total_points": 119,
       "players": [
         {
           "name": "Abhishek Sharma",
@@ -1705,10 +1705,10 @@
           "name": "Suryakumar Yadav",
           "played": true,
           "capped_status": "Capped",
-          "base_points": 50,
+          "base_points": 51,
           "multiplier": 1,
           "multiplier_reason": "",
-          "total_points": 50
+          "total_points": 51
         },
         {
           "name": "Marcus Stoinis",

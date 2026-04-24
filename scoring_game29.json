@@ -635,18 +635,16 @@
       },
       "fielding": {
         "catches": 0,
-        "runouts": 1,
+        "runouts": 0,
         "runout_direct_hits": 0,
         "stumpings": 0,
-        "points": 5,
-        "breakdown": [
-          "Run out (Marcus Stoinis) = +5"
-        ]
+        "points": 0,
+        "breakdown": []
       },
-      "base_points": 71,
+      "base_points": 66,
       "multiplier": 1,
       "multiplier_reason": "",
-      "total_points": 71
+      "total_points": 66
     },
     "Nicholas Pooran": {
       "ipl_team": "Lucknow Super Giants",
@@ -674,19 +672,19 @@
       },
       "fielding": {
         "catches": 1,
-        "runouts": 1,
-        "runout_direct_hits": 0,
+        "runouts": 0,
+        "runout_direct_hits": 1,
         "stumpings": 0,
-        "points": 15,
+        "points": 20,
         "breakdown": [
           "Catch (Nehal Wadhera) = +10",
-          "Run out (Marcus Stoinis) = +5"
+          "Run out direct hit (Marcus Stoinis) = +10"
         ]
       },
-      "base_points": 26,
+      "base_points": 31,
       "multiplier": 1,
       "multiplier_reason": "",
-      "total_points": 26
+      "total_points": 31
     },
     "Aiden Markram": {
       "ipl_team": "Lucknow Super Giants",
@@ -966,7 +964,7 @@
     {
       "id": 1,
       "name": "Valtheru Valyrian Steel",
-      "total_points": 96,
+      "total_points": 101,
       "players": [
         {
           "name": "Sanju Samson",
@@ -999,10 +997,10 @@
           "name": "Nicholas Pooran",
           "played": true,
           "capped_status": "Capped",
-          "base_points": 26,
+          "base_points": 31,
           "multiplier": 1,
           "multiplier_reason": "",
-          "total_points": 26
+          "total_points": 31
         },
         {
           "name": "Yuzvendra Chahal",
@@ -1473,7 +1471,7 @@
     {
       "id": 3,
       "name": "Dracarys Dynamites",
-      "total_points": 98,
+      "total_points": 93,
       "players": [
         {
           "name": "KL Rahul",
@@ -1524,10 +1522,10 @@
           "name": "Rishabh Pant",
           "played": true,
           "capped_status": "Capped",
-          "base_points": 71,
+          "base_points": 66,
           "multiplier": 1,
           "multiplier_reason": "",
-          "total_points": 71
+          "total_points": 66
         },
         {
           "name": "Mohammed Siraj",

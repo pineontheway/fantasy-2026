@@ -922,9 +922,9 @@
       "multiplier_reason": "",
       "total_points": 11
     },
-    "Mukul Choudhary": {
+    "Mukesh Choudhary": {
       "ipl_team": "Chennai Super Kings",
-      "capped_status": "Uncapped",
+      "capped_status": "Unknown",
       "batting": {
         "runs": 0,
         "balls": 0,
@@ -958,7 +958,7 @@
       },
       "base_points": 30,
       "multiplier": 1,
-      "multiplier_reason": "Uncapped but no condition met (0 runs, 2 wickets, 0 dismissals)",
+      "multiplier_reason": "",
       "total_points": 30
     }
   },
@@ -1473,7 +1473,7 @@
     {
       "id": 3,
       "name": "Dracarys Dynamites",
-      "total_points": 30,
+      "total_points": 0,
       "players": [
         {
           "name": "KL Rahul",
@@ -1630,12 +1630,12 @@
         },
         {
           "name": "Mukul Choudhary",
-          "played": true,
+          "played": false,
           "capped_status": "Uncapped",
-          "base_points": 30,
+          "base_points": 0,
           "multiplier": 1,
-          "multiplier_reason": "Uncapped but no condition met (0 runs, 2 wickets, 0 dismissals)",
-          "total_points": 30
+          "multiplier_reason": "",
+          "total_points": 0
         }
       ]
     },
