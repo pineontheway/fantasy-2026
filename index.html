@@ -765,6 +765,7 @@ function renderWeekTabs() {
           </div>`;
       });
 
+      html += `<!--UPCOMING-PER-TEAM-${team.id}-${week.weekNum}-->`;
       html += `</div>`;
     });
 
@@ -855,10 +856,51 @@ function renderUpcomingGames(el, html, week, playedGameNums) {
     fetch('schedule.json').then(r => r.json()).then(data => {
       scheduleData = data.content.matches;
       doRenderUpcoming(el, html, week, playedGameNums);
-    }).catch(() => { el.innerHTML = html; });
+    }).catch(() => { el.innerHTML = html.replace(/<!--UPCOMING-PER-TEAM-\d+-\d+-->/g, ''); });
   } else {
     doRenderUpcoming(el, html, week, playedGameNums);
   }
+}
+
+function buildTeamUpcomingHtml(teamId, week, playedGameNums, playerIplMap, upcomingGames) {
+  const draftTeam = getDraftForWeek(week.weekNum).teams.find(t => t.id === teamId);
+  if (!draftTeam) return '';
+
+  const blocks = [];
+  upcomingGames.forEach(m => {
+    const gn = parseInt((m.title.match(/(\d+)/) || [])[1]);
+    const slugTeams = m.slug.replace(/-\d+\w*-match$/, '').split('-vs-');
+    const iplTeams = slugTeams.map(s => {
+      const key = s.replace(/-/g, ' ');
+      return IPL_TEAM_ALIASES[key] || key.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    });
+    const playersInGame = draftTeam.players.filter(p => {
+      const iplTeam = playerIplMap[p];
+      return iplTeam && iplTeams.includes(iplTeam);
+    });
+    if (!playersInGame.length) return;
+
+    const dateStr = new Date(m.startDate).toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
+    blocks.push(`
+      <div style="margin-top:0.75rem;padding:0.6rem 0.75rem;background:var(--bg3);border-radius:8px;border-left:3px solid var(--blue)">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.4rem">
+          <div style="font-size:0.8rem;color:var(--text2)">Game ${gn} &mdash; ${iplTeams.join(' vs ')}</div>
+          <div style="font-size:0.7rem;color:var(--blue)">${dateStr} • Upcoming</div>
+        </div>
+        ${playersInGame.map(p => {
+          const capped = draftTeam.player_capped[p];
+          return `
+          <div class="gtc-player">
+            <div class="name">
+              ${roleBadge(p)}${capped === 'Uncapped' ? '<span class="badge badge-uncapped">UC</span>' : ''}
+              <span>${p}</span>
+            </div>
+            <span style="font-size:0.7rem;color:var(--text3)">${playerIplMap[p] || ''}</span>
+          </div>`;
+        }).join('')}
+      </div>`);
+  });
+  return blocks.join('');
 }
 
 function doRenderUpcoming(el, html, week, playedGameNums) {
@@ -929,6 +971,12 @@ function doRenderUpcoming(el, html, week, playedGameNums) {
       html += '</div>';
     });
   }
+
+  // Fill per-team upcoming-game placeholders inside each team card
+  html = html.replace(/<!--UPCOMING-PER-TEAM-(\d+)-(\d+)-->/g, (_, teamId, weekNum) => {
+    if (parseInt(weekNum) !== week.weekNum) return '';
+    return buildTeamUpcomingHtml(parseInt(teamId), week, playedGameNums, playerIplMap, upcomingGames);
+  });
 
   el.innerHTML = html;
 }
