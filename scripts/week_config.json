@@ -41,7 +41,7 @@
         24,
         25
       ],
-      "roster": "draft_data.json",
+      "roster": "draft_data_week3.json",
       "groups": [
         {
           "name": "Group 1",
@@ -82,7 +82,7 @@
         33,
         34
       ],
-      "roster": "draft_data.json",
+      "roster": "draft_data_week4.json",
       "groups": [
         {
           "name": "Group 1",

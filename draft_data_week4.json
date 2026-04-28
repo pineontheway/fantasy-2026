@@ -133,7 +133,7 @@
         "Abhinandan Singh": 30,
         "Aniket Verma": 64
       },
-      "total_points": 1361,
+      "total_points": 1371,
       "player_capped": {
         "Jasprit Bumrah": "Capped",
         "Krains Fuletra": "Uncapped",
@@ -191,10 +191,10 @@
         "Kamindu Mendis",
         "Trent Boult",
         "Rahul Chahar",
-        "Ashwani Kumar",
+        "Harpreet Brar",
         "Ashutosh Sharma",
         "Nehal Wadhera",
-        "Spencer Johnson",
+        "Onkar Tarmale",
         "Vijaykumar Vyshak",
         "Anukul Roy"
       ],
@@ -209,15 +209,15 @@
         "T Natarajan": 71,
         "Kamindu Mendis": 0,
         "Rahul Chahar": 0,
+        "Harpreet Brar": 0,
         "Ashutosh Sharma": 47,
         "Nehal Wadhera": 74,
+        "Onkar Tarmale": 0,
         "Vijaykumar Vyshak": -10,
         "Anukul Roy": 101,
-        "Trent Boult": 0,
-        "Spencer Johnson": 0,
-        "Ashwani Kumar": 0
+        "Trent Boult": 0
       },
-      "total_points": 2501,
+      "total_points": 2481,
       "player_capped": {
         "Yashasvi Jaiswal": "Capped",
         "Kartik Sharma": "Uncapped",
@@ -229,13 +229,13 @@
         "T Natarajan": "Capped",
         "Kamindu Mendis": "Capped",
         "Rahul Chahar": "Capped",
+        "Harpreet Brar": "Uncapped",
         "Ashutosh Sharma": "Uncapped",
         "Nehal Wadhera": "Uncapped",
+        "Onkar Tarmale": "Uncapped",
         "Vijaykumar Vyshak": "Uncapped",
         "Anukul Roy": "Uncapped",
-        "Trent Boult": "Capped",
-        "Spencer Johnson": "Capped",
-        "Ashwani Kumar": "Uncapped"
+        "Trent Boult": "Capped"
       },
       "player_roles": {
         "Yashasvi Jaiswal": "BAT",
@@ -248,13 +248,13 @@
         "T Natarajan": "BOWL",
         "Kamindu Mendis": "AR",
         "Rahul Chahar": "BOWL",
+        "Harpreet Brar": "AR",
         "Ashutosh Sharma": "AR",
         "Nehal Wadhera": "BAT",
+        "Onkar Tarmale": "BOWL",
         "Vijaykumar Vyshak": "BOWL",
         "Anukul Roy": "AR",
-        "Trent Boult": "BOWL",
-        "Spencer Johnson": "BOWL",
-        "Ashwani Kumar": "BOWL"
+        "Trent Boult": "BOWL"
       },
       "owner": "Praveen"
     },
@@ -273,10 +273,10 @@
         "Deepak Chahar",
         "Prithvi Shaw",
         "Rahul Tripathi",
-        "Mitchell Starc",
+        "Mitchell Santner",
         "Angkrish Raghuvanshi",
         "Donovan Ferreira",
-        "Finn Allen",
+        "Anuj Rawat",
         "Josh Hazlewood",
         "Krunal Pandya",
         "Mukul Choudhary"
@@ -293,15 +293,15 @@
         "Deepak Chahar": 18,
         "Prithvi Shaw": 0,
         "Rahul Tripathi": 0,
+        "Mitchell Santner": 147,
         "Angkrish Raghuvanshi": 535,
         "Donovan Ferreira": 181,
+        "Anuj Rawat": 0,
         "Krunal Pandya": 195,
         "Mukul Choudhary": 422,
-        "Josh Hazlewood": 65,
-        "Mitchell Starc": 0,
-        "Finn Allen": 0
+        "Josh Hazlewood": 65
       },
-      "total_points": 3111,
+      "total_points": 3258,
       "player_capped": {
         "KL Rahul": "Capped",
         "Arjun Tendulkar": "Uncapped",
@@ -314,13 +314,13 @@
         "Deepak Chahar": "Capped",
         "Prithvi Shaw": "Capped",
         "Rahul Tripathi": "Capped",
+        "Mitchell Santner": "Capped",
         "Angkrish Raghuvanshi": "Uncapped",
         "Donovan Ferreira": "Capped",
+        "Anuj Rawat": "Uncapped",
         "Krunal Pandya": "Capped",
         "Mukul Choudhary": "Uncapped",
-        "Josh Hazlewood": "Capped",
-        "Mitchell Starc": "Capped",
-        "Finn Allen": "Capped"
+        "Josh Hazlewood": "Capped"
       },
       "player_roles": {
         "KL Rahul": "BAT",
@@ -334,13 +334,13 @@
         "Deepak Chahar": "BOWL",
         "Prithvi Shaw": "BAT",
         "Rahul Tripathi": "BAT",
+        "Mitchell Santner": "AR",
         "Angkrish Raghuvanshi": "BAT",
         "Donovan Ferreira": "WK",
+        "Anuj Rawat": "WK",
         "Krunal Pandya": "AR",
         "Mukul Choudhary": "WK",
-        "Josh Hazlewood": "BOWL",
-        "Mitchell Starc": "BOWL",
-        "Finn Allen": "BAT"
+        "Josh Hazlewood": "BOWL"
       },
       "owner": "Akshay"
     },
@@ -349,14 +349,14 @@
       "name": "Slayers Unsullied Force",
       "players": [
         "Abhishek Sharma",
-        "Eshan Malinga",
+        "Prashant Veer",
         "Rashid Khan",
         "Suryakumar Yadav",
         "Marcus Stoinis",
         "Kuldeep Yadav",
         "Tilak Varma",
         "Rajat Patidar",
-        "Yash Raj Punja",
+        "Shardul Thakur",
         "Lungi Ngidi",
         "Azmatullah Omarzai",
         "Mukesh Kumar",
@@ -369,12 +369,14 @@
       ],
       "player_points": {
         "Abhishek Sharma": 581,
+        "Prashant Veer": 136,
         "Rashid Khan": 199,
         "Suryakumar Yadav": 227,
         "Marcus Stoinis": 73,
         "Kuldeep Yadav": 66,
         "Tilak Varma": 351,
         "Rajat Patidar": 454,
+        "Shardul Thakur": 66,
         "Lungi Ngidi": 143,
         "Azmatullah Omarzai": 0,
         "Nandre Burger": 133,
@@ -383,19 +385,19 @@
         "Pathum Nissanka": 225,
         "Jitesh Sharma": 124,
         "Cooper Connolly": 191,
-        "Mukesh Kumar": 0,
-        "Eshan Malinga": 0,
-        "Yash Raj Punja": 0
+        "Mukesh Kumar": 0
       },
-      "total_points": 3249,
+      "total_points": 3421,
       "player_capped": {
         "Abhishek Sharma": "Capped",
+        "Prashant Veer": "Uncapped",
         "Rashid Khan": "Capped",
         "Suryakumar Yadav": "Capped",
         "Marcus Stoinis": "Capped",
         "Kuldeep Yadav": "Capped",
         "Tilak Varma": "Capped",
         "Rajat Patidar": "Capped",
+        "Shardul Thakur": "Capped",
         "Lungi Ngidi": "Capped",
         "Azmatullah Omarzai": "Capped",
         "Nandre Burger": "Capped",
@@ -404,18 +406,18 @@
         "Pathum Nissanka": "Capped",
         "Jitesh Sharma": "Capped",
         "Cooper Connolly": "Capped",
-        "Mukesh Kumar": "Uncapped",
-        "Eshan Malinga": "Capped",
-        "Yash Raj Punja": "Uncapped"
+        "Mukesh Kumar": "Uncapped"
       },
       "player_roles": {
         "Abhishek Sharma": "BAT",
+        "Prashant Veer": "AR",
         "Rashid Khan": "BOWL",
         "Suryakumar Yadav": "BAT",
         "Marcus Stoinis": "AR",
         "Kuldeep Yadav": "BOWL",
         "Tilak Varma": "BAT",
         "Rajat Patidar": "BAT",
+        "Shardul Thakur": "BOWL",
         "Lungi Ngidi": "BOWL",
         "Azmatullah Omarzai": "AR",
         "Nandre Burger": "BOWL",
@@ -424,9 +426,7 @@
         "Pathum Nissanka": "BAT",
         "Jitesh Sharma": "WK",
         "Cooper Connolly": "AR",
-        "Mukesh Kumar": "BOWL",
-        "Eshan Malinga": "BOWL",
-        "Yash Raj Punja": "BOWL"
+        "Mukesh Kumar": "BOWL"
       },
       "owner": "Satish"
     },
@@ -441,11 +441,11 @@
         "Rohit Sharma",
         "Josh Inglis",
         "Nitish Kumar Reddy",
-        "Akash Madhwal",
+        "Avesh Khan",
         "Shimron Hetmyer",
         "Ajinkya Rahane",
         "Jamie Overton",
-        "Akeal Hosein",
+        "Jaydev Unadkat",
         "Karun Nair",
         "Ayush Badoni",
         "Abdul Samad",
@@ -460,18 +460,18 @@
         "Rohit Sharma": 225,
         "Josh Inglis": 0,
         "Nitish Kumar Reddy": 329,
+        "Avesh Khan": 83,
         "Shimron Hetmyer": 124,
         "Ajinkya Rahane": 219,
         "Jamie Overton": 378,
+        "Jaydev Unadkat": 84,
         "Karun Nair": 7,
         "Ayush Badoni": 395,
         "Abdul Samad": 146,
         "Ramandeep Singh": 207,
-        "Prince Yadav": 290,
-        "Akeal Hosein": 0,
-        "Akash Madhwal": 0
+        "Prince Yadav": 290
       },
-      "total_points": 2904,
+      "total_points": 3071,
       "player_capped": {
         "Mitchell Marsh": "Capped",
         "Jason Holder": "Capped",
@@ -480,16 +480,16 @@
         "Rohit Sharma": "Capped",
         "Josh Inglis": "Capped",
         "Nitish Kumar Reddy": "Capped",
+        "Avesh Khan": "Capped",
         "Shimron Hetmyer": "Capped",
         "Ajinkya Rahane": "Capped",
         "Jamie Overton": "Capped",
+        "Jaydev Unadkat": "Capped",
         "Karun Nair": "Capped",
         "Ayush Badoni": "Uncapped",
         "Abdul Samad": "Uncapped",
         "Ramandeep Singh": "Uncapped",
-        "Prince Yadav": "Uncapped",
-        "Akeal Hosein": "Capped",
-        "Akash Madhwal": "Uncapped"
+        "Prince Yadav": "Uncapped"
       },
       "player_roles": {
         "Mitchell Marsh": "BAT",
@@ -499,16 +499,16 @@
         "Rohit Sharma": "BAT",
         "Josh Inglis": "WK",
         "Nitish Kumar Reddy": "AR",
+        "Avesh Khan": "BOWL",
         "Shimron Hetmyer": "BAT",
         "Ajinkya Rahane": "BOWL",
         "Jamie Overton": "BOWL",
+        "Jaydev Unadkat": "BOWL",
         "Karun Nair": "BAT",
         "Ayush Badoni": "AR",
         "Abdul Samad": "AR",
         "Ramandeep Singh": "AR",
-        "Prince Yadav": "BOWL",
-        "Akeal Hosein": "AR",
-        "Akash Madhwal": "BOWL"
+        "Prince Yadav": "BOWL"
       },
       "owner": "Nagarjuna"
     },
@@ -522,12 +522,12 @@
         "Shivam Dube",
         "Quinton de Kock",
         "Rachin Ravindra",
-        "Praful Hinge",
+        "Lockie Ferguson",
         "Matheesha Pathirana",
         "Shashank Singh",
         "Prasidh Krishna",
         "Devdutt Padikkal",
-        "Rasikh Salam",
+        "Ishant Sharma",
         "Noor Ahmad",
         "Sai Kishore",
         "Kartik Tyagi",
@@ -542,18 +542,18 @@
         "Shivam Dube": 205,
         "Quinton de Kock": 236,
         "Rachin Ravindra": 0,
+        "Lockie Ferguson": 0,
         "Matheesha Pathirana": 0,
         "Shashank Singh": 141,
         "Prasidh Krishna": 205,
         "Devdutt Padikkal": 438,
+        "Ishant Sharma": 0,
         "Noor Ahmad": 154,
         "Sai Kishore": 0,
         "Kartik Tyagi": 267,
         "Suyash Sharma": 95,
         "Mohsin Khan": 75,
-        "Sarfaraz Khan": 213,
-        "Praful Hinge": 0,
-        "Rasikh Salam": 0
+        "Sarfaraz Khan": 213
       },
       "total_points": 3330,
       "player_capped": {
@@ -563,18 +563,18 @@
         "Shivam Dube": "Capped",
         "Quinton de Kock": "Capped",
         "Rachin Ravindra": "Capped",
+        "Lockie Ferguson": "Capped",
         "Matheesha Pathirana": "Capped",
         "Shashank Singh": "Uncapped",
         "Prasidh Krishna": "Capped",
         "Devdutt Padikkal": "Capped",
+        "Ishant Sharma": "Capped",
         "Noor Ahmad": "Capped",
         "Sai Kishore": "Capped",
         "Kartik Tyagi": "Uncapped",
         "Suyash Sharma": "Uncapped",
         "Mohsin Khan": "Uncapped",
-        "Sarfaraz Khan": "Capped",
-        "Praful Hinge": "Uncapped",
-        "Rasikh Salam": "Uncapped"
+        "Sarfaraz Khan": "Capped"
       },
       "player_roles": {
         "Heinrich Klaasen": "BAT",
@@ -583,18 +583,18 @@
         "Shivam Dube": "AR",
         "Quinton de Kock": "WK",
         "Rachin Ravindra": "AR",
+        "Lockie Ferguson": "BOWL",
         "Matheesha Pathirana": "BOWL",
         "Shashank Singh": "BAT",
         "Prasidh Krishna": "BOWL",
         "Devdutt Padikkal": "BAT",
+        "Ishant Sharma": "BOWL",
         "Noor Ahmad": "BOWL",
         "Sai Kishore": "AR",
         "Kartik Tyagi": "BOWL",
         "Suyash Sharma": "BOWL",
         "Mohsin Khan": "BOWL",
-        "Sarfaraz Khan": "BAT",
-        "Praful Hinge": "BOWL",
-        "Rasikh Salam": "BOWL"
+        "Sarfaraz Khan": "BAT"
       },
       "owner": "Vijay"
     },
@@ -603,9 +603,9 @@
       "name": "Dothraki Khaleesi Gang",
       "players": [
         "Vaibhav Sooryavanshi",
-        "Shubham Dubey",
+        "Digvesh Rathi",
         "Sameer Rizvi",
-        "Allah Ghazanfar",
+        "Finn Allen",
         "Shreyas Iyer",
         "Jos Buttler",
         "Kagiso Rabada",
@@ -623,6 +623,7 @@
       "player_points": {
         "Vaibhav Sooryavanshi": 920,
         "Sameer Rizvi": 632,
+        "Finn Allen": 143,
         "Shreyas Iyer": 357,
         "Jos Buttler": 455,
         "Kagiso Rabada": 249,
@@ -635,14 +636,14 @@
         "Manav Suthar": 30,
         "Blessing Muzarabani": 70,
         "Ravichandran Smaran": 0,
-        "Mangesh Yadav": 0,
-        "Allah Ghazanfar": 0,
-        "Shubham Dubey": 0
+        "Digvesh Rathi": 62,
+        "Mangesh Yadav": 0
       },
-      "total_points": 3763,
+      "total_points": 3967,
       "player_capped": {
         "Vaibhav Sooryavanshi": "Uncapped",
         "Sameer Rizvi": "Uncapped",
+        "Finn Allen": "Capped",
         "Shreyas Iyer": "Capped",
         "Jos Buttler": "Capped",
         "Kagiso Rabada": "Capped",
@@ -655,13 +656,13 @@
         "Manav Suthar": "Uncapped",
         "Blessing Muzarabani": "Capped",
         "Ravichandran Smaran": "Capped",
-        "Mangesh Yadav": "Uncapped",
-        "Allah Ghazanfar": "Capped",
-        "Shubham Dubey": "Uncapped"
+        "Digvesh Rathi": "Uncapped",
+        "Mangesh Yadav": "Uncapped"
       },
       "player_roles": {
         "Vaibhav Sooryavanshi": "BAT",
         "Sameer Rizvi": "BAT",
+        "Finn Allen": "BAT",
         "Shreyas Iyer": "BAT",
         "Jos Buttler": "WK",
         "Kagiso Rabada": "BOWL",
@@ -674,9 +675,8 @@
         "Manav Suthar": "BOWL",
         "Blessing Muzarabani": "BOWL",
         "Ravichandran Smaran": "BAT",
-        "Mangesh Yadav": "BOWL",
-        "Allah Ghazanfar": "BOWL",
-        "Shubham Dubey": "BAT"
+        "Digvesh Rathi": "BOWL",
+        "Mangesh Yadav": "BOWL"
       },
       "owner": "Prakash"
     },
@@ -684,7 +684,7 @@
       "id": 9,
       "name": "Telugu Targerions",
       "players": [
-        "Sakib Hussain",
+        "Ayush Mhatre",
         "Ishan Kishan",
         "Jofra Archer",
         "Shubman Gill",
@@ -696,7 +696,7 @@
         "Will Jacks",
         "Romario Shepherd",
         "Sherfane Rutherford",
-        "Mukesh Choudhary",
+        "Vipraj Nigam",
         "Mayank Yadav",
         "Harsh Dubey",
         "Mayank Markande",
@@ -704,6 +704,7 @@
         "Brijesh Sharma"
       ],
       "player_points": {
+        "Ayush Mhatre": 657,
         "Ishan Kishan": 428,
         "Jofra Archer": 313,
         "Shubman Gill": 489,
@@ -714,17 +715,17 @@
         "Will Jacks": 0,
         "Romario Shepherd": 113,
         "Sherfane Rutherford": 180,
+        "Vipraj Nigam": 36,
         "Mayank Yadav": -13,
         "Harsh Dubey": 262,
         "Mayank Markande": -20,
         "Shivang Kumar": 200,
         "Brijesh Sharma": 106,
-        "Varun Chakaravarthy": 125,
-        "Sakib Hussain": 0,
-        "Mukesh Choudhary": 0
+        "Varun Chakaravarthy": 125
       },
-      "total_points": 3020,
+      "total_points": 3703,
       "player_capped": {
+        "Ayush Mhatre": "Uncapped",
         "Ishan Kishan": "Capped",
         "Jofra Archer": "Capped",
         "Shubman Gill": "Capped",
@@ -735,16 +736,16 @@
         "Will Jacks": "Capped",
         "Romario Shepherd": "Capped",
         "Sherfane Rutherford": "Capped",
+        "Vipraj Nigam": "Uncapped",
         "Mayank Yadav": "Capped",
         "Harsh Dubey": "Uncapped",
         "Mayank Markande": "Uncapped",
         "Shivang Kumar": "Uncapped",
         "Brijesh Sharma": "Uncapped",
-        "Varun Chakaravarthy": "Capped",
-        "Sakib Hussain": "Uncapped",
-        "Mukesh Choudhary": "Uncapped"
+        "Varun Chakaravarthy": "Capped"
       },
       "player_roles": {
+        "Ayush Mhatre": "BAT",
         "Ishan Kishan": "WK",
         "Jofra Archer": "BOWL",
         "Shubman Gill": "BAT",
@@ -755,14 +756,13 @@
         "Will Jacks": "AR",
         "Romario Shepherd": "AR",
         "Sherfane Rutherford": "BAT",
+        "Vipraj Nigam": "AR",
         "Mayank Yadav": "BOWL",
         "Harsh Dubey": "AR",
         "Mayank Markande": "BOWL",
         "Shivang Kumar": "AR",
         "Brijesh Sharma": "BOWL",
-        "Varun Chakaravarthy": "BOWL",
-        "Sakib Hussain": "BOWL",
-        "Mukesh Choudhary": "BOWL"
+        "Varun Chakaravarthy": "BOWL"
       },
       "owner": "Karthik"
     }
