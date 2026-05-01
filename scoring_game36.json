@@ -964,6 +964,8 @@
     {
       "id": 1,
       "name": "Valtheru Valyrian Steel",
+      "captain": null,
+      "captain_active_this_game": false,
       "total_points": 10,
       "players": [
         {
@@ -973,6 +975,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -982,6 +986,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -991,6 +997,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1000,6 +1008,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1009,6 +1019,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1018,6 +1030,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1027,6 +1041,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1036,6 +1052,8 @@
           "base_points": 10,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 10
         },
         {
@@ -1045,6 +1063,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1054,6 +1074,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1063,6 +1085,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1072,6 +1096,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1081,6 +1107,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1090,6 +1118,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1099,6 +1129,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1108,6 +1140,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1117,6 +1151,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1126,6 +1162,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1135,6 +1173,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         }
       ]
@@ -1142,6 +1182,8 @@
     {
       "id": 2,
       "name": "Agiripalli Aegons (Eggs)",
+      "captain": null,
+      "captain_active_this_game": false,
       "total_points": 18,
       "players": [
         {
@@ -1151,6 +1193,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1160,6 +1204,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1169,6 +1215,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1178,6 +1226,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1187,6 +1237,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1196,6 +1248,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1205,6 +1259,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1214,6 +1270,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1223,6 +1281,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1232,6 +1292,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1241,6 +1303,8 @@
           "base_points": 7,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 7
         },
         {
@@ -1250,6 +1314,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1259,6 +1325,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1268,6 +1336,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1277,6 +1347,8 @@
           "base_points": 11,
           "multiplier": 1,
           "multiplier_reason": "Uncapped but no condition met (1 runs, 0 wickets, 1 dismissals)",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 11
         },
         {
@@ -1286,6 +1358,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1295,6 +1369,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1304,6 +1380,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         }
       ]
@@ -1311,6 +1389,8 @@
     {
       "id": 4,
       "name": "Snow Strikers",
+      "captain": "Prabhsimran Singh",
+      "captain_active_this_game": false,
       "total_points": 30,
       "players": [
         {
@@ -1320,6 +1400,8 @@
           "base_points": 14,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 14
         },
         {
@@ -1329,6 +1411,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1338,6 +1422,8 @@
           "base_points": 10,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 10
         },
         {
@@ -1347,6 +1433,8 @@
           "base_points": 6,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 6
         },
         {
@@ -1356,6 +1444,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1365,6 +1455,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1374,6 +1466,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1383,6 +1477,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1392,6 +1488,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1401,6 +1499,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1410,6 +1510,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1419,6 +1521,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1428,6 +1532,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1437,6 +1543,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1446,6 +1554,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1455,6 +1565,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1464,6 +1576,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         }
       ]
@@ -1471,6 +1585,8 @@
     {
       "id": 3,
       "name": "Dracarys Dynamites",
+      "captain": "Angkrish Raghuvanshi",
+      "captain_active_this_game": false,
       "total_points": 101,
       "players": [
         {
@@ -1480,6 +1596,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1489,6 +1607,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1498,6 +1618,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1507,6 +1629,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1516,6 +1640,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1525,6 +1651,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1534,6 +1662,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1543,6 +1673,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1552,6 +1684,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1561,6 +1695,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1570,6 +1706,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1579,6 +1717,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1588,6 +1728,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1597,6 +1739,8 @@
           "base_points": 101,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 101
         },
         {
@@ -1606,6 +1750,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1615,6 +1761,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1624,6 +1772,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1633,6 +1783,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         }
       ]
@@ -1640,6 +1792,8 @@
     {
       "id": 5,
       "name": "Slayers Unsullied Force",
+      "captain": "Dhruv Jurel",
+      "captain_active_this_game": false,
       "total_points": 204,
       "players": [
         {
@@ -1649,6 +1803,8 @@
           "base_points": 93,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 93
         },
         {
@@ -1658,6 +1814,8 @@
           "base_points": 40,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 40
         },
         {
@@ -1667,6 +1825,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1676,6 +1836,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1685,6 +1847,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1694,6 +1858,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1703,6 +1869,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1712,6 +1880,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1721,6 +1891,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1730,6 +1902,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1739,6 +1913,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1748,6 +1924,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1757,6 +1935,8 @@
           "base_points": -20,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": -20
         },
         {
@@ -1766,6 +1946,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1775,6 +1957,8 @@
           "base_points": 91,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 91
         },
         {
@@ -1784,6 +1968,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1793,6 +1979,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1802,6 +1990,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         }
       ]
@@ -1809,6 +1999,8 @@
     {
       "id": 6,
       "name": "Tyrion Titans",
+      "captain": "Nitish Kumar Reddy",
+      "captain_active_this_game": false,
       "total_points": 125,
       "players": [
         {
@@ -1818,6 +2010,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1827,6 +2021,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1836,6 +2032,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1845,6 +2043,8 @@
           "base_points": 20,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 20
         },
         {
@@ -1854,6 +2054,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1863,6 +2065,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1872,6 +2076,8 @@
           "base_points": 92,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 92
         },
         {
@@ -1881,6 +2087,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1890,6 +2098,8 @@
           "base_points": 13,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 13
         },
         {
@@ -1899,6 +2109,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1908,6 +2120,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1917,6 +2131,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1926,6 +2142,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1935,6 +2153,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1944,6 +2164,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1953,6 +2175,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1962,6 +2186,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         }
       ]
@@ -1969,6 +2195,8 @@
     {
       "id": 7,
       "name": "White Walkers",
+      "captain": "Priyansh Arya",
+      "captain_active_this_game": false,
       "total_points": 59,
       "players": [
         {
@@ -1978,6 +2206,8 @@
           "base_points": 59,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 59
         },
         {
@@ -1987,6 +2217,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -1996,6 +2228,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2005,6 +2239,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2014,6 +2250,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2023,6 +2261,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2032,6 +2272,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "Uncapped but no condition met (0 runs, 1 wickets, 0 dismissals)",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2041,6 +2283,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2050,6 +2294,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2059,6 +2305,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2068,6 +2316,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2077,6 +2327,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2086,6 +2338,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2095,6 +2349,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2104,6 +2360,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2113,6 +2371,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2122,6 +2382,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2131,6 +2393,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         }
       ]
@@ -2138,6 +2402,8 @@
     {
       "id": 8,
       "name": "Dothraki Khaleesi Gang",
+      "captain": "Vaibhav Sooryavanshi",
+      "captain_active_this_game": false,
       "total_points": 392,
       "players": [
         {
@@ -2147,6 +2413,8 @@
           "base_points": 196,
           "multiplier": 2,
           "multiplier_reason": "30+ runs (103)",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 392
         },
         {
@@ -2156,6 +2424,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2165,6 +2435,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2174,6 +2446,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2183,6 +2457,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2192,6 +2468,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2201,6 +2479,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2210,6 +2490,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2219,6 +2501,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2228,6 +2512,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2237,6 +2523,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2246,6 +2534,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2255,6 +2545,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2264,6 +2556,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2273,6 +2567,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2282,6 +2578,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2291,6 +2589,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         }
       ]
@@ -2298,6 +2598,8 @@
     {
       "id": 9,
       "name": "Telugu Targerions",
+      "captain": "Shubman Gill",
+      "captain_active_this_game": false,
       "total_points": 195,
       "players": [
         {
@@ -2307,6 +2609,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "Uncapped but no condition met (0 runs, 1 wickets, 0 dismissals)",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2316,6 +2620,8 @@
           "base_points": 133,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 133
         },
         {
@@ -2325,6 +2631,8 @@
           "base_points": 52,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 52
         },
         {
@@ -2334,6 +2642,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2343,6 +2653,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2352,6 +2664,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2361,6 +2675,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2370,6 +2686,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2379,6 +2697,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2388,6 +2708,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2397,6 +2719,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2406,6 +2730,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2415,6 +2741,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2424,6 +2752,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2433,6 +2763,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2442,6 +2774,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 0
         },
         {
@@ -2451,6 +2785,8 @@
           "base_points": -20,
           "multiplier": 1,
           "multiplier_reason": "Uncapped but no condition met (0 runs, 0 wickets, 0 dismissals)",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": -20
         },
         {
@@ -2460,6 +2796,8 @@
           "base_points": 30,
           "multiplier": 1,
           "multiplier_reason": "Uncapped but no condition met (0 runs, 2 wickets, 0 dismissals)",
+          "is_captain": false,
+          "captain_multiplier": 1,
           "total_points": 30
         }
       ]

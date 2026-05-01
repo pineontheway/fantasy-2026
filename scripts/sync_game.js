@@ -20,6 +20,10 @@ const ROOT = path.resolve(__dirname, '..');
 const NAME_MAP = require('./name_map.json');
 const NAME_IGNORE = new Set(require('./name_ignore.json'));
 const WEEK_CONFIG = require('./week_config.json');
+const CAPTAINS_PATH = path.resolve(__dirname, '..', 'captains.json');
+const CAPTAINS = fs.existsSync(CAPTAINS_PATH)
+  ? JSON.parse(fs.readFileSync(CAPTAINS_PATH, 'utf-8'))
+  : {};
 
 // ─── CLI ────────────────────────────────────────────────────────────
 const gameFile = process.argv[2];
@@ -349,13 +353,41 @@ for (const [name, p] of Object.entries(playerScores)) {
   p.total_points = p.base_points * p.multiplier;
 }
 
+// ─── Captains for this week ─────────────────────────────────────────
+// captains.json shape: { "weekN": { "<teamId>": { "captain": "Player", "game": <gameNum> } } }
+// Captain 2x applies ONLY in the specific game the team activated it.
+const weekCaptains = CAPTAINS[`week${gameWeekNum}`] || {};
+
+// Validate captain entries against this week's roster + game list
+for (const [teamId, entry] of Object.entries(weekCaptains)) {
+  if (!entry || typeof entry !== 'object' || !entry.captain || !entry.game) continue;
+  const team = scoringDraft.teams.find(t => String(t.id) === String(teamId));
+  if (!team) {
+    console.warn(`⚠️  captains.json week${gameWeekNum}: team id ${teamId} not found`);
+    continue;
+  }
+  if (!team.players.includes(entry.captain)) {
+    console.warn(`⚠️  captains.json week${gameWeekNum}: "${entry.captain}" is not on ${team.name}'s roster`);
+  }
+  if (!weekEntry.games.includes(entry.game)) {
+    console.warn(`⚠️  captains.json week${gameWeekNum}: game ${entry.game} for ${team.name} is not in week ${gameWeekNum}`);
+  }
+}
+
 // ─── Fantasy team scores (using week-appropriate roster) ────────────
 const fantasyTeamScores = scoringDraft.teams.map(team => {
   let total = 0;
+  const capEntry = weekCaptains[String(team.id)] || null;
+  // Captain 2x only applies if this game is the one the team activated
+  const activeCaptainName = (capEntry && capEntry.game === gameNum) ? capEntry.captain : null;
+  const captainName = capEntry ? capEntry.captain : null;
   const players = team.players.map(pn => {
     const ps = playerScores[pn];
-    const tp = ps ? ps.total_points : 0;
-    total += tp;
+    const baseTotal = ps ? ps.total_points : 0;
+    const isCaptain = !!activeCaptainName && pn === activeCaptainName;
+    const captainMult = isCaptain && ps ? 2 : 1;
+    const effective = baseTotal * captainMult;
+    total += effective;
     return {
       name: pn,
       played: !!ps,
@@ -363,10 +395,19 @@ const fantasyTeamScores = scoringDraft.teams.map(team => {
       base_points:   ps ? ps.base_points : 0,
       multiplier:    ps ? ps.multiplier : 1,
       multiplier_reason: ps ? ps.multiplier_reason : '',
-      total_points: tp
+      is_captain: isCaptain,
+      captain_multiplier: captainMult,
+      total_points: effective
     };
   });
-  return { id: team.id, name: team.name, total_points: total, players };
+  return {
+    id: team.id,
+    name: team.name,
+    captain: captainName,
+    captain_active_this_game: !!activeCaptainName,
+    total_points: total,
+    players
+  };
 });
 
 // ─── Write scoring file ────────────────────────────────────────────
@@ -568,6 +609,24 @@ const topPlayers = Object.entries(playerScores)
   .sort((a, b) => b.total_points - a.total_points);
 topPlayers.slice(0, 5).forEach((p, i) =>
   console.log(`  ${i + 1}. ${p.name}: ${p.total_points} pts (base ${p.base_points}${p.multiplier > 1 ? ' x' + p.multiplier : ''}) [${p.capped_status}]`));
+
+// Captain bonus summary — only teams that activated their captain this game
+const captainLines = [];
+for (const ft of fantasyTeamScores) {
+  if (!ft.captain_active_this_game) continue;
+  const cp = ft.players.find(p => p.is_captain);
+  if (!cp) continue;
+  const baseTotal = cp.base_points * cp.multiplier;
+  if (cp.played) {
+    captainLines.push(`  ${ft.name} — ${cp.name} (C): ${baseTotal} → ${cp.total_points} pts`);
+  } else {
+    captainLines.push(`  ${ft.name} — ${cp.name} (C): did not play`);
+  }
+}
+if (captainLines.length) {
+  console.log('\n👑 Captain bonuses (activated this game):');
+  captainLines.forEach(l => console.log(l));
+}
 
 const uncapped2x = topPlayers.filter(p => p.multiplier === 2);
 if (uncapped2x.length) {
