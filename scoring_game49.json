@@ -1390,9 +1390,9 @@
     {
       "id": 4,
       "name": "Snow Strikers",
-      "captain": null,
-      "captain_active_this_game": false,
-      "total_points": 80,
+      "captain": "Prabhsimran Singh",
+      "captain_active_this_game": true,
+      "total_points": 83,
       "players": [
         {
           "name": "Yashasvi Jaiswal",
@@ -1467,9 +1467,9 @@
           "base_points": 3,
           "multiplier": 1,
           "multiplier_reason": "Uncapped but no condition met (3 runs, 0 wickets, 0 dismissals)",
-          "is_captain": false,
-          "captain_multiplier": 1,
-          "total_points": 3
+          "is_captain": true,
+          "captain_multiplier": 2,
+          "total_points": 6
         },
         {
           "name": "T Natarajan",
@@ -1586,7 +1586,7 @@
     {
       "id": 3,
       "name": "Dracarys Dynamites",
-      "captain": null,
+      "captain": "Angkrish Raghuvanshi",
       "captain_active_this_game": false,
       "total_points": 0,
       "players": [
@@ -1793,9 +1793,9 @@
     {
       "id": 5,
       "name": "Slayers Unsullied Force",
-      "captain": null,
-      "captain_active_this_game": false,
-      "total_points": 315,
+      "captain": "Abhishek Sharma",
+      "captain_active_this_game": true,
+      "total_points": 385,
       "players": [
         {
           "name": "Abhishek Sharma",
@@ -1804,9 +1804,9 @@
           "base_points": 70,
           "multiplier": 1,
           "multiplier_reason": "",
-          "is_captain": false,
-          "captain_multiplier": 1,
-          "total_points": 70
+          "is_captain": true,
+          "captain_multiplier": 2,
+          "total_points": 140
         },
         {
           "name": "Eshan Malinga",
@@ -2000,7 +2000,7 @@
     {
       "id": 6,
       "name": "Tyrion Titans",
-      "captain": null,
+      "captain": "Mitchell Marsh",
       "captain_active_this_game": false,
       "total_points": 131,
       "players": [
@@ -2196,7 +2196,7 @@
     {
       "id": 7,
       "name": "White Walkers",
-      "captain": null,
+      "captain": "Priyansh Arya",
       "captain_active_this_game": false,
       "total_points": 108,
       "players": [
@@ -2403,9 +2403,9 @@
     {
       "id": 8,
       "name": "Dothraki Khaleesi Gang",
-      "captain": null,
-      "captain_active_this_game": false,
-      "total_points": 17,
+      "captain": "Shreyas Iyer",
+      "captain_active_this_game": true,
+      "total_points": 34,
       "players": [
         {
           "name": "Vaibhav Sooryavanshi",
@@ -2458,9 +2458,9 @@
           "base_points": 17,
           "multiplier": 1,
           "multiplier_reason": "",
-          "is_captain": false,
-          "captain_multiplier": 1,
-          "total_points": 17
+          "is_captain": true,
+          "captain_multiplier": 2,
+          "total_points": 34
         },
         {
           "name": "Jos Buttler",

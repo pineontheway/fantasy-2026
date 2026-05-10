@@ -1382,7 +1382,7 @@
     {
       "id": 4,
       "name": "Snow Strikers",
-      "captain": null,
+      "captain": "Prabhsimran Singh",
       "captain_active_this_game": false,
       "total_points": 141,
       "players": [
@@ -1578,7 +1578,7 @@
     {
       "id": 3,
       "name": "Dracarys Dynamites",
-      "captain": null,
+      "captain": "Angkrish Raghuvanshi",
       "captain_active_this_game": false,
       "total_points": 40,
       "players": [
@@ -1785,7 +1785,7 @@
     {
       "id": 5,
       "name": "Slayers Unsullied Force",
-      "captain": null,
+      "captain": "Abhishek Sharma",
       "captain_active_this_game": false,
       "total_points": 109,
       "players": [
@@ -1992,7 +1992,7 @@
     {
       "id": 6,
       "name": "Tyrion Titans",
-      "captain": null,
+      "captain": "Mitchell Marsh",
       "captain_active_this_game": false,
       "total_points": 110,
       "players": [
@@ -2188,9 +2188,9 @@
     {
       "id": 7,
       "name": "White Walkers",
-      "captain": null,
-      "captain_active_this_game": false,
-      "total_points": 2,
+      "captain": "Priyansh Arya",
+      "captain_active_this_game": true,
+      "total_points": 4,
       "players": [
         {
           "name": "Heinrich Klaasen",
@@ -2221,9 +2221,9 @@
           "base_points": 2,
           "multiplier": 1,
           "multiplier_reason": "Uncapped but no condition met (2 runs, 0 wickets, 0 dismissals)",
-          "is_captain": false,
-          "captain_multiplier": 1,
-          "total_points": 2
+          "is_captain": true,
+          "captain_multiplier": 2,
+          "total_points": 4
         },
         {
           "name": "Shivam Dube",
@@ -2395,7 +2395,7 @@
     {
       "id": 8,
       "name": "Dothraki Khaleesi Gang",
-      "captain": null,
+      "captain": "Shreyas Iyer",
       "captain_active_this_game": false,
       "total_points": 245,
       "players": [

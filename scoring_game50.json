@@ -1380,7 +1380,7 @@
     {
       "id": 4,
       "name": "Snow Strikers",
-      "captain": null,
+      "captain": "Prabhsimran Singh",
       "captain_active_this_game": false,
       "total_points": 0,
       "players": [
@@ -1576,7 +1576,7 @@
     {
       "id": 3,
       "name": "Dracarys Dynamites",
-      "captain": null,
+      "captain": "Angkrish Raghuvanshi",
       "captain_active_this_game": false,
       "total_points": 123,
       "players": [
@@ -1783,7 +1783,7 @@
     {
       "id": 5,
       "name": "Slayers Unsullied Force",
-      "captain": null,
+      "captain": "Abhishek Sharma",
       "captain_active_this_game": false,
       "total_points": 112,
       "players": [
@@ -1990,9 +1990,9 @@
     {
       "id": 6,
       "name": "Tyrion Titans",
-      "captain": null,
-      "captain_active_this_game": false,
-      "total_points": 365,
+      "captain": "Mitchell Marsh",
+      "captain_active_this_game": true,
+      "total_points": 550,
       "players": [
         {
           "name": "Mitchell Marsh",
@@ -2001,9 +2001,9 @@
           "base_points": 185,
           "multiplier": 1,
           "multiplier_reason": "",
-          "is_captain": false,
-          "captain_multiplier": 1,
-          "total_points": 185
+          "is_captain": true,
+          "captain_multiplier": 2,
+          "total_points": 370
         },
         {
           "name": "Jason Holder",
@@ -2186,7 +2186,7 @@
     {
       "id": 7,
       "name": "White Walkers",
-      "captain": null,
+      "captain": "Priyansh Arya",
       "captain_active_this_game": false,
       "total_points": 39,
       "players": [
@@ -2393,7 +2393,7 @@
     {
       "id": 8,
       "name": "Dothraki Khaleesi Gang",
-      "captain": null,
+      "captain": "Shreyas Iyer",
       "captain_active_this_game": false,
       "total_points": 20,
       "players": [
