@@ -15,5 +15,10 @@
     "5": { "captain": "Abhishek Sharma", "game": 49 },
     "6": { "captain": "Mitchell Marsh", "game": 50 },
     "3": { "captain": "Angkrish Raghuvanshi", "game": 51 }
+  },
+  "week7": {
+    "8": { "captain": "Jos Buttler", "game": 52 },
+    "3": { "captain": "KL Rahul", "game": 55 },
+    "7": { "captain": "Priyansh Arya", "game": 55 }
   }
 }

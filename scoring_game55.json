@@ -1624,9 +1624,9 @@
     {
       "id": 3,
       "name": "Dracarys Dynamites",
-      "captain": null,
-      "captain_active_this_game": false,
-      "total_points": 33,
+      "captain": "KL Rahul",
+      "captain_active_this_game": true,
+      "total_points": 46,
       "players": [
         {
           "name": "KL Rahul",
@@ -1635,9 +1635,9 @@
           "base_points": 13,
           "multiplier": 1,
           "multiplier_reason": "",
-          "is_captain": false,
-          "captain_multiplier": 1,
-          "total_points": 13
+          "is_captain": true,
+          "captain_multiplier": 2,
+          "total_points": 26
         },
         {
           "name": "Arjun Tendulkar",
@@ -2234,9 +2234,9 @@
     {
       "id": 7,
       "name": "White Walkers",
-      "captain": null,
-      "captain_active_this_game": false,
-      "total_points": 178,
+      "captain": "Priyansh Arya",
+      "captain_active_this_game": true,
+      "total_points": 366,
       "players": [
         {
           "name": "Heinrich Klaasen",
@@ -2267,9 +2267,9 @@
           "base_points": 94,
           "multiplier": 2,
           "multiplier_reason": "30+ runs (56)",
-          "is_captain": false,
-          "captain_multiplier": 1,
-          "total_points": 188
+          "is_captain": true,
+          "captain_multiplier": 2,
+          "total_points": 376
         },
         {
           "name": "Shivam Dube",
@@ -2441,7 +2441,7 @@
     {
       "id": 8,
       "name": "Dothraki Khaleesi Gang",
-      "captain": null,
+      "captain": "Jos Buttler",
       "captain_active_this_game": false,
       "total_points": 91,
       "players": [
