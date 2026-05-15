@@ -1382,9 +1382,9 @@
     {
       "id": 4,
       "name": "Snow Strikers",
-      "captain": null,
-      "captain_active_this_game": false,
-      "total_points": 190,
+      "captain": "Prabhsimran Singh",
+      "captain_active_this_game": true,
+      "total_points": 380,
       "players": [
         {
           "name": "Yashasvi Jaiswal",
@@ -1459,9 +1459,9 @@
           "base_points": 95,
           "multiplier": 2,
           "multiplier_reason": "30+ runs (57)",
-          "is_captain": false,
-          "captain_multiplier": 1,
-          "total_points": 190
+          "is_captain": true,
+          "captain_multiplier": 2,
+          "total_points": 380
         },
         {
           "name": "T Natarajan",
