@@ -958,7 +958,7 @@
     {
       "id": 1,
       "name": "Valtheru Valyrian Steel",
-      "captain": null,
+      "captain": "Naman Dhir",
       "captain_active_this_game": false,
       "total_points": 0,
       "players": [
@@ -1383,7 +1383,7 @@
     {
       "id": 4,
       "name": "Snow Strikers",
-      "captain": null,
+      "captain": "Prabhsimran Singh",
       "captain_active_this_game": false,
       "total_points": 79,
       "players": [
@@ -1786,7 +1786,7 @@
     {
       "id": 5,
       "name": "Slayers Unsullied Force",
-      "captain": null,
+      "captain": "Cooper Connolly",
       "captain_active_this_game": false,
       "total_points": 20,
       "players": [
@@ -2592,9 +2592,9 @@
     {
       "id": 9,
       "name": "Telugu Targerions",
-      "captain": null,
-      "captain_active_this_game": false,
-      "total_points": 98,
+      "captain": "Ishan Kishan",
+      "captain_active_this_game": true,
+      "total_points": 135,
       "players": [
         {
           "name": "Sakib Hussain",
@@ -2614,9 +2614,9 @@
           "base_points": 37,
           "multiplier": 1,
           "multiplier_reason": "",
-          "is_captain": false,
-          "captain_multiplier": 1,
-          "total_points": 37
+          "is_captain": true,
+          "captain_multiplier": 2,
+          "total_points": 74
         },
         {
           "name": "Jofra Archer",
