@@ -1785,9 +1785,9 @@
     {
       "id": 5,
       "name": "Slayers Unsullied Force",
-      "captain": null,
-      "captain_active_this_game": false,
-      "total_points": 273,
+      "captain": "Cooper Connolly",
+      "captain_active_this_game": true,
+      "total_points": 292,
       "players": [
         {
           "name": "Abhishek Sharma",
@@ -1983,9 +1983,9 @@
           "base_points": 19,
           "multiplier": 1,
           "multiplier_reason": "",
-          "is_captain": false,
-          "captain_multiplier": 1,
-          "total_points": 19
+          "is_captain": true,
+          "captain_multiplier": 2,
+          "total_points": 38
         }
       ]
     },
