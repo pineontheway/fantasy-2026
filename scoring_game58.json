@@ -957,9 +957,9 @@
     {
       "id": 1,
       "name": "Valtheru Valyrian Steel",
-      "captain": null,
-      "captain_active_this_game": false,
-      "total_points": 59,
+      "captain": "Naman Dhir",
+      "captain_active_this_game": true,
+      "total_points": 72,
       "players": [
         {
           "name": "Sanju Samson",
@@ -1122,9 +1122,9 @@
           "base_points": 13,
           "multiplier": 1,
           "multiplier_reason": "Uncapped but no condition met (9 runs, 0 wickets, 0 dismissals)",
-          "is_captain": false,
-          "captain_multiplier": 1,
-          "total_points": 13
+          "is_captain": true,
+          "captain_multiplier": 2,
+          "total_points": 26
         },
         {
           "name": "Vaibhav Arora",
