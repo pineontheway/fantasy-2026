@@ -203,7 +203,7 @@
         58,
         59
       ],
-      "roster": "draft_data.json",
+      "roster": "draft_data_week7.json",
       "groups": [
         {
           "name": "Group 1",
@@ -243,7 +243,33 @@
         66,
         67
       ],
-      "roster": "draft_data.json"
+      "roster": "draft_data.json",
+      "groups": [
+        {
+          "name": "Group 1",
+          "teams": [
+            8,
+            7,
+            6
+          ]
+        },
+        {
+          "name": "Group 2",
+          "teams": [
+            1,
+            9,
+            5
+          ]
+        },
+        {
+          "name": "Group 3",
+          "teams": [
+            3,
+            4,
+            2
+          ]
+        }
+      ]
     },
     {
       "week": 9,
