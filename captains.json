@@ -24,5 +24,10 @@
     "5": { "captain": "Cooper Connolly", "game": 58 },
     "1": { "captain": "Naman Dhir", "game": 58 },
     "9": { "captain": "Ishan Kishan", "game": 56 }
+  },
+  "week8": {
+    "7": { "captain": "Priyansh Arya", "game": 61 },
+    "5": { "captain": "Abhishek Sharma", "game": 63 },
+    "8": { "captain": "Vaibhav Sooryavanshi", "game": 64 }
   }
 }
