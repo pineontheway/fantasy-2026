@@ -1790,7 +1790,7 @@
     {
       "id": 5,
       "name": "Slayers Unsullied Force",
-      "captain": null,
+      "captain": "Abhishek Sharma",
       "captain_active_this_game": false,
       "total_points": 142,
       "players": [
@@ -2193,8 +2193,8 @@
     {
       "id": 7,
       "name": "White Walkers",
-      "captain": null,
-      "captain_active_this_game": false,
+      "captain": "Priyansh Arya",
+      "captain_active_this_game": true,
       "total_points": 410,
       "players": [
         {
@@ -2226,8 +2226,8 @@
           "base_points": 0,
           "multiplier": 1,
           "multiplier_reason": "Uncapped but no condition met (0 runs, 0 wickets, 1 dismissals)",
-          "is_captain": false,
-          "captain_multiplier": 1,
+          "is_captain": true,
+          "captain_multiplier": 2,
           "total_points": 0
         },
         {
@@ -2400,7 +2400,7 @@
     {
       "id": 8,
       "name": "Dothraki Khaleesi Gang",
-      "captain": null,
+      "captain": "Vaibhav Sooryavanshi",
       "captain_active_this_game": false,
       "total_points": 51,
       "players": [

@@ -1782,9 +1782,9 @@
     {
       "id": 5,
       "name": "Slayers Unsullied Force",
-      "captain": null,
-      "captain_active_this_game": false,
-      "total_points": 66,
+      "captain": "Abhishek Sharma",
+      "captain_active_this_game": true,
+      "total_points": 102,
       "players": [
         {
           "name": "Abhishek Sharma",
@@ -1793,9 +1793,9 @@
           "base_points": 36,
           "multiplier": 1,
           "multiplier_reason": "",
-          "is_captain": false,
-          "captain_multiplier": 1,
-          "total_points": 36
+          "is_captain": true,
+          "captain_multiplier": 2,
+          "total_points": 72
         },
         {
           "name": "Eshan Malinga",
@@ -2185,7 +2185,7 @@
     {
       "id": 7,
       "name": "White Walkers",
-      "captain": null,
+      "captain": "Priyansh Arya",
       "captain_active_this_game": false,
       "total_points": 128,
       "players": [
@@ -2392,7 +2392,7 @@
     {
       "id": 8,
       "name": "Dothraki Khaleesi Gang",
-      "captain": null,
+      "captain": "Vaibhav Sooryavanshi",
       "captain_active_this_game": false,
       "total_points": 7,
       "players": [

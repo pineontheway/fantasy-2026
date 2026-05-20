@@ -1775,7 +1775,7 @@
     {
       "id": 5,
       "name": "Slayers Unsullied Force",
-      "captain": null,
+      "captain": "Abhishek Sharma",
       "captain_active_this_game": false,
       "total_points": 106,
       "players": [
@@ -2178,7 +2178,7 @@
     {
       "id": 7,
       "name": "White Walkers",
-      "captain": null,
+      "captain": "Priyansh Arya",
       "captain_active_this_game": false,
       "total_points": 20,
       "players": [
@@ -2385,9 +2385,9 @@
     {
       "id": 8,
       "name": "Dothraki Khaleesi Gang",
-      "captain": null,
-      "captain_active_this_game": false,
-      "total_points": 344,
+      "captain": "Vaibhav Sooryavanshi",
+      "captain_active_this_game": true,
+      "total_points": 688,
       "players": [
         {
           "name": "Vaibhav Sooryavanshi",
@@ -2396,9 +2396,9 @@
           "base_points": 172,
           "multiplier": 2,
           "multiplier_reason": "30+ runs (93)",
-          "is_captain": false,
-          "captain_multiplier": 1,
-          "total_points": 344
+          "is_captain": true,
+          "captain_multiplier": 2,
+          "total_points": 688
         },
         {
           "name": "Shubham Dubey",
