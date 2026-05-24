@@ -241,7 +241,10 @@
         64,
         65,
         66,
-        67
+        67,
+        68,
+        69,
+        70
       ],
       "roster": "draft_data.json",
       "groups": [
@@ -270,15 +273,6 @@
           ]
         }
       ]
-    },
-    {
-      "week": 9,
-      "games": [
-        68,
-        69,
-        70
-      ],
-      "roster": "draft_data.json"
     }
   ]
 }
