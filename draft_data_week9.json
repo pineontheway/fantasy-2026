@@ -65,11 +65,11 @@
       "id": 7,
       "name": "White Walkers",
       "owner": "Vijay",
-      "players": ["Devdutt Padikkal", "Rasikh Salam", "Suyash Sharma", "Prasidh Krishna", "Sai Kishore", "Ashok Sharma", "Heinrich Klaasen", "Travis Head", "Dhruv Jurel", "Pat Cummins"],
-      "player_points": {"Devdutt Padikkal": 0, "Rasikh Salam": 0, "Suyash Sharma": 0, "Prasidh Krishna": 0, "Sai Kishore": 0, "Ashok Sharma": 0, "Heinrich Klaasen": 0, "Travis Head": 0, "Dhruv Jurel": 0, "Pat Cummins": 0},
+      "players": ["Devdutt Padikkal", "Rasikh Salam", "Suyash Sharma", "Prasidh Krishna", "Sai Kishore", "Ashok Sharma", "Heinrich Klaasen", "Praful Hinge", "Travis Head", "Dhruv Jurel", "Pat Cummins"],
+      "player_points": {"Devdutt Padikkal": 0, "Rasikh Salam": 0, "Suyash Sharma": 0, "Prasidh Krishna": 0, "Sai Kishore": 0, "Ashok Sharma": 0, "Heinrich Klaasen": 0, "Praful Hinge": 0, "Travis Head": 0, "Dhruv Jurel": 0, "Pat Cummins": 0},
       "total_points": 0,
-      "player_capped": {"Devdutt Padikkal": "Capped", "Rasikh Salam": "Uncapped", "Suyash Sharma": "Uncapped", "Prasidh Krishna": "Capped", "Sai Kishore": "Capped", "Ashok Sharma": "Uncapped", "Heinrich Klaasen": "Capped", "Travis Head": "Capped", "Dhruv Jurel": "Capped", "Pat Cummins": "Capped"},
-      "player_roles": {"Devdutt Padikkal": "BAT", "Rasikh Salam": "BOWL", "Suyash Sharma": "BOWL", "Prasidh Krishna": "BOWL", "Sai Kishore": "AR", "Ashok Sharma": "BOWL", "Heinrich Klaasen": "BAT", "Travis Head": "BAT", "Dhruv Jurel": "WK", "Pat Cummins": "BOWL"}
+      "player_capped": {"Devdutt Padikkal": "Capped", "Rasikh Salam": "Uncapped", "Suyash Sharma": "Uncapped", "Prasidh Krishna": "Capped", "Sai Kishore": "Capped", "Ashok Sharma": "Uncapped", "Heinrich Klaasen": "Capped", "Praful Hinge": "Uncapped", "Travis Head": "Capped", "Dhruv Jurel": "Capped", "Pat Cummins": "Capped"},
+      "player_roles": {"Devdutt Padikkal": "BAT", "Rasikh Salam": "BOWL", "Suyash Sharma": "BOWL", "Prasidh Krishna": "BOWL", "Sai Kishore": "AR", "Ashok Sharma": "BOWL", "Heinrich Klaasen": "BAT", "Praful Hinge": "BOWL", "Travis Head": "BAT", "Dhruv Jurel": "WK", "Pat Cummins": "BOWL"}
     },
     {
       "id": 8,

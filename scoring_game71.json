@@ -1649,6 +1649,17 @@
           "total_points": 0
         },
         {
+          "name": "Praful Hinge",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
           "name": "Travis Head",
           "played": false,
           "capped_status": "Capped",
