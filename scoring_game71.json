@@ -417,7 +417,7 @@
     },
     "Jacob Duffy": {
       "ipl_team": "Royal Challengers Bengaluru",
-      "capped_status": "Unknown",
+      "capped_status": "Capped",
       "batting": {
         "runs": 0,
         "balls": 0,
@@ -726,7 +726,7 @@
     },
     "Jason Holder": {
       "ipl_team": "Gujarat Titans",
-      "capped_status": "Unknown",
+      "capped_status": "Capped",
       "batting": {
         "runs": 0,
         "balls": 3,
@@ -1054,6 +1054,28 @@
           "is_captain": false,
           "captain_multiplier": 1,
           "total_points": 55
+        },
+        {
+          "name": "Lhuan-dre Pretorius",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
         }
       ]
     },
@@ -1237,6 +1259,28 @@
           "is_captain": false,
           "captain_multiplier": 1,
           "total_points": 29
+        },
+        {
+          "name": "Shahrukh Khan",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Donovan Ferreira",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
         }
       ]
     },
@@ -1345,6 +1389,17 @@
           "is_captain": false,
           "captain_multiplier": 1,
           "total_points": 45
+        },
+        {
+          "name": "Ravindra Jadeja",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
         }
       ]
     },
@@ -1475,6 +1530,28 @@
           "is_captain": false,
           "captain_multiplier": 1,
           "total_points": 30
+        },
+        {
+          "name": "Yash Raj Punja",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Nandre Burger",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
         }
       ]
     },
@@ -1483,7 +1560,7 @@
       "name": "Tyrion Titans",
       "captain": null,
       "captain_active_this_game": false,
-      "total_points": 26,
+      "total_points": 56,
       "players": [
         {
           "name": "Akash Madhwal",
@@ -1561,6 +1638,17 @@
           "is_captain": false,
           "captain_multiplier": 1,
           "total_points": 14
+        },
+        {
+          "name": "Jason Holder",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 30,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 30
         }
       ]
     },
@@ -1699,7 +1787,7 @@
       "name": "Dothraki Khaleesi Gang",
       "captain": null,
       "captain_active_this_game": false,
-      "total_points": 183,
+      "total_points": 253,
       "players": [
         {
           "name": "Bhuvneshwar Kumar",
@@ -1832,6 +1920,17 @@
           "is_captain": false,
           "captain_multiplier": 1,
           "total_points": 0
+        },
+        {
+          "name": "Jacob Duffy",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 70,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 70
         }
       ]
     },
@@ -1962,6 +2061,50 @@
           "is_captain": false,
           "captain_multiplier": 1,
           "total_points": 55
+        },
+        {
+          "name": "Sakib Hussain",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Harsh Dubey",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Shivang Kumar",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Brijesh Sharma",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
         }
       ]
     }
