@@ -35,11 +35,11 @@
       "id": 4,
       "name": "Snow Strikers",
       "owner": "Praveen",
-      "players": ["Yashasvi Jaiswal", "Sai Sudharsan", "Travis Head", "Kamindu Mendis", "Rahul Chahar", "Shubman Gill", "Abhishek Sharma", "Devdutt Padikkal"],
-      "player_points": {"Yashasvi Jaiswal": 0, "Sai Sudharsan": 0, "Travis Head": 0, "Kamindu Mendis": 0, "Rahul Chahar": 0, "Shubman Gill": 0, "Abhishek Sharma": 0, "Devdutt Padikkal": 0},
+      "players": ["Yashasvi Jaiswal", "Sai Sudharsan", "Travis Head", "Kamindu Mendis", "Rahul Chahar", "Venkatesh Iyer", "Shubman Gill", "Abhishek Sharma", "Devdutt Padikkal"],
+      "player_points": {"Yashasvi Jaiswal": 0, "Sai Sudharsan": 0, "Travis Head": 0, "Kamindu Mendis": 0, "Rahul Chahar": 0, "Venkatesh Iyer": 0, "Shubman Gill": 0, "Abhishek Sharma": 0, "Devdutt Padikkal": 0},
       "total_points": 0,
-      "player_capped": {"Yashasvi Jaiswal": "Capped", "Sai Sudharsan": "Capped", "Travis Head": "Capped", "Kamindu Mendis": "Capped", "Rahul Chahar": "Capped", "Shubman Gill": "Capped", "Abhishek Sharma": "Capped", "Devdutt Padikkal": "Capped"},
-      "player_roles": {"Yashasvi Jaiswal": "BAT", "Sai Sudharsan": "BAT", "Travis Head": "BAT", "Kamindu Mendis": "AR", "Rahul Chahar": "BOWL", "Shubman Gill": "BAT", "Abhishek Sharma": "BAT", "Devdutt Padikkal": "BAT"}
+      "player_capped": {"Yashasvi Jaiswal": "Capped", "Sai Sudharsan": "Capped", "Travis Head": "Capped", "Kamindu Mendis": "Capped", "Rahul Chahar": "Capped", "Venkatesh Iyer": "Capped", "Shubman Gill": "Capped", "Abhishek Sharma": "Capped", "Devdutt Padikkal": "Capped"},
+      "player_roles": {"Yashasvi Jaiswal": "BAT", "Sai Sudharsan": "BAT", "Travis Head": "BAT", "Kamindu Mendis": "AR", "Rahul Chahar": "BOWL", "Venkatesh Iyer": "AR", "Shubman Gill": "BAT", "Abhishek Sharma": "BAT", "Devdutt Padikkal": "BAT"}
     },
     {
       "id": 5,

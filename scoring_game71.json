@@ -1245,7 +1245,7 @@
       "name": "Snow Strikers",
       "captain": null,
       "captain_active_this_game": false,
-      "total_points": 87,
+      "total_points": 116,
       "players": [
         {
           "name": "Yashasvi Jaiswal",
@@ -1301,6 +1301,17 @@
           "is_captain": false,
           "captain_multiplier": 1,
           "total_points": 0
+        },
+        {
+          "name": "Venkatesh Iyer",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 29,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 29
         },
         {
           "name": "Shubman Gill",
