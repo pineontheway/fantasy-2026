@@ -57,8 +57,12 @@
     .fw-group-row .team-info .tn { font-size: 0.82rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .fw-group-row .team-info .ow { font-size: 0.68rem; color: var(--text3); }
     .fw-group-row .pts { font-weight: 800; color: var(--gold); font-size: 1.05rem; font-variant-numeric: tabular-nums; flex-shrink: 0; }
-    .fw-games { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.85rem; margin-top: 0.4rem; }
-    @media (max-width: 800px) { .fw-games { grid-template-columns: 1fr; } }
+    .fw-games { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 0.4rem; }
+    .fw-game-block { background: transparent; }
+    .fw-game-block .game-header { background: var(--bg2); border-radius: 10px; padding: 1rem 1.25rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .fw-game-block .game-header .match-title { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1.05rem; }
+    .fw-game-block .game-header .match-result { color: var(--green); font-size: 0.85rem; }
+    .fw-game-block .game-header .match-meta { color: var(--text2); font-size: 0.8rem; text-align: right; }
     .fw-game-card { background: var(--bg2); border-radius: 10px; padding: 0.9rem 1rem; border-left: 3px solid var(--bg4); }
     .fw-game-card.done { border-left-color: var(--green); }
     .fw-game-card.upcoming { border-left-color: var(--blue); }
@@ -781,38 +785,55 @@ function renderFinalWeek() {
   const gamesHtml = FINAL_WEEK_GAMES.map(g => {
     const sc = getFinalWeekScoring(g.num);
     if (!sc) {
-      return `<div class="fw-game-card upcoming">
-        <div class="fw-game-head">
-          <div class="fw-game-title">Game ${g.num} — ${g.label}</div>
-          <div class="fw-game-status upcoming">Upcoming</div>
+      return `<div class="fw-game-block upcoming-block">
+        <div class="game-header" style="background:var(--bg2);margin-bottom:1rem">
+          <div>
+            <div class="match-title">Game ${g.num} — ${g.label}</div>
+            <div class="match-result" style="color:var(--blue)">Upcoming</div>
+          </div>
+          <div class="match-meta">TBD</div>
         </div>
-        <div class="fw-game-result">Match not yet played</div>
       </div>`;
     }
-    const title = sc.match.title || g.label;
-    const result = sc.match.status || '';
-    const ground = sc.match.ground || '';
-    const date = sc.match.date ? new Date(sc.match.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' }) : '';
-    const ftPts = {};
-    wkDraft.teams.forEach(t => { ftPts[t.id] = { name: t.name, pts: 0 }; });
-    wkDraft.teams.forEach(t => {
-      t.players.forEach(name => {
-        const ps = sc.player_scores[name];
-        if (ps) ftPts[t.id].pts += ps.total_points;
-      });
-    });
-    const pills = Object.entries(ftPts).sort((a, b) => b[1].pts - a[1].pts).map(([id, ft]) => {
-      const cls = ft.pts > 0 ? 'pts-pos' : ft.pts < 0 ? 'pts-neg' : 'pts-zero';
-      const sign = ft.pts > 0 ? '+' : '';
-      return `<div class="fw-gt-pill"><span class="name">${ft.name}</span><span class="pts ${cls}">${sign}${ft.pts}</span></div>`;
+    const m = sc.match;
+    const ps = sc.player_scores || {};
+    const teamCards = (sc.fantasy_team_scores || []).map(t => {
+      const activePlayers = (t.players || []).filter(p => p.played).sort((a, b) => b.total_points - a.total_points);
+      return `<div class="game-team-card">
+        <h4>${t.name}</h4>
+        <div class="gtc-pts ${ptsClass(t.total_points)}">${t.total_points > 0 ? '+' : ''}${t.total_points} pts</div>
+        ${activePlayers.length ? activePlayers.map(p => {
+          const pData = ps[p.name];
+          let bdHtml = '';
+          if (pData) {
+            const sections = [];
+            if (pData.batting.breakdown.length) sections.push('<div class="bd-section">Batting (' + fmtPts(pData.batting.points) + ')</div>' + pData.batting.breakdown.map(l => '<div class="bd-line">' + l + '</div>').join(''));
+            if (pData.bowling.breakdown.length) sections.push('<div class="bd-section">Bowling (' + fmtPts(pData.bowling.points) + ')</div>' + pData.bowling.breakdown.map(l => '<div class="bd-line">' + l + '</div>').join(''));
+            if (pData.fielding.breakdown.length) sections.push('<div class="bd-section">Fielding (' + fmtPts(pData.fielding.points) + ')</div>' + pData.fielding.breakdown.map(l => '<div class="bd-line">' + l + '</div>').join(''));
+            if (p.multiplier > 1) sections.push('<div class="bd-mult">Uncapped 2x (' + (p.multiplier_reason || '') + '): ' + p.base_points + ' × 2 = ' + (p.base_points * p.multiplier) + '</div>');
+            bdHtml = sections.join('');
+          }
+          const uid = 'fw-bd-' + g.num + '-' + t.id + '-' + p.name.replace(/[^a-zA-Z]/g, '');
+          return `<div class="gtc-player" onclick="toggleBD('${uid}')" style="cursor:pointer">
+            <div class="name">
+              ${p.capped_status === 'Uncapped' ? '<span class="badge badge-uncapped">UC</span>' : ''}${p.multiplier === 2 ? '<span class="badge badge-2x">2x</span>' : ''}
+              <span>${p.name}</span>
+            </div>
+            <span class="pts-cell ${ptsClass(p.total_points)}">${p.base_points !== p.total_points ? p.base_points + '→' : ''}${fmtPts(p.total_points)}</span>
+          </div>
+          ${bdHtml ? '<div class="breakdown-row" id="' + uid + '"><div class="breakdown-content">' + bdHtml + '</div></div>' : ''}`;
+        }).join('') : '<div style="font-size:0.8rem;color:var(--text3);padding:0.3rem 0">No players scored</div>'}
+      </div>`;
     }).join('');
-    return `<div class="fw-game-card done">
-      <div class="fw-game-head">
-        <div class="fw-game-title">Game ${g.num} — ${title}</div>
-        <div class="fw-game-status done">Done</div>
+    return `<div class="fw-game-block">
+      <div class="game-header" style="margin-bottom:1rem">
+        <div>
+          <div class="match-title">Game ${g.num} — ${m.teams ? m.teams.join(' vs ') : g.label}</div>
+          <div class="match-result">${m.status || ''}</div>
+        </div>
+        <div class="match-meta">${m.ground || ''}<br>${m.date ? new Date(m.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }) : ''}</div>
       </div>
-      <div class="fw-game-result">${result}${ground ? ' • ' + ground : ''}${date ? ' • ' + date : ''}</div>
-      <div class="fw-game-teamlist">${pills}</div>
+      <div class="game-standings">${teamCards}</div>
     </div>`;
   }).join('');
 
