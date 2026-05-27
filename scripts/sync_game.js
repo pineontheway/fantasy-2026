@@ -45,9 +45,16 @@ const draft = require(path.join(ROOT, 'draft_data.json'));
 const matchTitle = game.match.title || '';
 let gameNum = null;
 
-// Try to extract from match title ("3rd Match" → 3)
-const titleMatch = matchTitle.match(/(\d+)/);
-if (titleMatch) gameNum = parseInt(titleMatch[1]);
+// Highest priority: extract from filename (e.g. "game71.json" → 71). Avoids
+// mis-parsing playoff titles like "1st Qualifier" as game 1.
+const fileNumMatch = path.basename(gameFile).match(/game(\d+)\.json/i);
+if (fileNumMatch) gameNum = parseInt(fileNumMatch[1]);
+
+// Fallback: extract from match title ("3rd Match" → 3)
+if (!gameNum) {
+  const titleMatch = matchTitle.match(/(\d+)/);
+  if (titleMatch) gameNum = parseInt(titleMatch[1]);
+}
 
 // Fallback: next available scoring file number
 if (!gameNum) {

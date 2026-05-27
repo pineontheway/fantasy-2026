@@ -273,6 +273,44 @@
           ]
         }
       ]
+    },
+    {
+      "week": 9,
+      "label": "Final Week",
+      "games": [
+        71,
+        72,
+        73,
+        74
+      ],
+      "roster": "draft_data_week9.json",
+      "no_captains": true,
+      "groups": [
+        {
+          "name": "Group 1",
+          "teams": [
+            8,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "Group 2",
+          "teams": [
+            9,
+            3,
+            7
+          ]
+        },
+        {
+          "name": "Group 3",
+          "teams": [
+            1,
+            4,
+            2
+          ]
+        }
+      ]
     }
   ]
 }
