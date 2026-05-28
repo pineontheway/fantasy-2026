@@ -1,0 +1,2133 @@
+{
+  "match": {
+    "title": "Eliminator",
+    "slug": "rajasthan-royals-vs-sunrisers-hyderabad-eliminator",
+    "status": "RR won by 47 runs",
+    "date": "2026-05-27T00:00:00.000Z",
+    "ground": "Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",
+    "teams": [
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ]
+  },
+  "scoring_rules": {
+    "note": "Uncapped players get 2x multiplier ONLY if: 30+ runs OR 3+ wickets OR 3+ fielding dismissals",
+    "uncapped_multiplier": 2,
+    "conditions": [
+      "30+ runs",
+      "3+ wickets",
+      "3+ fielding dismissals (catches + runouts + direct hits + stumpings)"
+    ]
+  },
+  "player_scores": {
+    "Yashasvi Jaiswal": {
+      "ipl_team": "Rajasthan Royals",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 29,
+        "balls": 29,
+        "fours": 4,
+        "sixes": 0,
+        "is_out": true,
+        "points": 27,
+        "breakdown": [
+          "29 runs = +29",
+          "4 fours = +8",
+          "SR 100.0 <=100 = -10"
+        ]
+      },
+      "bowling": {
+        "overs": 0,
+        "wickets": 0,
+        "conceded": 0,
+        "economy": 0,
+        "maidens": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "base_points": 27,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 27
+    },
+    "Vaibhav Sooryavanshi": {
+      "ipl_team": "Rajasthan Royals",
+      "capped_status": "Uncapped",
+      "batting": {
+        "runs": 97,
+        "balls": 29,
+        "fours": 5,
+        "sixes": 12,
+        "is_out": true,
+        "points": 190,
+        "breakdown": [
+          "97 runs = +97",
+          "5 fours = +10",
+          "12 sixes = +48",
+          "SR 334.5 >=300 = +25",
+          "≥50 runs bonus = +5",
+          "≥30 runs bonus = +5"
+        ]
+      },
+      "bowling": {
+        "overs": 0,
+        "wickets": 0,
+        "conceded": 0,
+        "economy": 0,
+        "maidens": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "fielding": {
+        "catches": 1,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 10,
+        "breakdown": [
+          "Catch (Shivang Kumar) = +10"
+        ]
+      },
+      "base_points": 200,
+      "multiplier": 2,
+      "multiplier_reason": "30+ runs (97)",
+      "total_points": 400
+    },
+    "Dhruv Jurel": {
+      "ipl_team": "Rajasthan Royals",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 50,
+        "balls": 21,
+        "fours": 5,
+        "sixes": 3,
+        "is_out": true,
+        "points": 97,
+        "breakdown": [
+          "50 runs = +50",
+          "5 fours = +10",
+          "3 sixes = +12",
+          "SR 238.1 >=200 = +15",
+          "≥50 runs bonus = +5",
+          "≥30 runs bonus = +5"
+        ]
+      },
+      "bowling": {
+        "overs": 0,
+        "wickets": 0,
+        "conceded": 0,
+        "economy": 0,
+        "maidens": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "fielding": {
+        "catches": 1,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 10,
+        "breakdown": [
+          "Catch (Abhishek Sharma) = +10"
+        ]
+      },
+      "base_points": 107,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 107
+    },
+    "Riyan Parag": {
+      "ipl_team": "Rajasthan Royals",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 26,
+        "balls": 12,
+        "fours": 2,
+        "sixes": 2,
+        "is_out": true,
+        "points": 38,
+        "breakdown": [
+          "26 runs = +26",
+          "2 fours = +4",
+          "2 sixes = +8"
+        ]
+      },
+      "bowling": {
+        "overs": 0,
+        "wickets": 0,
+        "conceded": 0,
+        "economy": 0,
+        "maidens": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "base_points": 38,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 38
+    },
+    "Donovan Ferreira": {
+      "ipl_team": "Rajasthan Royals",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 12,
+        "balls": 9,
+        "fours": 1,
+        "sixes": 0,
+        "is_out": true,
+        "points": 14,
+        "breakdown": [
+          "12 runs = +12",
+          "1 fours = +2"
+        ]
+      },
+      "bowling": {
+        "overs": 0,
+        "wickets": 0,
+        "conceded": 0,
+        "economy": 0,
+        "maidens": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "fielding": {
+        "catches": 1,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 10,
+        "breakdown": [
+          "Catch (Ishan Kishan) = +10"
+        ]
+      },
+      "base_points": 24,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 24
+    },
+    "Dasun Shanaka": {
+      "ipl_team": "Rajasthan Royals",
+      "capped_status": "Unknown",
+      "batting": {
+        "runs": 5,
+        "balls": 3,
+        "fours": 1,
+        "sixes": 0,
+        "is_out": true,
+        "points": 7,
+        "breakdown": [
+          "5 runs = +5",
+          "1 fours = +2"
+        ]
+      },
+      "bowling": {
+        "overs": 0,
+        "wickets": 0,
+        "conceded": 0,
+        "economy": 0,
+        "maidens": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "fielding": {
+        "catches": 1,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 10,
+        "breakdown": [
+          "Catch (Nitish Kumar Reddy) = +10"
+        ]
+      },
+      "base_points": 17,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 17
+    },
+    "Ravindra Jadeja": {
+      "ipl_team": "Rajasthan Royals",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 12,
+        "balls": 9,
+        "fours": 1,
+        "sixes": 0,
+        "is_out": false,
+        "points": 14,
+        "breakdown": [
+          "12 runs = +12",
+          "1 fours = +2"
+        ]
+      },
+      "bowling": {
+        "overs": 3,
+        "wickets": 2,
+        "conceded": 21,
+        "economy": 7,
+        "maidens": 0,
+        "points": 40,
+        "breakdown": [
+          "2 wickets = +40"
+        ]
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "base_points": 54,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 54
+    },
+    "Jofra Archer": {
+      "ipl_team": "Rajasthan Royals",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 4,
+        "balls": 5,
+        "fours": 1,
+        "sixes": 0,
+        "is_out": true,
+        "points": 6,
+        "breakdown": [
+          "4 runs = +4",
+          "1 fours = +2"
+        ]
+      },
+      "bowling": {
+        "overs": 4,
+        "wickets": 3,
+        "conceded": 58,
+        "economy": 14.5,
+        "maidens": 0,
+        "points": 50,
+        "breakdown": [
+          "3 wickets = +60",
+          "3 wickets bonus = +10",
+          "Economy 14.5 >=12 = -20"
+        ]
+      },
+      "fielding": {
+        "catches": 3,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 40,
+        "breakdown": [
+          "Catch (Ravichandran Smaran) = +10",
+          "Catch (Pat Cummins) = +10",
+          "Catch (Eshan Malinga) = +10",
+          "3 catches bonus = +10"
+        ]
+      },
+      "base_points": 96,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 96
+    },
+    "Nandre Burger": {
+      "ipl_team": "Rajasthan Royals",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 1,
+        "balls": 1,
+        "fours": 0,
+        "sixes": 0,
+        "is_out": true,
+        "points": 1,
+        "breakdown": [
+          "1 runs = +1"
+        ]
+      },
+      "bowling": {
+        "overs": 3,
+        "wickets": 2,
+        "conceded": 26,
+        "economy": 8.66,
+        "maidens": 0,
+        "points": 40,
+        "breakdown": [
+          "2 wickets = +40"
+        ]
+      },
+      "fielding": {
+        "catches": 1,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 10,
+        "breakdown": [
+          "Catch (Salil Arora) = +10"
+        ]
+      },
+      "base_points": 51,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 51
+    },
+    "Sushant Mishra": {
+      "ipl_team": "Rajasthan Royals",
+      "capped_status": "Unknown",
+      "batting": {
+        "runs": 1,
+        "balls": 3,
+        "fours": 0,
+        "sixes": 0,
+        "is_out": false,
+        "points": 1,
+        "breakdown": [
+          "1 runs = +1"
+        ]
+      },
+      "bowling": {
+        "overs": 2.2,
+        "wickets": 2,
+        "conceded": 21,
+        "economy": 9,
+        "maidens": 0,
+        "points": 40,
+        "breakdown": [
+          "2 wickets = +40"
+        ]
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "base_points": 41,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 41
+    },
+    "Brijesh Sharma": {
+      "ipl_team": "Rajasthan Royals",
+      "capped_status": "Uncapped",
+      "batting": {
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "is_out": false,
+        "points": 0,
+        "breakdown": [
+          "Did not bat"
+        ]
+      },
+      "bowling": {
+        "overs": 3,
+        "wickets": 0,
+        "conceded": 31,
+        "economy": 10.33,
+        "maidens": 0,
+        "points": -10,
+        "breakdown": [
+          "Economy 10.33 >=10 = -10"
+        ]
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "base_points": -10,
+      "multiplier": 1,
+      "multiplier_reason": "Uncapped but no condition met (0 runs, 0 wickets, 0 dismissals)",
+      "total_points": -10
+    },
+    "Yash Raj Punja": {
+      "ipl_team": "Rajasthan Royals",
+      "capped_status": "Uncapped",
+      "batting": {
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "is_out": false,
+        "points": 0,
+        "breakdown": [
+          "Did not bat"
+        ]
+      },
+      "bowling": {
+        "overs": 4,
+        "wickets": 1,
+        "conceded": 39,
+        "economy": 9.75,
+        "maidens": 0,
+        "points": 20,
+        "breakdown": [
+          "1 wickets = +20"
+        ]
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "base_points": 20,
+      "multiplier": 1,
+      "multiplier_reason": "Uncapped but no condition met (0 runs, 1 wickets, 0 dismissals)",
+      "total_points": 20
+    },
+    "Praful Hinge": {
+      "ipl_team": "Sunrisers Hyderabad",
+      "capped_status": "Uncapped",
+      "batting": {
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "is_out": false,
+        "points": 0,
+        "breakdown": [
+          "Did not bat"
+        ]
+      },
+      "bowling": {
+        "overs": 4,
+        "wickets": 3,
+        "conceded": 54,
+        "economy": 13.5,
+        "maidens": 0,
+        "points": 50,
+        "breakdown": [
+          "3 wickets = +60",
+          "3 wickets bonus = +10",
+          "Economy 13.5 >=12 = -20"
+        ]
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "base_points": 50,
+      "multiplier": 2,
+      "multiplier_reason": "3+ wickets (3)",
+      "total_points": 100
+    },
+    "Abhishek Sharma": {
+      "ipl_team": "Sunrisers Hyderabad",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 0,
+        "balls": 2,
+        "fours": 0,
+        "sixes": 0,
+        "is_out": true,
+        "points": -10,
+        "breakdown": [
+          "Out on 0 = -10"
+        ]
+      },
+      "bowling": {
+        "overs": 0,
+        "wickets": 0,
+        "conceded": 0,
+        "economy": 0,
+        "maidens": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "fielding": {
+        "catches": 3,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 40,
+        "breakdown": [
+          "Catch (Yashasvi Jaiswal) = +10",
+          "Catch (Dasun Shanaka) = +10",
+          "Catch (Jofra Archer) = +10",
+          "3 catches bonus = +10"
+        ]
+      },
+      "base_points": 30,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 30
+    },
+    "Travis Head": {
+      "ipl_team": "Sunrisers Hyderabad",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 17,
+        "balls": 8,
+        "fours": 2,
+        "sixes": 1,
+        "is_out": true,
+        "points": 25,
+        "breakdown": [
+          "17 runs = +17",
+          "2 fours = +4",
+          "1 sixes = +4"
+        ]
+      },
+      "bowling": {
+        "overs": 0,
+        "wickets": 0,
+        "conceded": 0,
+        "economy": 0,
+        "maidens": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "base_points": 25,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 25
+    },
+    "Ishan Kishan": {
+      "ipl_team": "Sunrisers Hyderabad",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 33,
+        "balls": 11,
+        "fours": 3,
+        "sixes": 3,
+        "is_out": true,
+        "points": 56,
+        "breakdown": [
+          "33 runs = +33",
+          "3 fours = +6",
+          "3 sixes = +12",
+          "≥30 runs bonus = +5"
+        ]
+      },
+      "bowling": {
+        "overs": 0,
+        "wickets": 0,
+        "conceded": 0,
+        "economy": 0,
+        "maidens": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 2,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 10,
+        "breakdown": [
+          "Run out (Donovan Ferreira) = +5",
+          "Run out (Nandre Burger) = +5"
+        ]
+      },
+      "base_points": 66,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 66
+    },
+    "Ravichandran Smaran": {
+      "ipl_team": "Sunrisers Hyderabad",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 1,
+        "balls": 4,
+        "fours": 0,
+        "sixes": 0,
+        "is_out": true,
+        "points": 1,
+        "breakdown": [
+          "1 runs = +1"
+        ]
+      },
+      "bowling": {
+        "overs": 0,
+        "wickets": 0,
+        "conceded": 0,
+        "economy": 0,
+        "maidens": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "fielding": {
+        "catches": 1,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 10,
+        "breakdown": [
+          "Catch (Vaibhav Sooryavanshi) = +10"
+        ]
+      },
+      "base_points": 11,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 11
+    },
+    "Heinrich Klaasen": {
+      "ipl_team": "Sunrisers Hyderabad",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 18,
+        "balls": 10,
+        "fours": 2,
+        "sixes": 1,
+        "is_out": true,
+        "points": 26,
+        "breakdown": [
+          "18 runs = +18",
+          "2 fours = +4",
+          "1 sixes = +4"
+        ]
+      },
+      "bowling": {
+        "overs": 0,
+        "wickets": 0,
+        "conceded": 0,
+        "economy": 0,
+        "maidens": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "fielding": {
+        "catches": 1,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 10,
+        "breakdown": [
+          "Catch (Riyan Parag) = +10"
+        ]
+      },
+      "base_points": 36,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 36
+    },
+    "Nitish Kumar Reddy": {
+      "ipl_team": "Sunrisers Hyderabad",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 38,
+        "balls": 20,
+        "fours": 3,
+        "sixes": 2,
+        "is_out": true,
+        "points": 57,
+        "breakdown": [
+          "38 runs = +38",
+          "3 fours = +6",
+          "2 sixes = +8",
+          "≥30 runs bonus = +5"
+        ]
+      },
+      "bowling": {
+        "overs": 2,
+        "wickets": 1,
+        "conceded": 12,
+        "economy": 6,
+        "maidens": 0,
+        "points": 20,
+        "breakdown": [
+          "1 wickets = +20"
+        ]
+      },
+      "fielding": {
+        "catches": 1,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 10,
+        "breakdown": [
+          "Catch (Dhruv Jurel) = +10"
+        ]
+      },
+      "base_points": 87,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 87
+    },
+    "Salil Arora": {
+      "ipl_team": "Sunrisers Hyderabad",
+      "capped_status": "Unknown",
+      "batting": {
+        "runs": 35,
+        "balls": 21,
+        "fours": 2,
+        "sixes": 2,
+        "is_out": true,
+        "points": 52,
+        "breakdown": [
+          "35 runs = +35",
+          "2 fours = +4",
+          "2 sixes = +8",
+          "≥30 runs bonus = +5"
+        ]
+      },
+      "bowling": {
+        "overs": 0,
+        "wickets": 0,
+        "conceded": 0,
+        "economy": 0,
+        "maidens": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "base_points": 52,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 52
+    },
+    "Pat Cummins": {
+      "ipl_team": "Sunrisers Hyderabad",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 1,
+        "balls": 2,
+        "fours": 0,
+        "sixes": 0,
+        "is_out": true,
+        "points": 1,
+        "breakdown": [
+          "1 runs = +1"
+        ]
+      },
+      "bowling": {
+        "overs": 4,
+        "wickets": 0,
+        "conceded": 64,
+        "economy": 16,
+        "maidens": 0,
+        "points": -20,
+        "breakdown": [
+          "Economy 16 >=12 = -20"
+        ]
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "base_points": -19,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": -19
+    },
+    "Shivang Kumar": {
+      "ipl_team": "Sunrisers Hyderabad",
+      "capped_status": "Uncapped",
+      "batting": {
+        "runs": 27,
+        "balls": 24,
+        "fours": 3,
+        "sixes": 0,
+        "is_out": true,
+        "points": 33,
+        "breakdown": [
+          "27 runs = +27",
+          "3 fours = +6"
+        ]
+      },
+      "bowling": {
+        "overs": 2,
+        "wickets": 1,
+        "conceded": 19,
+        "economy": 9.5,
+        "maidens": 0,
+        "points": 20,
+        "breakdown": [
+          "1 wickets = +20"
+        ]
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 1,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 5,
+        "breakdown": [
+          "Run out (Donovan Ferreira) = +5"
+        ]
+      },
+      "base_points": 58,
+      "multiplier": 1,
+      "multiplier_reason": "Uncapped but no condition met (27 runs, 1 wickets, 1 dismissals)",
+      "total_points": 58
+    },
+    "Eshan Malinga": {
+      "ipl_team": "Sunrisers Hyderabad",
+      "capped_status": "Capped",
+      "batting": {
+        "runs": 5,
+        "balls": 8,
+        "fours": 0,
+        "sixes": 0,
+        "is_out": true,
+        "points": 5,
+        "breakdown": [
+          "5 runs = +5"
+        ]
+      },
+      "bowling": {
+        "overs": 4,
+        "wickets": 1,
+        "conceded": 40,
+        "economy": 10,
+        "maidens": 0,
+        "points": 10,
+        "breakdown": [
+          "1 wickets = +20",
+          "Economy 10 >=10 = -10"
+        ]
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 1,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 5,
+        "breakdown": [
+          "Run out (Nandre Burger) = +5"
+        ]
+      },
+      "base_points": 20,
+      "multiplier": 1,
+      "multiplier_reason": "",
+      "total_points": 20
+    },
+    "Sakib Hussain": {
+      "ipl_team": "Sunrisers Hyderabad",
+      "capped_status": "Uncapped",
+      "batting": {
+        "runs": 5,
+        "balls": 7,
+        "fours": 1,
+        "sixes": 0,
+        "is_out": false,
+        "points": 7,
+        "breakdown": [
+          "5 runs = +5",
+          "1 fours = +2"
+        ]
+      },
+      "bowling": {
+        "overs": 4,
+        "wickets": 0,
+        "conceded": 52,
+        "economy": 13,
+        "maidens": 0,
+        "points": -20,
+        "breakdown": [
+          "Economy 13 >=12 = -20"
+        ]
+      },
+      "fielding": {
+        "catches": 0,
+        "runouts": 0,
+        "runout_direct_hits": 0,
+        "stumpings": 0,
+        "points": 0,
+        "breakdown": []
+      },
+      "base_points": -13,
+      "multiplier": 1,
+      "multiplier_reason": "Uncapped but no condition met (5 runs, 0 wickets, 0 dismissals)",
+      "total_points": -13
+    }
+  },
+  "fantasy_team_scores": [
+    {
+      "id": 1,
+      "name": "Valtheru Valyrian Steel",
+      "captain": null,
+      "captain_active_this_game": false,
+      "total_points": 466,
+      "players": [
+        {
+          "name": "Sanju Samson",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Tim David",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Jacob Bethell",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Yash Dayal",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Harshal Patel",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "played": true,
+          "capped_status": "Uncapped",
+          "base_points": 200,
+          "multiplier": 2,
+          "multiplier_reason": "30+ runs (97)",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 400
+        },
+        {
+          "name": "Ishan Kishan",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 66,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 66
+        },
+        {
+          "name": "Jos Buttler",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Lhuan-dre Pretorius",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Agiripalli Aegons (Eggs)",
+      "captain": null,
+      "captain_active_this_game": false,
+      "total_points": 74,
+      "players": [
+        {
+          "name": "Riyan Parag",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 38,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 38
+        },
+        {
+          "name": "Glenn Phillips",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Rahul Tewatia",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Aniket Verma",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Abhinandan Singh",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Virat Kohli",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Krunal Pandya",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 36,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 36
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dracarys Dynamites",
+      "captain": null,
+      "captain_active_this_game": false,
+      "total_points": 54,
+      "players": [
+        {
+          "name": "Virat Kohli",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Josh Hazlewood",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Krunal Pandya",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Mohammed Siraj",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Sai Sudharsan",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Abhishek Sharma",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 30,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 30
+        },
+        {
+          "name": "Venkatesh Iyer",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Shahrukh Khan",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Donovan Ferreira",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 24,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 24
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Snow Strikers",
+      "captain": null,
+      "captain_active_this_game": false,
+      "total_points": 136,
+      "players": [
+        {
+          "name": "Yashasvi Jaiswal",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 27,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 27
+        },
+        {
+          "name": "Sai Sudharsan",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Travis Head",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 25,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 25
+        },
+        {
+          "name": "Kamindu Mendis",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Rahul Chahar",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Venkatesh Iyer",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Shubman Gill",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Abhishek Sharma",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 30,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 30
+        },
+        {
+          "name": "Devdutt Padikkal",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Ravindra Jadeja",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 54,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 54
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Slayers Unsullied Force",
+      "captain": null,
+      "captain_active_this_game": false,
+      "total_points": 228,
+      "players": [
+        {
+          "name": "Rajat Patidar",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Lungi Ngidi",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Jitesh Sharma",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Rashid Khan",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Sandeep Sharma",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Dhruv Jurel",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 107,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 107
+        },
+        {
+          "name": "Abhishek Sharma",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 30,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 30
+        },
+        {
+          "name": "Eshan Malinga",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 20,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 20
+        },
+        {
+          "name": "Virat Kohli",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Venkatesh Iyer",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Sai Sudharsan",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Yash Raj Punja",
+          "played": true,
+          "capped_status": "Uncapped",
+          "base_points": 20,
+          "multiplier": 1,
+          "multiplier_reason": "Uncapped but no condition met (0 runs, 1 wickets, 0 dismissals)",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 20
+        },
+        {
+          "name": "Nandre Burger",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 51,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 51
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Tyrion Titans",
+      "captain": null,
+      "captain_active_this_game": false,
+      "total_points": 134,
+      "players": [
+        {
+          "name": "Akash Madhwal",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Shimron Hetmyer",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Pat Cummins",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": -19,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": -19
+        },
+        {
+          "name": "Nitish Kumar Reddy",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 87,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 87
+        },
+        {
+          "name": "Shubman Gill",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Ishan Kishan",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 66,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 66
+        },
+        {
+          "name": "Tim David",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Jason Holder",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "White Walkers",
+      "captain": null,
+      "captain_active_this_game": false,
+      "total_points": 249,
+      "players": [
+        {
+          "name": "Devdutt Padikkal",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Rasikh Salam",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Suyash Sharma",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Prasidh Krishna",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Sai Kishore",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Ashok Sharma",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 36,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 36
+        },
+        {
+          "name": "Praful Hinge",
+          "played": true,
+          "capped_status": "Uncapped",
+          "base_points": 50,
+          "multiplier": 2,
+          "multiplier_reason": "3+ wickets (3)",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 100
+        },
+        {
+          "name": "Travis Head",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 25,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 25
+        },
+        {
+          "name": "Dhruv Jurel",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 107,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 107
+        },
+        {
+          "name": "Pat Cummins",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": -19,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": -19
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Dothraki Khaleesi Gang",
+      "captain": null,
+      "captain_active_this_game": false,
+      "total_points": 543,
+      "players": [
+        {
+          "name": "Bhuvneshwar Kumar",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Jos Buttler",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Kagiso Rabada",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Washington Sundar",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Manav Suthar",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "played": true,
+          "capped_status": "Uncapped",
+          "base_points": 200,
+          "multiplier": 2,
+          "multiplier_reason": "30+ runs (97)",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 400
+        },
+        {
+          "name": "Shubham Dubey",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Mohammad Shami",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Ravichandran Smaran",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 11,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 11
+        },
+        {
+          "name": "Devdutt Padikkal",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 36,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 36
+        },
+        {
+          "name": "Jofra Archer",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 96,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 96
+        },
+        {
+          "name": "Jacob Duffy",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Telugu Targerions",
+      "captain": null,
+      "captain_active_this_game": false,
+      "total_points": 597,
+      "players": [
+        {
+          "name": "Liam Livingstone",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Phil Salt",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Romario Shepherd",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Shubman Gill",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Sherfane Rutherford",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Jofra Archer",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 96,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 96
+        },
+        {
+          "name": "Nitish Rana",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Ishan Kishan",
+          "played": true,
+          "capped_status": "Capped",
+          "base_points": 66,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 66
+        },
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "played": true,
+          "capped_status": "Uncapped",
+          "base_points": 200,
+          "multiplier": 2,
+          "multiplier_reason": "30+ runs (97)",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 400
+        },
+        {
+          "name": "Rajat Patidar",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Jos Buttler",
+          "played": false,
+          "capped_status": "Capped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Sakib Hussain",
+          "played": true,
+          "capped_status": "Uncapped",
+          "base_points": -13,
+          "multiplier": 1,
+          "multiplier_reason": "Uncapped but no condition met (5 runs, 0 wickets, 0 dismissals)",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": -13
+        },
+        {
+          "name": "Harsh Dubey",
+          "played": false,
+          "capped_status": "Uncapped",
+          "base_points": 0,
+          "multiplier": 1,
+          "multiplier_reason": "",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 0
+        },
+        {
+          "name": "Shivang Kumar",
+          "played": true,
+          "capped_status": "Uncapped",
+          "base_points": 58,
+          "multiplier": 1,
+          "multiplier_reason": "Uncapped but no condition met (27 runs, 1 wickets, 1 dismissals)",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": 58
+        },
+        {
+          "name": "Brijesh Sharma",
+          "played": true,
+          "capped_status": "Uncapped",
+          "base_points": -10,
+          "multiplier": 1,
+          "multiplier_reason": "Uncapped but no condition met (0 runs, 0 wickets, 0 dismissals)",
+          "is_captain": false,
+          "captain_multiplier": 1,
+          "total_points": -10
+        }
+      ]
+    }
+  ]
+}
